@@ -1,0 +1,80 @@
+
+ .select-card-type .cards-wrap .card:nth-last-child(2) {
+  --y: calc(-79%);
+  transform: translate(-50%, var(--y)) scale(0.9);
+}
+
+ .select-card-type .cards-wrap .card:nth-last-child(1) {
+  --y: calc(-50% + -11px);
+  transform: translate(-50%, var(--y)) scale(1);
+}
+
+ .select-card-type .cards-wrap .card img {
+  width: 32.1rem;
+}
+
+@keyframes swap {
+  50% {
+    transform: translate(-50%, -132%) scale(0.85);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translate(-50%, calc(var(--y) - 15px)) scale(0.85);
+    z-index: -1;
+  }
+}
+
+ .select-card-type .select-type-title {
+  color: #a5b1bd;
+  font-weight: 300;
+  margin-bottom: 3.2rem;
+}
+
+ .select-card-type .select-card {
+  display: flex;
+}
+ .select-card-type .select-card .card-type {
+  border: 1px solid #535c64;
+  color: #a5b1bd;
+  padding: 1.6rem 3.5rem;
+  cursor: pointer;
+  border-radius: 0.7rem;
+  font-weight: 300;
+  transition: all 0.3s;
+  position: relative;
+}
+
+ .select-card-type .select-card .card-type .tick {
+  display: none;
+}
+
+ .select-card-type .select-card .card-type:hover {
+  transform: translateY(-0.12rem);
+}
+
+ .select-card-type .select-card .card-type.card-type--active {
+  border-color: #2764ff !important;
+  color: var(--white-color);
+  font-weight: 400;
+}
+
+
+  .select-card-type
+  .select-card
+  .card-type.card-type--active
+  .tick {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: -1px;
+  background-color: #2764ff;
+  border-radius: 0 0.7rem 0 0.8rem;
+  width: 3.197rem;
+  height: 2.132rem;
+}
+
+ .select-card-type .select-card > *:not(:first-child) {
+  margin-left: 2.4rem;
+}

@@ -4,6 +4,7 @@ import './CardContainer.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { useIcons } from '../../hooks/useIcon';
 
 const cards = [
   {
@@ -59,26 +60,6 @@ const settings = {
 };
 
 const CardContainer = ({ translateSize }) => {
-  const [cardTypes] = React.useState([
-    {
-      type: 'naira',
-      currency: 'ngn',
-      name: 'Naira',
-      img: nairaCard,
-      typeName: 'Naira Card (NGN)',
-      controlSpending: true,
-      globalPayment: true,
-    },
-    {
-      type: 'dollar',
-      currency: 'usd',
-      name: 'Dollar',
-      img: dollarCard,
-      typeName: 'Dollar Card (USD)',
-      controlSpending: true,
-      globalPayment: true,
-    },
-  ]);
   return (
     <div className='card-container'>
       <div className='slides-wrapper'>
