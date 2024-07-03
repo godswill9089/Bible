@@ -1,6 +1,6 @@
 import React from 'react'
 import Mission from './Mission';
-import "../../Card/CardContainer.css";
+import "../../CardContainer/CardContainer.css";
 
 const missions = [
     {

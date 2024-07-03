@@ -1,0 +1,21 @@
+.card-container {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+.card-container .slides-wrapper {
+  background-color: yellow;
+  padding: 1rem;
+  overflow: hidden;
+  margin-right: -9.5rem;
+}
+.card-container .cards-wrapper {
+  display: flex;
+  justify-content: space-around;
+  transition: all linear 1s;
+  gap: 2rem;
+}
