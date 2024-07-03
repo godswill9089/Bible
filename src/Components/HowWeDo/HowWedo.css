@@ -1,0 +1,105 @@
+.how-we-do-component{
+  width: 90%;
+}
+
+.how-we-do-component .wedo {
+  width: 25% !important;
+}
+
+.how-we-do-component .how-we-do-it-description {
+  width: 60%;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  line-height: 30px;
+}
+
+.how-we-do-component .strong {
+  color: #3c0cec;
+}
+.how-we-do-component .carousel-screen-1 {
+  background-image: url('../../Assets/blog\ image.png');
+}
+.how-we-do-component .carousel-screen-2 {
+  background-image: url('../../Assets/carousel-volunteer.svg');
+}
+.how-we-do-component .carousel-screen-3 {
+  background-image: url('../../Assets/carousel-family.svg');
+}
+.how-we-do-component .bg-img-2 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  /* height: 100vh; */
+  height: 400px;
+  max-height: 400px;
+  border-radius: 10px;
+  /* display: none; */
+  /* overflow: hidden; */
+  width: 100%;
+  /* background-color: green; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  /* padding: 4rem 1rem !important; */
+}
+.how-we-do-component .screens {
+  display: flex;
+  align-items: center;
+  /* background-color: blue; */
+  /* margin-bottom: 10rem; */
+  padding: 2rem;
+  height: 90%;
+}
+.how-we-do-component .screen {
+  /* min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+  transition: opacity 0.5s ease;
+  opacity: 0;
+  color: #fff;
+  /* background-color: aqua; */
+  width: 50%;
+}
+.how-we-do-component .screen.active {
+  opacity: 1;
+}
+
+.how-we-do-component .screen-info {
+  margin-bottom: 3rem;
+}
+.how-we-do-component .screen-btn {
+  border-radius: 3rem;
+  color: #6200ea;
+  background-color: #fff;;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  width: 35%;
+  align-items: center;
+  margin-top: auto;
+}
+  
+.screen-btn .arrow {
+  margin-left: 30px;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.how-we-do-component .btns {
+  display: flex;
+  column-gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.how-we-do-component .btn {
+  width: 32px;
+  height: 8px;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.how-we-do-component .btn.active {
+  background-color: #FF5240DB;
+}

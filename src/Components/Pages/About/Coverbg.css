@@ -1,0 +1,30 @@
+/* src/components/HeroSection.css */
+
+.hero-section {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: rgba(255, 0, 0, 0.8);
+    /* Semi-transparent red background */
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 80%;
+}
+
+.overlay-text {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}

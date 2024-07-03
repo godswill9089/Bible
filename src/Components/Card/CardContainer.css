@@ -1,0 +1,8 @@
+.card-container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .slick-prev, .slick-next {
+    display: none !important;
+  }

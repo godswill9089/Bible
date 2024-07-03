@@ -1,0 +1,125 @@
+.ban{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: "Poppins", sans-serif;
+}
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 80px;
+    height: 200% !important;
+}
+
+.text-content {
+    max-width: 60%;
+}
+
+.text-content h1 {
+    font-size: 2em;
+    margin: 0;
+    color: #333;
+}
+
+.text-content p {
+    font-size: 1em;
+    color: #666;
+    margin: 10px 0;
+}
+
+.link{
+    margin-top: 10px;
+}
+
+.watch-button {
+    display: flex;
+    width: 40%;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #6a00ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.watch-button:hover {
+    background-color: #4a00cc;
+}
+
+.video-content {
+    position: relative;
+    width: 200px;
+    height: 120px;
+}
+
+.video-placeholder {
+    background-color: #6200ea;
+    width: 120%;
+    height: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.video-placeholder .play-button {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    mask: url('data:image/svg+xml,%3Csvg xmlns%3D"http%3A//www.w3.org/2000/svg" viewBox%3D"0 0 24 24"%3E%3Cpath fill%3D"%23000000" d%3D"M8 5v14l11-7z"/%3E%3C/svg%3E') center / contain no-repeat;
+    -webkit-mask: url('data:image/svg+xml,%3Csvg xmlns%3D"http%3A//www.w3.org/2000/svg" viewBox%3D"0 0 24 24"%3E%3Cpath fill%3D"%23000000" d%3D"M8 5v14l11-7z"/%3E%3C/svg%3E') center / contain no-repeat;
+}
+
+.video-placeholder::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 80%;
+    height: 80%;
+    background-color: #00c0ff;
+    /* z-index: -1; */
+    border-radius: 8px;
+}
+
+.join{
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.join-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.join-header button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-family: "Poppins", sans-serif !important;
+    cursor: pointer;
+    background-color: #6a00ff;
+    border: none;
+    font-weight: 500;
+    font-size: 15px;
+    width: 20%;
+    gap: 25px;
+    border-radius: 50px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link2{
+    margin-top: 5px;
+}
