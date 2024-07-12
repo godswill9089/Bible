@@ -28,6 +28,12 @@
   font-weight: 600;
 }
 .books-component .carousel {
+  /* position: relative; */
+}
+.books-component .carousel .books-wrapper {
+  padding: 1rem;
+  overflow: hidden;
+  margin-right: -9.5rem;
   position: relative;
 }
 .books-component .carousel .books {
@@ -35,6 +41,11 @@
   column-gap: 3rem;
   align-items: center;
   justify-content: center;
+  /* new */
+  display: flex;
+  justify-content: space-around;
+  transition: all linear 1s;
+  gap: 2rem;
 }
 .books-component .carousel .books .book {
   position: relative;

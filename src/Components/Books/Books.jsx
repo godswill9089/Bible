@@ -9,7 +9,40 @@ import ButtonPill from '../../Views/Molecules/ButtonPill/ButtonPill';
 import ButtonRound from '../../Views/Molecules/ButtonRound/ButtonRound';
 
 const Books = () => {
-  const { titleIcon } = useIcons();
+  const testimonials = [
+    {
+      text: "I used to be lost and alone. After joining The Moving Bible's volunteer program, I found purpose and a supportive community.",
+      name: 'Sarah',
+    },
+    {
+      text: "Our marriage was on the brink of collapse. Through The Moving Bible's marriage counseling program based on Christian principles, we rediscovered the love and respect for each other.",
+      name: 'Maria and Carlos',
+    },
+    {
+      text: "The Moving Bible's daily devotionals have been a guiding light in my life.",
+      name: 'David',
+    },
+    {
+      text: 'bdbd d dndndnd dndnd ddndndndnnd dndndn ',
+      name: 'David',
+    },
+    {
+      text: 'dhsoeoe osca  saeddn dsnd ddjaja aekjejea eakaekkae, gshsie akkso dkakka LwowOED DANAANNAD ADKADKKjs sjsdjd,gshsie akkso dkakka LwowOED DANAANNAD ADKADKKjs sjsdjd. gshsie akkso dkakka LwowOED DANAANNAD ADKADKKjs sjsdjd',
+      name: 'David',
+    },
+    {
+      text: 'jajadjad akakka dkakka LwowOED DANAANNAD ADKADKKjs sjsdjd',
+      name: 'David',
+    },
+    {
+      text: 'gshsie akkso dkakka LwowOED DANAANNAD ADKADKKjs sjsdjd ,gshsie akkso dkakka LwowOED DANAANNAD ADKADKKjs sjsdjd,gshsie akkso dkakka LwowOED DANAANNAD ADKADKKjs sjsdjd,gshsie akkso dkakka LwowOED DANAANNAD ADKADKKjs sjsdjd,gshsie akkso dkakka LwowOED DANAANNAD ADKADKKjs sjsdjd',
+      name: 'David',
+    },
+    {
+      text: 'oeis shshw akakka dkakka LwowOED DANAANNAD ADKADKKjs sjsdjd, gshsie akkso dkakka LwowOED DANAANNAD ADKADKKjs sjsdjd, gshsie akkso dkakka LwowOED DANAANNAD ADKADKKjs sjsdjd',
+      name: 'David',
+    },
+  ];
   const [translateSize, setTranslateSize] = useState(0);
   const [direction, setDirection] = useState('');
   const handleTranslate = (direction) => {
@@ -17,13 +50,13 @@ const Books = () => {
       if (translateSize === 0) {
         setTranslateSize(210);
       } else {
-        setTranslateSize(translateSize - 42);
+        setTranslateSize(translateSize - 27);
       }
     } else {
       if (translateSize === 210) {
         setTranslateSize(0);
       } else {
-        setTranslateSize(translateSize + 42);
+        setTranslateSize(translateSize + 27);
       }
     }
     setDirection(direction);
@@ -50,37 +83,34 @@ const Books = () => {
             </p>
           </div>
           <div className='carousel'>
-            <div className='books'>
-              <div className='book'>
-                <img src='' alt='' className='' />
-                <div className='btn-wrapper'>
-                  <ButtonPill text={'Buy now'} />
-                </div>
+            <div className='books-wrapper'>
+              <div
+                className='books'
+                style={{ transform: `translateX(-${translateSize}rem)` }}
+              >
+                {testimonials.map((book, index) => (
+                  <div key={index} className='book'>
+                    <img src='' alt='' className='' />
+                    <div className='btn-wrapper'>
+                      <ButtonPill text={'Buy now'} />
+                    </div>
+                  </div>
+                ))}
               </div>
-              <div className='book'>
-                <img src='' alt='' className='' />
-                <div className='btn-wrapper'>
-                  <ButtonPill text={'Buy now'} />
-                </div>
+              <div className='carousel-btn-left'>
+                <ButtonRound
+                  active={false}
+                  direction='left'
+                  onClick={() => handleTranslate('left')}
+                />
               </div>
-              <div className='book'>
-                <img src='' alt='' className='' />
-                <div className='btn-wrapper'>
-                  <ButtonPill text={'Buy now'} />
-                </div>
+              <div className='carousel-btn-right'>
+                <ButtonRound
+                  active={true}
+                  direction='right'
+                  onClick={() => handleTranslate('right')}
+                />
               </div>
-              <div className='book'>
-                <img src='' alt='' className='' />
-                <div className='btn-wrapper'>
-                  <ButtonPill text={'Buy now'} />
-                </div>
-              </div>
-            </div>
-            <div className='carousel-btn-left'>
-              <ButtonRound active={false} direction='left' onClick={() => {}} />
-            </div>
-            <div className='carousel-btn-right'>
-              <ButtonRound active={true} direction='right' onClick={() => {}} />
             </div>
           </div>
         </div>
