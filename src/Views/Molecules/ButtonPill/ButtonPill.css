@@ -1,0 +1,18 @@
+.btn-pill-component {
+  background-color: #3c0cec;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5rem;
+  padding: 1.2rem 2rem;
+  border-top-left-radius: 1000px;
+  border-top-right-radius: 1000px;
+  border-bottom-right-radius: 1000px;
+  border-bottom-left-radius: 1000px;
+  cursor: pointer;
+}
+.btn-pill-component p {
+  font-weight: 400;
+  font-size: 1.8rem;
+}

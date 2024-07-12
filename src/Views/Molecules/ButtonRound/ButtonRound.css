@@ -1,0 +1,22 @@
+.btn-round{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4rem;
+  width: 5.1rem;
+  height: 5.1rem;
+  min-width: 5.1rem;
+  min-height: 5.1rem;
+  border-radius: 50%;
+  overflow: hidden;
+  font-size: 2.4rem;
+  border: 2px solid #000000;
+  color: #000000;
+  background-color: #fff;
+  cursor: pointer;
+}
+.btn-round.active {
+  border: 2px solid #9277f4;
+  color: #fff;
+  background-color: #9277f4;
+}

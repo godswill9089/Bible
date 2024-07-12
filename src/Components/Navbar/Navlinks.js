@@ -24,7 +24,7 @@ export const NavLinks = [
     {
         id: 4,
         title: "Products",
-        link: "/product",
+        link: "/products",
         cName: "nav-links"
     },
 

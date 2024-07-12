@@ -5,7 +5,7 @@ import { headerRoutes } from './Components/Routes/Route';
 import MediaHero from './Components/Pages/Media/MediaHero';
 import Home from './Pages/Home/Home';
 import AboutUs from './Pages/About/AboutUs';
-import Product from './Components/Pages/Product/Product';
+import Products from './Pages/Products/Products';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path={headerRoutes.About} element={<AboutUs />} />
         <Route path={headerRoutes.Media} element={<MediaHero />} />
-        <Route path={headerRoutes.Product} element={<Product />} />
+        <Route path={headerRoutes.Product} element={<Products />} />
       </Routes>
     </BrowserRouter>
   );

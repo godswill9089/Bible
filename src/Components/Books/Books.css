@@ -1,0 +1,66 @@
+.books-component {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400 !important;
+  width: 100%;
+  margin: 0 auto;
+}
+.books-component .container {
+  width: 87.5%;
+  margin: 0 auto;
+}
+.books-component .content {
+  padding: 4rem 15rem;
+}
+.books-component .title-wrapper {
+  display: flex;
+  margin-bottom: 5rem;
+}
+.books-component .info {
+  margin-bottom: 7rem;
+}
+.books-component .info p {
+  margin-bottom: 2rem;
+  font-weight: 400;
+  font-size: 1.8rem;
+  /* line-height: 4.16rem; */
+}
+.books-component .info p span {
+  font-weight: 600;
+}
+.books-component .carousel {
+  position: relative;
+}
+.books-component .carousel .books {
+  display: flex;
+  column-gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+.books-component .carousel .books .book {
+  position: relative;
+  min-width: 25rem;
+  min-height: 35rem;
+  width: 25rem;
+  height: 35rem;
+  border-radius: 1rem;
+  background-color: #cc2f9ee5;
+}
+.books-component .carousel .books .book .btn-wrapper {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 21.6rem;
+}
+.books-component .carousel .carousel-btn-left {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.books-component .carousel .carousel-btn-right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
