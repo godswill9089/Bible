@@ -7,9 +7,10 @@ import FramedArt from '../../Components/FramedArt/FramedArt';
 import Customization from '../../Components/Customization/Customization';
 import ReadyToJoin from '../../Components/ReadyToJoin/ReadyToJoin';
 
-const Products = () => {
+const Media = () => {
   return (
-    <div className='products'>
+    <div className='media'>
+      <Navbar />
       <HeroProducts />
       <Books />
       <FramedArt />
@@ -20,4 +21,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default Media;

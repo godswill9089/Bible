@@ -1,15 +1,4 @@
-.abt-img{
-    background-image: url("../../Assets/About\ us\ Image.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-clip: content-box;
-    min-height: 100vh;
-}
 
-.abt-logo{
-   color: white !important;
-}
 
 .abt-main a{
     color: white !important;

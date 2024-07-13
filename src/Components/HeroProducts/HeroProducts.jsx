@@ -15,8 +15,8 @@ const HeroProducts = () => {
   return (
     <div className='hero-products-wrapper'>
       <div className='hero-products'>
-        <div className='content'>
-          <div className='container'>
+        <div className='container'>
+          <div className='content'>
             <div className='info-wrapper'>
               <p>
                 The Moving Bible Shop offers a variety of resources to deepen

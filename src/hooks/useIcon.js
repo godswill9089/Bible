@@ -11,6 +11,7 @@ import productsBannerIcon3 from '../Assets/Images/products-banner-icon-3.svg';
 import productsBannerShirts from '../Assets/Images/products-banner-shirts.svg';
 import titleIcon from '../Assets/Images/title-icon.svg';
 import logoWhite from '../Assets/Images/logo-white.svg';
+import aboutUsBanner from '../Assets/Images/about-us-banner.svg';
 
 export const useIcons = () => {
   return {
@@ -26,5 +27,6 @@ export const useIcons = () => {
     productsBannerShirts,
     titleIcon,
     logoWhite,
+    aboutUsBanner,
   };
 };

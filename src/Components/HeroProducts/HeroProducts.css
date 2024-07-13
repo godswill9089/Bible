@@ -37,14 +37,14 @@
   z-index: 3;
   color: white;
 }
+.hero-products-wrapper .container {
+  height: 100%;
+  width: 87.5%;
+  margin: 0 auto;
+}
 
 .hero-products .content {
   /* background-color: green; */
-  height: 100%;
-}
-.hero-products-wrapper .container {
-  width: 87.5%;
-  margin: 0 auto;
   height: 100%;
   position: relative;
 }
@@ -54,13 +54,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .hero-products .info-wrapper p {
   width: 60%;
   max-width: 70rem;
   font-weight: 400;
-  font-size: 3.2rem;
-  line-height: 4.16rem;
+  font-size: 2.7rem;
+  line-height: 3.7rem;
 }
 .hero-products .img-1 {
   width: 39.3rem;
@@ -81,8 +82,8 @@
   width: 7.4rem;
   height: 11rem;
   position: absolute;
-  top: 14.8rem;
-  right: 20%;
+ top: 24.8rem;
+  right: 10%;
 }
 .hero-products-wrapper {
   position: relative;
@@ -100,8 +101,8 @@
 }
 .hero-products-wrapper .t-shirts .content .info .info-text {
   font-weight: 400;
-  font-size: 3.2rem;
-  line-height: 4.16rem;
+ font-size: 2.7rem;
+  line-height: 3.7rem;
   margin-bottom: 10rem;
 }
 .hero-products-wrapper .t-shirts .content .info .info-text span {
