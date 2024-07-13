@@ -15,6 +15,11 @@ import aboutUsBanner from '../Assets/Images/about-us-banner.svg';
 import nigeria from '../Assets/Images/nigeria.svg';
 import china from '../Assets/Images/china.svg';
 import uk from '../Assets/Images/united-kingdom.svg';
+import mediaBanner from '../Assets/Images/media-banner.svg';
+import play from '../Assets/Images/play.svg';
+import ebook from '../Assets/Images/ebook.svg';
+import blog from '../Assets/Images/blog.svg';
+import devotional from '../Assets/Images/devotional.svg';
 
 export const useIcons = () => {
   return {
@@ -34,5 +39,10 @@ export const useIcons = () => {
     nigeria,
     china,
     uk,
+    mediaBanner,
+    play,
+    ebook,
+    blog,
+    devotional,
   };
 };

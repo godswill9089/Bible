@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Card = ({ title, description, }) => {
   return (
-    <div className="card">
+    <div className="card-component">
       <div className="card-top-bar"></div>
       <div className='card-top'>
         <h2 className="card-title">{title}</h2>

@@ -1,45 +1,45 @@
-.card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin:10px;
-    margin-top: 60px !important;
-    min-width: 350px;
-    width: 350px;
-    height: 250px;
-    text-align: left;
-    position: relative;
-  }
+.card-component {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  margin-top: 60px !important;
+  min-width: 350px;
+  width: 350px;
+  height: 250px;
+  text-align: left;
+  position: relative;
+}
 
-  .card-top {
-    padding: 25px;
-  }
+.card-component .card-top {
+  padding: 25px;
+}
 
-  .card-top-bar {
-    height: 13px;
-    background-color: #3C0CEC;
-    border-radius: 4px;
-  }
-  
-  .card-title {
-    font-size: 1.2em;
-    color: black;
-  }
-  
-  .card-description {
-    margin: 20px 0;
-  }
-  
-  .card-link {
-    color: #6200ea;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    margin-top: auto;
-  }
-  
-  .card-link .arrow {
-    margin-left: 5px;
-    font-size: 1.2em;
-    margin-top: 10px;
-  }
+.card-component .card-top-bar {
+  height: 13px;
+  background-color: #3c0cec;
+  border-radius: 4px;
+}
+
+.card-component .card-title {
+  font-size: 1.2em;
+  color: black;
+}
+
+.card-component .card-description {
+  margin: 20px 0;
+}
+
+.card-component .card-link {
+  color: #6200ea;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+}
+
+.card-component .card-link .arrow {
+  margin-left: 5px;
+  font-size: 1.2em;
+  margin-top: 10px;
+}

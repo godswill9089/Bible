@@ -1,0 +1,45 @@
+.card-media {
+  min-width: 44.2rem;
+  min-height: 44.2rem;
+  width: 44.2rem;
+  height: 44.2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #fff;
+}
+.card-media .card-top {
+  min-height: 2rem;
+  height: 2rem;
+  background-color: #3c0cec;
+}
+.card-media .card-content {
+  padding: 4rem 2rem 0;
+}
+.card-media .icon {
+  display: flex;
+  justify-content: flex-end;
+}
+.card-media .icon img {
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: 2rem;
+}
+
+.card-media .details {
+  min-height: 20rem;
+}
+.card-media h1 {
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 4.17rem;
+  margin-bottom: 2.4rem;
+}
+.card-media p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+.card-media .btn-learn-more {
+  width: 30rem;
+}

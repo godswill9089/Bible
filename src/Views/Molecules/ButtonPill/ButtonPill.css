@@ -3,7 +3,7 @@
   color: #fff;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   column-gap: 5rem;
   padding: 1.2rem 2rem;
   border-top-left-radius: 1000px;
