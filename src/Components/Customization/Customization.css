@@ -1,0 +1,112 @@
+.customization {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400 !important;
+  width: 100%;
+  margin: 0 auto;
+}
+.customization .container {
+  width: 87.5%;
+  margin: 0 auto;
+}
+.customization .content {
+  padding: 9rem 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.customization .content .details-wrapper {
+  width: 50%;
+}
+.customization .title-wrapper {
+  display: flex;
+  margin-bottom: 3.5rem;
+}
+.customization .details {
+  margin-bottom: 7rem;
+  max-width: 60rem;
+}
+.customization .details .title {
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 4.92rem;
+  margin-bottom: 1rem;
+}
+.customization .details .info {
+  margin-bottom: 2rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.952rem;
+}
+.customization .details .info span {
+  font-weight: 600;
+}
+.customization .describe {
+  border: 2px solid #000000;
+  border-radius: 1000px;
+  height: 7rem;
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+.customization .describe .describe-info {
+  display: flex;
+  align-items: center;
+  flex: 1 1 0%;
+  justify-content: space-between;
+}
+.customization .describe .describe-info .style {
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+}
+.customization .content .card-wrapper {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.customization .content .card-customization {
+  min-width: 40.2rem;
+  min-height: 32.2rem;
+  width: 40.2rem;
+  height: 32.2rem;
+  background-color: #d9d9d9;
+  border-radius: 1rem;
+}
+.customization .created {
+  margin-bottom: 6rem;
+}
+.customization .created .title {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  font-weight: 500;
+  line-height: 7.872rem;
+  text-align: center;
+}
+.customization .created .created-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 4rem;
+}
+.customization .created .created-cards .column {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+}
+.customization .created .created-cards .card-customization-1 {
+  min-width: 35rem;
+  min-height: 35rem;
+  width: 35rem;
+  height: 35rem;
+  background-color: #d9d9d9;
+  border-radius: 1rem;
+}
+.customization .created .created-cards .card-customization-2 {
+  min-width: 35rem;
+  min-height: 45rem;
+  width: 35rem;
+  height: 45rem;
+  background-color: #d9d9d9;
+  border-radius: 1rem;
+}

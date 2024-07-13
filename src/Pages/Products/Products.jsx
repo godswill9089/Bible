@@ -7,17 +7,23 @@ import Testimonials from '../../Components/Testimonials/Testimonials';
 import Footer from '../../Components/Footer/Footer';
 import HeroProducts from '../../Components/HeroProducts/HeroProducts';
 import Books from '../../Components/Books/Books';
+import FramedArt from '../../Components/FramedArt/FramedArt';
+import Customization from '../../Components/Customization/Customization';
+import ReadyToJoin from '../../Components/ReadyToJoin/ReadyToJoin';
 
 const Products = () => {
   return (
-    <div className='Home'>
+    <div className='products'>
       <Navbar />
       <HeroProducts />
       <Books />
-      <HowWedo />
+      <FramedArt />
+      <Customization />
+      <ReadyToJoin />
+      {/* <HowWedo />
       <Testimonials />
       <Become />
-      <SignUp />
+      <SignUp /> */}
       <Footer />
     </div>
   );

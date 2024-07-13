@@ -1,0 +1,63 @@
+.framed-art {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400 !important;
+  width: 100%;
+  margin: 0 auto;
+}
+.framed-art .container {
+  width: 87.5%;
+  margin: 0 auto;
+}
+.framed-art .content {
+  padding: 9rem 15rem;
+  background-color: #fff;
+  box-shadow: 0px 5.969581604003906px 16.714828491210938px 0px #080f340a;
+  border-radius: 0.8rem;
+}
+.framed-art .title-wrapper {
+  display: flex;
+  margin-bottom: 5rem;
+}
+.framed-art .details {
+  margin-bottom: 7rem;
+  max-width: 60rem;
+}
+.framed-art .details .title {
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 4.92rem;
+  margin-bottom: 1rem;
+}
+.framed-art .details .info {
+  margin-bottom: 2rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.952rem;
+}
+
+.framed-art .btns-wrapper {
+  display: flex;
+  column-gap: 4rem;
+  align-items: center;
+  margin-bottom: 12rem;
+}
+.framed-art .btns {
+  display: flex;
+  column-gap: 1.5rem;
+  align-items: center;
+}
+.framed-art .btns-2 {
+  display: flex;
+  column-gap: 1rem;
+  justify-content: center;
+}
+.framed-art .btns-2 .btn {
+  width: 32px;
+  height: 8px;
+  border-radius: 8px;
+  background-color: #000000;
+  cursor: pointer;
+}
+.framed-art .btns-2 .btn.active {
+  background-color: #3c0cec;
+}
