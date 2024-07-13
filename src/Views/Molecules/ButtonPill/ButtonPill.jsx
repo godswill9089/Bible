@@ -1,11 +1,13 @@
 import React from 'react';
 import './ButtonPill.css';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { useIcons } from '../../../hooks/useIcon';
 
-const ButtonPill = ({ text, onClick }) => {
+const ButtonPill = ({ text, onClick, podcast }) => {
+  const { arrowRight, audio } = useIcons();
   return (
     <div onClick={onClick} className='btn-pill-component'>
-      <p>{text}</p> <FaArrowRight />
+      <p>{text}</p>
+      <img src={podcast ? audio : arrowRight} alt='' />
     </div>
   );
 };

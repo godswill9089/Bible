@@ -20,6 +20,14 @@ import play from '../Assets/Images/play.svg';
 import ebook from '../Assets/Images/ebook.svg';
 import blog from '../Assets/Images/blog.svg';
 import devotional from '../Assets/Images/devotional.svg';
+import podcast1 from '../Assets/Images/podcast-1.svg';
+import podcast1Sm from '../Assets/Images/podcast-1-sm.svg';
+import podcast2 from '../Assets/Images/podcast-2.svg';
+import podcast2Sm from '../Assets/Images/podcast-2-sm.svg';
+import podcast3 from '../Assets/Images/podcast-3.svg';
+import podcast3Sm from '../Assets/Images/podcast-3-sm.svg';
+import audio from '../Assets/Images/audio.svg';
+import arrowRight from '../Assets/Images/arrow.svg';
 
 export const useIcons = () => {
   return {
@@ -44,5 +52,13 @@ export const useIcons = () => {
     ebook,
     blog,
     devotional,
+    podcast1,
+    podcast1Sm,
+    podcast2,
+    podcast2Sm,
+    podcast3,
+    podcast3Sm,
+    audio,
+    arrowRight,
   };
 };
