@@ -155,7 +155,7 @@
 .navbar-component .lang {
   display: flex;
   align-items: center;
-  column-gap: 0.6rem;
+  column-gap: 0.2rem;
 }
 .navbar-component .en {
   font-weight: 900;
@@ -166,6 +166,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 0.3rem;
 }
 /* nav btn */
 .navbar-component .nav-btn-wrapper {

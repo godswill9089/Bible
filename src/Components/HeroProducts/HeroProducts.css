@@ -1,4 +1,7 @@
-.hero-products {
+.hero-products-wrapper {
+  position: relative;
+}
+.hero-products-wrapper .hero-products {
   position: relative;
   width: 100%;
   min-height: 67.4rem;
@@ -7,7 +10,7 @@
   margin-top: -9.3rem;
 }
 
-.hero-products::before {
+.hero-products-wrapper .hero-products::before {
   content: '';
   position: absolute;
   top: 0;
@@ -20,7 +23,7 @@
   z-index: 1; /* Ensure it is below the overlay and content */
 }
 
-.hero-products::after {
+.hero-products-wrapper .hero-products::after {
   content: '';
   position: absolute;
   top: 0;
@@ -32,7 +35,7 @@
   z-index: 2; /* Ensure it is above the background image but below the content */
 }
 
-.hero-products > * {
+.hero-products-wrapper .hero-products > * {
   position: relative;
   z-index: 3;
   color: white;
@@ -43,12 +46,12 @@
   margin: 0 auto;
 }
 
-.hero-products .content {
+.hero-products-wrapper .hero-products .content {
   /* background-color: green; */
   height: 100%;
   position: relative;
 }
-.hero-products .info-wrapper {
+.hero-products-wrapper .hero-products .info-wrapper {
   width: 100%;
   height: 100%;
   display: flex;
@@ -56,21 +59,21 @@
   justify-content: center;
   text-align: center;
 }
-.hero-products .info-wrapper p {
+.hero-products-wrapper .hero-products .info-wrapper p {
   width: 60%;
   max-width: 70rem;
   font-weight: 400;
   font-size: 2.7rem;
   line-height: 3.7rem;
 }
-.hero-products .img-1 {
+.hero-products-wrapper .hero-products .img-1 {
   width: 39.3rem;
   height: 24.9rem;
   position: absolute;
   bottom: 0;
   left: 0;
 }
-.hero-products .img-2 {
+.hero-products-wrapper .hero-products .img-2 {
   width: 20.7rem;
   height: 10.5rem;
   position: absolute;
@@ -78,16 +81,14 @@
   /* left: 42rem; */
   left: 20%;
 }
-.hero-products .img-3 {
+.hero-products-wrapper .hero-products .img-3 {
   width: 7.4rem;
   height: 11rem;
   position: absolute;
- top: 24.8rem;
+  top: 24.8rem;
   right: 10%;
 }
-.hero-products-wrapper {
-  position: relative;
-}
+
 .hero-products-wrapper .t-shirts {
   background-color: #fff;
   min-height: 20rem;
@@ -101,7 +102,7 @@
 }
 .hero-products-wrapper .t-shirts .content .info .info-text {
   font-weight: 400;
- font-size: 2.7rem;
+  font-size: 2.7rem;
   line-height: 3.7rem;
   margin-bottom: 10rem;
 }
