@@ -4,7 +4,7 @@
   height: 9.3rem;
 }
 .navbar-component-other {
- /* padding: 4rem 0 0; */
+  /* padding: 4rem 0 0; */
 }
 .navbar-component .container {
   width: 87.5%;
@@ -17,21 +17,29 @@
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .navbar-component .logo-wrapper {
   z-index: 3;
+  width: 26.9rem;
+  height: 5.4rem;
 }
 .navbar-component .logo {
-  width: 60%;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 
+.navbar-component .nav-main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2rem;
+}
 .navbar-component .nav-main {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 0px;
   z-index: 4;
 }
 .navbar-component .nav-main li {
@@ -106,10 +114,30 @@
   justify-content: center;
   align-items: center;
   z-index: 3;
+  column-gap: 2rem;
+  color: #000;
+}
+.navbar-component .country-wrapper-other {
+  color: #fff;
+}
+.navbar-component .country-wrapper .country {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
 }
 .navbar-component .country > img {
   border-radius: 20px;
   justify-content: center;
+  min-width: 2.5rem;
+  min-height: 2.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: -0.5rem;
+  /* margin-left: -0.5rem; */
+  object-fit: cover;
 }
 
 .navbar-component .uk {
@@ -117,26 +145,30 @@
   left: 5px;
 }
 .navbar-component .italy {
-  position: absolute;
-  width: 2%;
+  position: relative;
+  left: 5px;
 }
 .navbar-component .nigeria {
   position: relative;
-  left: 20px;
+  left: 5px;
 }
-
+.navbar-component .lang {
+  display: flex;
+  align-items: center;
+  column-gap: 0.6rem;
+}
 .navbar-component .en {
-  margin-left: 25px;
-  font-weight: 500 !important;
-  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+}
+.navbar-component .en p {
 }
 .navbar-component .icon {
-  margin-top: 5px;
-  color: #3c0cec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* nav btn */
 .navbar-component .nav-btn-wrapper {
-  margin-left: auto;
   z-index: 3;
 }
 .navbar-component .nav-btn {

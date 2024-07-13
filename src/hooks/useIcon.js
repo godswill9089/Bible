@@ -12,6 +12,9 @@ import productsBannerShirts from '../Assets/Images/products-banner-shirts.svg';
 import titleIcon from '../Assets/Images/title-icon.svg';
 import logoWhite from '../Assets/Images/logo-white.svg';
 import aboutUsBanner from '../Assets/Images/about-us-banner.svg';
+import nigeria from '../Assets/Images/nigeria.svg';
+import china from '../Assets/Images/china.svg';
+import uk from '../Assets/Images/united-kingdom.svg';
 
 export const useIcons = () => {
   return {
@@ -28,5 +31,8 @@ export const useIcons = () => {
     titleIcon,
     logoWhite,
     aboutUsBanner,
+    nigeria,
+    china,
+    uk,
   };
 };
