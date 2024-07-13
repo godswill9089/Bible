@@ -28,6 +28,11 @@ import podcast3 from '../Assets/Images/podcast-3.svg';
 import podcast3Sm from '../Assets/Images/podcast-3-sm.svg';
 import audio from '../Assets/Images/audio.svg';
 import arrowRight from '../Assets/Images/arrow.svg';
+import expand from '../Assets/Images/expand.svg';
+import socialMedia1 from '../Assets/Images/social-media-1.svg';
+import socialMedia2 from '../Assets/Images/social-media-2.svg';
+import socialMedia3 from '../Assets/Images/social-media-3.svg';
+import starLike from '../Assets/Images/star-like.svg';
 
 export const useIcons = () => {
   return {
@@ -60,5 +65,10 @@ export const useIcons = () => {
     podcast3Sm,
     audio,
     arrowRight,
+    expand,
+    socialMedia1,
+    socialMedia2,
+    socialMedia3,
+    starLike,
   };
 };

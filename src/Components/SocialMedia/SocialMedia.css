@@ -1,0 +1,94 @@
+.social-media-component {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400 !important;
+  width: 100%;
+  margin: 0 auto;
+}
+.social-media-component .container {
+  width: 87.5%;
+  margin: 0 auto;
+}
+.social-media-component .content {
+  padding: 4rem 15rem;
+}
+.social-media-component .title-wrapper {
+  display: flex;
+  margin-bottom: 5rem;
+}
+.social-media-component .cards-con {
+  position: relative;
+}
+.social-media-component .cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+}
+.social-media-component .card-social-media {
+  width: 20rem;
+  min-width: 20rem;
+  width: 100%;
+  height: 50rem;
+  min-height: 50rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* background-color: green; */
+}
+.social-media-component .card-social-media .card-content {
+  padding: 5rem;
+  color: #fff;
+  text-align: center;
+}
+.social-media-component .card-social-media-1 {
+  background-color: #ff5240;
+}
+.social-media-component .card-social-media-2 {
+  background-color: #cc2f9e;
+}
+.social-media-component .card-social-media-3 {
+  background-color: #9302f0;
+}
+.social-media-component .card-social-media .card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.social-media-component .card-social-media .card-img-2 {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  cursor: pointer;
+}
+.social-media-component .card-social-media .links-wrapper {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.social-media-component .cards-con .img-1 {
+  position: absolute;
+  bottom: -8rem;
+  left: 2%;
+  width: 25rem;
+  height: 25rem;
+}
+.social-media-component .cards-con .img-2 {
+  position: absolute;
+  top: 10%;
+  left: 26%;
+  width: 15rem;
+  height: 15rem;
+}
+.social-media-component .cards-con .img-3 {
+  position: absolute;
+  top: 30%;
+  right: 26%;
+  width: 15rem;
+  height: 15rem;
+}

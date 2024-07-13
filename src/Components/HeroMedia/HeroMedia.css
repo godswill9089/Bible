@@ -97,6 +97,7 @@
 .hero-media-wrapper .cards-wrapper {
   background-color: #fff;
   min-height: 20rem;
+  padding: 0 0 6rem;
 }
 .hero-media-wrapper .cards-wrapper .content {
   padding: 0rem 10rem;
