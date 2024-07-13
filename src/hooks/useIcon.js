@@ -10,6 +10,7 @@ import productsBannerIcon2 from '../Assets/Images/products-banner-icon-2.svg';
 import productsBannerIcon3 from '../Assets/Images/products-banner-icon-3.svg';
 import productsBannerShirts from '../Assets/Images/products-banner-shirts.svg';
 import titleIcon from '../Assets/Images/title-icon.svg';
+import logoWhite from '../Assets/Images/logo-white.svg';
 
 export const useIcons = () => {
   return {
@@ -24,5 +25,6 @@ export const useIcons = () => {
     productsBannerIcon3,
     productsBannerShirts,
     titleIcon,
+    logoWhite,
   };
 };
