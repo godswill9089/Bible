@@ -10,7 +10,6 @@ import ReadyToJoin from '../../Components/ReadyToJoin/ReadyToJoin';
 const Media = () => {
   return (
     <div className='media'>
-      <Navbar />
       <HeroProducts />
       <Books />
       <FramedArt />
