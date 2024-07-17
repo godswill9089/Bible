@@ -98,9 +98,14 @@
   background-color: #fff;
   min-height: 20rem;
   padding: 0 0 6rem;
+  /* background-color: green; */
 }
 .hero-media-wrapper .cards-wrapper .content {
-  padding: 0rem 10rem;
+  /* padding: 0rem 10rem; */
+  margin: 0 auto;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
 }
 .hero-media-wrapper .cards {
   display: flex;
