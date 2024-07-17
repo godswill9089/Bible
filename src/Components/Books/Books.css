@@ -27,9 +27,6 @@
 .books-component .info p span {
   font-weight: 600;
 }
-.books-component .carousel {
-  /* position: relative; */
-}
 .books-component .carousel .books-wrapper {
   padding: 1rem;
   overflow: hidden;

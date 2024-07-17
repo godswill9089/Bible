@@ -10,36 +10,33 @@ const BriefHistory = () => {
                 <h1 style={{ textAlign: 'center' }}>A Brief History</h1>
                 <div className='brief-p'>
                     <p>
-                        In the early months of 2023, hearts heavy with the world's struggles, gathered in a modest apartment.
-                        They dreamt of reigniting the transformative power of faith, of seeing the gospel message touch lives
-                        across cultures and languages. This yearning birthed the seed of the moving bible.
+                        the moving bible is a faith based organization which has mandate to spread the gospel of Jesus Christ all over the world. In the early of months of 2023,
+                        amidst the world’s struggles, a clear vision was given to re-ignite the transformative power of faith through the spreading the gospel
+                        across cultures and languages but in an unconventional way that the world is used. Fueled by a shared vision, the group brainstormed ways to mitigate the language barriers in
+                        a bid for the Gospel to reach the unreached. The thought of a universal language of clothing among other tools will serve as a tool of conveyance of this great vision.
                     </p>
                     <br />
                     <p>
-                        Fueled by a shared vision, the group brainstormed ways to transcend language barriers. They recognized
-                        the universal language of clothing - a basic need and a powerful form of expression. <strong>The idea
-                            ignited: faith-based t-shirts.</strong>
+                        That vision also lead to the birth of the parent company – Godencall Limited  (meaning God and call ). The moving bible is one of numerous faith-based brands within  Godencall Limited.
+                        It is clearly noted that virtues and directions on how to live on the earth, pathway to salvation and righteous living are well documented in the bible for the average person (even an unbeliever, if he/she believes) to have a guide on how to navigate all the matters of this world and be ready and heaven-bound before the second coming of Jesus.
                     </p>
                     <br />
                     <p>
-                        Simple designs featuring uplifting messages and biblical verses were created. These weren't just garments;
-                        they were billboards for faith, sparking conversations and planting seeds of hope in everyday interactions.
+                        These knowledge from the bible is to be reflected in the life of the people and help them to be transformed up to the point that the same people are now the embodiment of the scriptures. That people shall see the writings and wisdom of the bible through the saints. Even when the physical bible is not been carried, all the inhabitants of the earth shall see the acts of the saints and can clearly identify that they are Christians exhibiting all the teachings in the bible. At this point, the Bible is no more left on the book but men will be the bible that is transported across all over the earth. When they talk, they talk scriptures; when they act, they act scriptures; even their inactions,
+                        will depict scriptures. That means as you reading this history travel to other locations, you are the BIBLE that other people read, see and emulate due to your actions, inactions and words.
                     </p>
                     <br />
                     <p>
-                        <strong>The moving bible expanded</strong> its clothing line, offering designs in various languages. This inclusivity
-                        became a cornerstone of the movement, ensuring the message transcended borders and demographics.
+                        The moving component of the “THE MOVING BIBLE” is also its ability scale across different localities and nations with great reception of the gospel of Jesus Christ by all human in readiness for the day we will answer the call from God.
                     </p>
                     <br />
                     <p>
-                        The moving bible has blossomed beyond clothing. The power of faith in action is now expressed through community
-                        outreach programs, online bible studies, and volunteer initiatives. However, the clothing line remains a core
-                        element, a constant visual reminder of the movement’s purpose.
+                        The vision is clear. That men begin to live out their lives in the accordance to the scriptures to the point of mastery where their lives are fully transformed by this consistent righteous living empowered by God. Are you ready to be THE MOVING BIBLE?
                     </p>
                </div>
             </section>
 
-            <section>
+            {/* <section>
                 <h2 style={{ textAlign: 'center' }}>The Moving Forward</h2>
                 <div className='brief-p'>
                     <p>
@@ -51,7 +48,7 @@ const BriefHistory = () => {
                         kindness, one life touched at a time.
                     </p>
                </div>
-            </section>
+            </section> */}
 
             <div className="join" style={{marginTop: '50px'}}>
                 <header className="join-header">

@@ -1,6 +1,7 @@
 .card-container {
   flex-wrap: wrap;
   justify-content: space-around;
+  overflow:  hidden !important;
 }
 
 .slick-prev,
@@ -8,13 +9,11 @@
   display: none !important;
 }
 .card-container .slides-wrapper {
-  padding: 1rem;
-  overflow: hidden;
+  overflow: hidden !important;
   margin-right: -9.5rem;
 }
 .card-container .cards-wrapper {
   display: flex;
   justify-content: space-around;
   transition: all linear 1s;
-  gap: 2rem;
 }

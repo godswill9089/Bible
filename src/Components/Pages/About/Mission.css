@@ -11,3 +11,48 @@
 .abt-t{
     width: 25%;
 }
+
+.card{
+    background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        margin-top: 60px !important;
+        min-width: 350px;
+        width: 350px;
+        height: 250px;
+        text-align: left
+}
+
+.card .card-top{
+    padding: 25px;
+}
+
+.card .card-top-bar {
+    height: 13px;
+    background-color: #3c0cec;
+    border-radius: 4px;
+}
+
+.card .card-title {
+    font-size: 1.2em;
+    color: black;
+}
+
+.card .card-description {
+    margin: 20px 0;
+}
+
+.card .card-link {
+    color: #6200ea;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+}
+
+.card .card-link .arrow {
+    margin-left: 5px;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
