@@ -33,6 +33,7 @@ import socialMedia1 from '../Assets/Images/social-media-1.svg';
 import socialMedia2 from '../Assets/Images/social-media-2.svg';
 import socialMedia3 from '../Assets/Images/social-media-3.svg';
 import starLike from '../Assets/Images/star-like.svg';
+import hoodieBlue from '../Assets/Images/hoodie-blue.svg';
 
 export const useIcons = () => {
   return {
@@ -70,5 +71,6 @@ export const useIcons = () => {
     socialMedia2,
     socialMedia3,
     starLike,
+    hoodieBlue,
   };
 };

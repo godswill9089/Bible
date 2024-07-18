@@ -10,6 +10,7 @@ const HeroProducts = () => {
     productsBannerIcon2,
     productsBannerIcon3,
     productsBannerShirts,
+    hoodieBlue,
   } = useIcons();
   const [active, setActive] = useState('right');
   return (
@@ -65,7 +66,7 @@ const HeroProducts = () => {
         </div>
       </div>
       <img
-        src={productsBannerShirts}
+        src={active === 'right' ? productsBannerShirts : hoodieBlue}
         alt=''
         className='products-banner-shirts'
       />
