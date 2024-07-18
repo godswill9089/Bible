@@ -8,8 +8,12 @@
   width: 87.5%;
   margin: 0 auto;
 }
+.audio-component .content-wrapper{
+padding: 4rem 5rem;
+}
 .audio-component .content {
-  padding: 4rem 15rem;
+ padding-left: 0rem;
+ padding-right: 5rem;
 }
 .audio-component .title-wrapper {
   display: flex;
@@ -27,9 +31,7 @@
 .audio-component .info p span {
   font-weight: 600;
 }
-.audio-component .carousel {
-  /* position: relative; */
-}
+
 .audio-component .carousel .podcasts-wrapper {
   padding: 1rem;
   overflow: hidden;
