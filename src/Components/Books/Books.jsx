@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './Books.css';
 import { FaArrowLeft, FaStarOfLife } from 'react-icons/fa';
 import { FaArrowRight } from 'react-icons/fa';
@@ -7,6 +7,7 @@ import { useIcons } from '../../hooks/useIcon';
 import Title from '../../Views/Atoms/Title/Title';
 import ButtonPill from '../../Views/Molecules/ButtonPill/ButtonPill';
 import ButtonRound from '../../Views/Molecules/ButtonRound/ButtonRound';
+import CardBook from '../../Views/Molecules/CardBook/CardBook';
 
 const Books = () => {
   const testimonials = [
@@ -43,24 +44,35 @@ const Books = () => {
       name: 'David',
     },
   ];
+  const bookContainer = useRef(null);
+  const [numOfColumns, setNumOfColumns] = useState(4);
+  const [cardBookWidth, setCardBookWidth] = useState(0);
   const [translateSize, setTranslateSize] = useState(0);
-  const [direction, setDirection] = useState('');
+  const [direction, setDirection] = useState('right');
+  const [slideCount, setSlideCount] = useState(0);
   const handleTranslate = (direction) => {
     if (direction === 'left') {
-      if (translateSize === 0) {
-        setTranslateSize(210);
+      if (slideCount === 0) {
+        // setTranslateSize(200);
       } else {
-        setTranslateSize(translateSize - 27);
+        setTranslateSize(translateSize - cardBookWidth);
+        setSlideCount(slideCount - 1);
       }
     } else {
-      if (translateSize === 210) {
-        setTranslateSize(0);
+      if (slideCount === testimonials.length - numOfColumns) {
+        // setTranslateSize(0);
       } else {
-        setTranslateSize(translateSize + 27);
+        setTranslateSize(translateSize + cardBookWidth);
+        setSlideCount(slideCount + 1);
       }
     }
     setDirection(direction);
   };
+  useEffect(() => {
+    const cardBookWidth = bookContainer.current?.getBoundingClientRect().width;
+    setCardBookWidth(cardBookWidth);
+  }, []);
+  console.log(cardBookWidth);
   return (
     <div className='books-component'>
       <div className='container'>
@@ -86,31 +98,36 @@ const Books = () => {
             <div className='books-wrapper'>
               <div
                 className='books'
-                style={{ transform: `translateX(-${translateSize}rem)` }}
+                style={{ transform: `translateX(-${translateSize}px)` }}
               >
                 {testimonials.map((book, index) => (
-                  <div key={index} className='book'>
-                    <img src='' alt='' className='' />
-                    <div className='btn-wrapper'>
-                      <ButtonPill text={'Buy now'} />
-                    </div>
+                  <div className='book-con' ref={bookContainer}>
+                    <CardBook />
                   </div>
                 ))}
               </div>
-              <div className='carousel-btn-left'>
-                <ButtonRound
-                  active={false}
-                  direction='left'
-                  onClick={() => handleTranslate('left')}
-                />
-              </div>
-              <div className='carousel-btn-right'>
-                <ButtonRound
-                  active={true}
-                  direction='right'
-                  onClick={() => handleTranslate('right')}
-                />
-              </div>
+            </div>
+            <div
+              className={`carousel-btn carousel-btn-left ${
+                slideCount === 0 && 'hidden'
+              }`}
+            >
+              <ButtonRound
+                active={direction === 'left'}
+                direction='left'
+                onClick={() => handleTranslate('left')}
+              />
+            </div>
+            <div
+              className={`carousel-btn carousel-btn-right ${
+                slideCount === testimonials.length - numOfColumns && 'hidden'
+              }`}
+            >
+              <ButtonRound
+                active={direction === 'right'}
+                direction='right'
+                onClick={() => handleTranslate('right')}
+              />
             </div>
           </div>
         </div>

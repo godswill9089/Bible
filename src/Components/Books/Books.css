@@ -6,11 +6,11 @@
 }
 .books-component .container {
   width: 87.5%;
-  background-color: green;
+  /* background-color: green; */
   margin: 0 auto;
 }
 .books-component .content {
-  padding: 4rem 7rem;
+  padding: 4rem 15rem;
 }
 .books-component .title-wrapper {
   display: flex;
@@ -28,17 +28,24 @@
 .books-component .info p span {
   font-weight: 600;
 }
+.books-component .carousel {
+  padding: 1rem 2.5rem;
+  overflow: hidden;
+  position: relative;
+  margin-left: -2.5rem;
+  margin-right: -2.5rem;
+}
 .books-component .carousel .books-wrapper {
   /* padding: 1rem; */
-  /* overflow: hidden; */
-  margin-right: -9.5rem;
+  overflow: hidden;
+  /* margin-right: -9.5rem; */
   position: relative;
-  background-color: green;
+  /* background-color: green; */
 }
 .books-component .carousel .books {
   display: flex;
-  overflow: hidden;
-  background-color: red;
+  /* overflow: hidden; */
+  /* background-color: red; */
   column-gap: 3rem;
   align-items: center;
   justify-content: center;
@@ -48,31 +55,22 @@
   transition: all linear 1s;
   gap: 2rem;
 }
-.books-component .carousel .books .book {
-  position: relative;
-  min-width: 23rem;
-  min-height: 35rem;
-  width: 23rem;
-  height: 35rem;
-  border-radius: 1rem;
-  background-color: #cc2f9ee5;
+.books-component .carousel .book-con {
+  /* background-color: green; */
 }
-.books-component .carousel .books .book .btn-wrapper {
-  position: absolute;
-  bottom: 3rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 21.6rem;
-}
+
 .books-component .carousel .carousel-btn-left {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 0rem;
   transform: translateY(-50%);
 }
 .books-component .carousel .carousel-btn-right {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 0rem;
   transform: translateY(-50%);
+}
+.books-component .carousel-btn.hidden {
+  display: none;
 }

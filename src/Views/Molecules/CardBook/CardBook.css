@@ -1,0 +1,16 @@
+.card-book {
+  position: relative;
+  min-width: 27.8rem;
+  min-height: 35rem;
+  width: 27.8rem;
+  height: 35rem;
+  border-radius: 1rem;
+  background-color: #cc2f9ee5;
+}
+.card-book .btn-wrapper {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 21.6rem;
+}
