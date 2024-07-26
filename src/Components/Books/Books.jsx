@@ -8,8 +8,10 @@ import Title from '../../Views/Atoms/Title/Title';
 import ButtonPill from '../../Views/Molecules/ButtonPill/ButtonPill';
 import ButtonRound from '../../Views/Molecules/ButtonRound/ButtonRound';
 import CardBook from '../../Views/Molecules/CardBook/CardBook';
+import useWindowSize from '../../hooks/useWindowSize';
 
 const Books = () => {
+  const { windowSize } = useWindowSize();
   const testimonials = [
     {
       id: 1,
@@ -48,14 +50,15 @@ const Books = () => {
       name: 'Sarah',
     },
   ];
-  const bookContainer = useRef(null);
-
+  
+  const cardContainer = useRef(null);
   const numOfCardsToDisplay = 4;
   const numOfCardsTotal = testimonials.length;
   const columnGap = 30;
   const [slideCount, setSlideCount] = useState(0);
+  const [numOfCardsExtra, setNumOfCardsExtra] = useState(1);
 
-  const [cardBookWidth, setCardBookWidth] = useState(0);
+  const [cardWidth, setCardWidth] = useState(0);
   const [translateSize, setTranslateSize] = useState(0);
   const [direction, setDirection] = useState('right');
 
@@ -64,25 +67,37 @@ const Books = () => {
       if (slideCount === 0) {
         // setTranslateSize(200);
       } else {
-        setTranslateSize(translateSize - columnGap - cardBookWidth);
+        setTranslateSize(translateSize - columnGap - cardWidth);
         setSlideCount(slideCount - 1);
       }
     } else {
-      if (slideCount === numOfCardsTotal + 1 - numOfCardsToDisplay) {
+      if (
+        slideCount ===
+        numOfCardsTotal + numOfCardsExtra - numOfCardsToDisplay
+      ) {
         // setTranslateSize(0);
       } else {
-        setTranslateSize(translateSize + columnGap + cardBookWidth);
+        setTranslateSize(translateSize + columnGap + cardWidth);
         setSlideCount(slideCount + 1);
       }
     }
     setDirection(direction);
   };
   useEffect(() => {
-    const cardBookWidth = bookContainer.current?.getBoundingClientRect().width;
-    setCardBookWidth(cardBookWidth);
+    const cardWidth = cardContainer.current?.getBoundingClientRect().width;
+    setCardWidth(cardWidth);
   }, []);
-  console.log('cardBookWidth', cardBookWidth);
-  console.log('translateSize', translateSize);
+  useEffect(() => {
+    if (windowSize.width <= 1300) {
+      setNumOfCardsExtra(2);
+    } else {
+      setNumOfCardsExtra(1);
+    }
+  }, [windowSize]);
+
+  // console.log('cardWidth', cardWidth);
+  // console.log('translateSize', translateSize);
+  // console.log('windowSize', windowSize);
 
   return (
     <div className='books-component'>
@@ -112,7 +127,7 @@ const Books = () => {
                 style={{ transform: `translateX(-${translateSize}px)` }}
               >
                 {testimonials.map((book, index) => (
-                  <div key={index} className='book-con' ref={bookContainer}>
+                  <div key={index} className='book-con' ref={cardContainer}>
                     <CardBook book={book} />
                   </div>
                 ))}
@@ -131,7 +146,8 @@ const Books = () => {
             </div>
             <div
               className={`carousel-btn carousel-btn-right ${
-                slideCount === numOfCardsTotal + 1 - numOfCardsToDisplay &&
+                slideCount ===
+                  numOfCardsTotal + numOfCardsExtra - numOfCardsToDisplay &&
                 'hidden'
               }`}
             >

@@ -3,20 +3,19 @@
   font-weight: 400 !important;
   width: 100%;
   margin: 0 auto;
+  /* background-color: green; */
 }
 .ready-to-join .container {
   width: 87.5%;
   margin: 0 auto;
 }
 .ready-to-join .content {
-  padding: 9rem 15rem;
+  padding: 7rem 15rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .ready-to-join .ready {
-  margin-bottom: 12rem;
-  margin: 0 auto 12rem
 }
 .ready-to-join .ready .title {
   font-size: 5rem;
@@ -30,4 +29,8 @@
   margin-bottom: 3rem;
   font-weight: 300;
   text-align: center;
+}
+.ready-to-join .btn {
+  display: flex;
+  justify-content: center;
 }

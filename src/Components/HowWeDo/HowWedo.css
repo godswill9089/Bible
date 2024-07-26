@@ -1,19 +1,31 @@
-.how-we-do-component{
-  width: 90%;
+.how-we-do-component {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400 !important;
+  width: 100%;
+  margin: 0 auto;
 }
-
-.how-we-do-component .wedo {
-  width: 25% !important;
+.how-we-do-component .container {
+  width: 87.5%;
+  margin: 0 auto;
 }
-
-.how-we-do-component .how-we-do-it-description {
-  width: 60%;
-  padding-bottom: 4px;
-  padding-top: 4px;
-  line-height: 30px;
+.how-we-do-component .content {
+  padding: 4rem 15rem;
 }
-
-.how-we-do-component .strong {
+.how-we-do-component .title-wrapper {
+  display: flex;
+  margin-bottom: 5rem;
+}
+.how-we-do-component .info {
+  margin-bottom: 7rem;
+}
+.how-we-do-component .info p {
+  margin-bottom: 2rem;
+  font-weight: 400;
+  font-size: 1.8rem;
+  letter-spacing: .02rem;
+}
+.how-we-do-component .info p strong {
+  font-weight: 600;
   color: #3c0cec;
 }
 .how-we-do-component .carousel-screen-1 {
@@ -30,36 +42,24 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-clip: content-box;
-  /* height: 100vh; */
   height: 400px;
   max-height: 400px;
   border-radius: 10px;
-  /* display: none; */
-  /* overflow: hidden; */
   width: 100%;
-  /* background-color: green; */
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  /* padding: 4rem 1rem !important; */
 }
 .how-we-do-component .screens {
   display: flex;
   align-items: center;
-  /* background-color: blue; */
-  /* margin-bottom: 10rem; */
   padding: 2rem;
   height: 90%;
 }
 .how-we-do-component .screen {
-  /* min-width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center; */
   transition: opacity 0.5s ease;
   opacity: 0;
   color: #fff;
-  /* background-color: aqua; */
   width: 50%;
 }
 .how-we-do-component .screen.active {
@@ -72,7 +72,7 @@
 .how-we-do-component .screen-btn {
   border-radius: 3rem;
   color: #6200ea;
-  background-color: #fff;;
+  background-color: #fff;
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -80,7 +80,7 @@
   align-items: center;
   margin-top: auto;
 }
-  
+
 .screen-btn .arrow {
   margin-left: 30px;
   font-size: 1.2em;
@@ -101,5 +101,7 @@
   cursor: pointer;
 }
 .how-we-do-component .btn.active {
-  background-color: #FF5240DB;
+  background-color: #ff5240db;
 }
+
+/* new */
