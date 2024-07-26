@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './About.css';
-import { FaArrowLeft, FaStarOfLife } from 'react-icons/fa';
-import { FaArrowRight } from 'react-icons/fa';
+import { FaStarOfLife } from 'react-icons/fa';
 import CardContainer from '../CardContainer/CardContainer';
+import ButtonRound from '../../Views/Molecules/ButtonRound/ButtonRound';
+import Title from '../../Views/Atoms/Title/Title';
 
 const About = () => {
   const [translateSize, setTranslateSize] = useState(0);
@@ -24,15 +25,12 @@ const About = () => {
     setDirection(direction);
   };
   return (
-    <div className='About-container'>
-      <div className='About-header-text'>
-        <h2>Learn About who we Are</h2>
-        <div>
-          <FaStarOfLife className='ico' />
-        </div>
+    <div className='about-component'>
+      <div className='title-wrapper'>
+        <Title text={'Learn About who we Are'} />
       </div>
-      <div className='about-p'>
-        <div>
+      <div className='about'>
+        <div className='details'>
           <p>
             Welcome to The Moving Bible! We are a passionate community dedicated
             to bringing the Gospel of Jesus Christ to life. We believe that
@@ -46,19 +44,19 @@ const About = () => {
             transforming communities and individuals.
           </p>
         </div>
-        <div className='btn-about'>
-          <button
-            className={`btns ${direction === 'left' && 'active'}`}
-            onClick={() => handleTranslate('left')}
-          >
-            <FaArrowLeft />
-          </button>
-          <button
-            className={`btns ${direction === 'right' && 'active'}`}
-            onClick={() => handleTranslate('right')}
-          >
-            <FaArrowRight />
-          </button>
+        <div className='btn-about-wrapper'>
+          <div className='btn-about'>
+            <ButtonRound
+              active={direction === 'left'}
+              onClick={() => handleTranslate('left')}
+              direction='left'
+            />
+            <ButtonRound
+              active={direction === 'right'}
+              onClick={() => handleTranslate('right')}
+              direction='right'
+            />
+          </div>
         </div>
       </div>
       <CardContainer translateSize={translateSize} />

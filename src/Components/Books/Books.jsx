@@ -12,57 +12,66 @@ import CardBook from '../../Views/Molecules/CardBook/CardBook';
 const Books = () => {
   const testimonials = [
     {
-      text: "I used to be lost and alone. After joining The Moving Bible's volunteer program, I found purpose and a supportive community.",
-      name: 'Sarah',
-    },
-    {
+      id: 1,
       text: "Our marriage was on the brink of collapse. Through The Moving Bible's marriage counseling program based on Christian principles, we rediscovered the love and respect for each other.",
       name: 'Maria and Carlos',
     },
     {
+      id: 2,
       text: "The Moving Bible's daily devotionals have been a guiding light in my life.",
       name: 'David',
     },
+    { id: 3, text: 'bdbd d dndndnd dndnd ddndndndnnd dndndn ', name: 'David' },
     {
-      text: 'bdbd d dndndnd dndnd ddndndndnnd dndndn ',
-      name: 'David',
-    },
-    {
+      id: 4,
       text: 'dhsoeoe osca  saeddn dsnd ddjaja aekjejea eakaekkae, gshsie akkso dkakka LwowOED DANAANNAD ADKADKKjs sjsdjd,gshsie akkso dkakka LwowOED DANAANNAD ADKADKKjs sjsdjd. gshsie akkso dkakka LwowOED DANAANNAD ADKADKKjs sjsdjd',
       name: 'David',
     },
     {
+      id: 5,
       text: 'jajadjad akakka dkakka LwowOED DANAANNAD ADKADKKjs sjsdjd',
       name: 'David',
     },
     {
+      id: 6,
       text: 'gshsie akkso dkakka LwowOED DANAANNAD ADKADKKjs sjsdjd ,gshsie akkso dkakka LwowOED DANAANNAD ADKADKKjs sjsdjd,gshsie akkso dkakka LwowOED DANAANNAD ADKADKKjs sjsdjd,gshsie akkso dkakka LwowOED DANAANNAD ADKADKKjs sjsdjd,gshsie akkso dkakka LwowOED DANAANNAD ADKADKKjs sjsdjd',
       name: 'David',
     },
     {
+      id: 7,
       text: 'oeis shshw akakka dkakka LwowOED DANAANNAD ADKADKKjs sjsdjd, gshsie akkso dkakka LwowOED DANAANNAD ADKADKKjs sjsdjd, gshsie akkso dkakka LwowOED DANAANNAD ADKADKKjs sjsdjd',
       name: 'David',
     },
+    {
+      id: 8,
+      text: "I used to be lost and alone. After joining The Moving Bible's volunteer program, I found purpose and a supportive community.",
+      name: 'Sarah',
+    },
   ];
   const bookContainer = useRef(null);
-  const [numOfColumns, setNumOfColumns] = useState(4);
+
+  const numOfCardsToDisplay = 4;
+  const numOfCardsTotal = testimonials.length;
+  const columnGap = 30;
+  const [slideCount, setSlideCount] = useState(0);
+
   const [cardBookWidth, setCardBookWidth] = useState(0);
   const [translateSize, setTranslateSize] = useState(0);
   const [direction, setDirection] = useState('right');
-  const [slideCount, setSlideCount] = useState(0);
+
   const handleTranslate = (direction) => {
     if (direction === 'left') {
       if (slideCount === 0) {
         // setTranslateSize(200);
       } else {
-        setTranslateSize(translateSize - cardBookWidth);
+        setTranslateSize(translateSize - columnGap - cardBookWidth);
         setSlideCount(slideCount - 1);
       }
     } else {
-      if (slideCount === testimonials.length - numOfColumns) {
+      if (slideCount === numOfCardsTotal + 1 - numOfCardsToDisplay) {
         // setTranslateSize(0);
       } else {
-        setTranslateSize(translateSize + cardBookWidth);
+        setTranslateSize(translateSize + columnGap + cardBookWidth);
         setSlideCount(slideCount + 1);
       }
     }
@@ -72,7 +81,9 @@ const Books = () => {
     const cardBookWidth = bookContainer.current?.getBoundingClientRect().width;
     setCardBookWidth(cardBookWidth);
   }, []);
-  console.log(cardBookWidth);
+  console.log('cardBookWidth', cardBookWidth);
+  console.log('translateSize', translateSize);
+
   return (
     <div className='books-component'>
       <div className='container'>
@@ -101,8 +112,8 @@ const Books = () => {
                 style={{ transform: `translateX(-${translateSize}px)` }}
               >
                 {testimonials.map((book, index) => (
-                  <div className='book-con' ref={bookContainer}>
-                    <CardBook />
+                  <div key={index} className='book-con' ref={bookContainer}>
+                    <CardBook book={book} />
                   </div>
                 ))}
               </div>
@@ -120,7 +131,8 @@ const Books = () => {
             </div>
             <div
               className={`carousel-btn carousel-btn-right ${
-                slideCount === testimonials.length - numOfColumns && 'hidden'
+                slideCount === numOfCardsTotal + 1 - numOfCardsToDisplay &&
+                'hidden'
               }`}
             >
               <ButtonRound
