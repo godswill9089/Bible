@@ -1,0 +1,25 @@
+.brief-history {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400 !important;
+  width: 100%;
+  margin: 0 auto;
+}
+.brief-history .container {
+  width: 87.5%;
+  margin: 0 auto;
+}
+.brief-history .content {
+  padding: 5rem 15rem;
+}
+.brief-history .title-wrapper {
+  display: flex;
+  margin-bottom: 5rem;
+}
+.brief-history .info {
+  margin-bottom: 3rem;
+}
+.brief-history .info p {
+  font-weight: 500;
+  font-size: 1.8rem;
+  /* line-height: 4.16rem; */
+}

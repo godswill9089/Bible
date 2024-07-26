@@ -11,12 +11,13 @@ import { FaChevronDown } from 'react-icons/fa';
 import Vision from '../../Components/Pages/About/Vision';
 import MissionCard from '../../Components/Pages/About/MissionCard';
 import Coverbg from '../../Components/Pages/About/Coverbg';
-import Value from '../../Components/Pages/About/Value';
-import BriefHistory from '../../Components/Pages/About/BriefHistory';
 import MeetTheTeam from '../../Components/Pages/About/MeetTheTeam';
 import AboutSingup from '../../Components/Pages/About/AboutSingup';
-import HeroProducts from '../../Components/HeroProducts/HeroProducts';
 import HeroAboutUs from '../../Components/HeroAboutUs/HeroAboutUs';
+import OurMission from '../../Components/OurMission/OurMission';
+import ReadyToJoin from '../../Components/ReadyToJoin/ReadyToJoin';
+import BriefHistory from '../../Components/BriefHistory/BriefHistory';
+import Value from '../../Components/Value/Value';
 
 const AboutUs = () => {
   const [active, setActive] = useState(0);
@@ -39,10 +40,12 @@ const AboutUs = () => {
         <HeroAboutUs />
       </div>
       <Vision />
-      <MissionCard />
+      {/* <MissionCard /> */}
+      <OurMission />
       <Coverbg />
       <Value />
       <BriefHistory />
+      <ReadyToJoin />
       <MeetTheTeam />
       <AboutSingup />
     </>

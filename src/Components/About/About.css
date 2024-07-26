@@ -62,7 +62,7 @@
 }
 /* new  */
 .about-component .carousel {
-  padding: 1rem 2.5rem;
+  padding: 7rem 2.5rem 0;
   overflow: hidden;
   position: relative;
   margin-left: -2.5rem;
@@ -77,17 +77,9 @@
 }
 .about-component .carousel .cards {
   display: flex;
-  /* overflow: hidden; */
-  /* background-color: red; */
-  column-gap: 3rem;
   align-items: center;
   justify-content: center;
-  /* new */
-  display: flex;
+  column-gap: 3rem;
   justify-content: space-around;
   transition: all linear 1s;
-  /* gap: 2rem; */
-}
-.about-component .carousel .book-con {
-  /* background-color: green; */
 }

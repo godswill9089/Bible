@@ -1,0 +1,45 @@
+.our-mission-component {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400 !important;
+  width: 100%;
+  margin: 0 auto;
+}
+.our-mission-component .container {
+  width: 87.5%;
+  margin: 0 auto;
+}
+.our-mission-component .content {
+  padding: 5rem 10rem;
+}
+.our-mission-component .title-wrapper {
+  display: flex;
+  margin-bottom: 5rem;
+}
+.our-mission-component .info {
+  margin-bottom: 3rem;
+}
+.our-mission-component .info p {
+  font-weight: 500;
+  font-size: 1.8rem;
+  /* line-height: 4.16rem; */
+}
+
+.our-mission-component .carousel {
+  /* padding: 0rem 2.5rem; */
+  overflow: hidden;
+  position: relative;
+  /* margin-left: -2.5rem;
+  margin-right: -2.5rem; */
+}
+.our-mission-component .carousel .cards-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+.our-mission-component .carousel .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 3rem;
+  justify-content: space-around;
+  transition: all linear 1s;
+}

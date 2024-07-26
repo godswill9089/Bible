@@ -1,7 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './About.css';
-import { FaStarOfLife } from 'react-icons/fa';
-import CardContainer from '../CardContainer/CardContainer';
 import ButtonRound from '../../Views/Molecules/ButtonRound/ButtonRound';
 import Title from '../../Views/Atoms/Title/Title';
 import Card from '../Card/Card';
