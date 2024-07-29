@@ -55,10 +55,6 @@
   transition: all linear 1s;
   gap: 2rem;
 }
-.books-component .carousel .book-con {
-  /* background-color: green; */
-}
-
 .books-component .carousel .carousel-btn-left {
   position: absolute;
   top: 50%;
