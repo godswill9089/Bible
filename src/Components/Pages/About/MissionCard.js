@@ -34,7 +34,7 @@ const missions = [
 const MissionCard = () => {
     return (
         <div className="card-container">
-           
+           s
             <Mission missions={missions} />
             
         </div>

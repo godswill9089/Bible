@@ -4,6 +4,7 @@ import Title from '../../Views/Atoms/Title/Title';
 import ButtonPill from '../../Views/Molecules/ButtonPill/ButtonPill';
 import ButtonRound from '../../Views/Molecules/ButtonRound/ButtonRound';
 import { useIcons } from '../../hooks/useIcon';
+import VideoPlayer from '../../Views/Molecules/VideoPlayer/VideoPlayer';
 
 const Video = () => {
   const [direction, setDirection] = useState('left');
@@ -79,17 +80,7 @@ const Video = () => {
               </div>
             </div>
             <div className='video-wrapper'>
-              <div className='video-con'>
-                <div className='backdrop'></div>
-                <div className='video-player-wrapper'>
-                  <div className='screen-wrapper'>
-                    <div className='screen'>
-                      <img src={play} alt='' className='play' />
-                      <img src={expand} alt='' className='expand' />
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <VideoPlayer />
             </div>
           </div>
 

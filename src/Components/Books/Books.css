@@ -53,7 +53,7 @@
   display: flex;
   justify-content: space-around;
   transition: all linear 1s;
-  gap: 2rem;
+  /* gap: 2rem; */
 }
 .books-component .carousel .carousel-btn-left {
   position: absolute;

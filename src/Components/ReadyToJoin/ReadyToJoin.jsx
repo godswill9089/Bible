@@ -9,7 +9,7 @@ const ReadyToJoin = () => {
         <div className='content'>
           <div className='ready'>
             <h1 className='title'>Ready to join us in making a difference? </h1>
-            <p className='info'>Choose your path</p>
+            <p className='info'>Choose Your Path</p>
             <div className='btn'>
               <ButtonPill
                 onClick={() => {
