@@ -70,7 +70,10 @@ const Navbar = () => {
                     onClick={() => navigate('/about')}
                     className={`nav-text ${
                       location.pathname !== '/' && 'nav-text-other'
-                    } ${active === 2 && 'active'}`}
+                    } ${
+                      (location.pathname.includes('/about') || active === 2) &&
+                      'active'
+                    }`}
                   >
                     About Us
                     <FaChevronDown className='icon' />
@@ -79,14 +82,13 @@ const Navbar = () => {
                     <div className='dropdown-links-wrapper about-us'>
                       <div className='dropdown-links-con'>
                         <div className='dropdown-links'>
-                          <li onClick={() => navigate('/')}>
-                            Why Moving Bible
+                          <li onClick={() => navigate('/about')}>
+                            Our Mission
                           </li>
-                          <li onClick={() => navigate('/')}>Our Mission</li>
-                          <li onClick={() => navigate('/')}>Our Vision</li>
-                          <li onClick={() => navigate('/')}>Our Values</li>
-                          <li onClick={() => navigate('/')}>History</li>
-                          <li onClick={() => navigate('/')}>Our team</li>
+                          <li onClick={() => navigate('/about')}>Our Vision</li>
+                          <li onClick={() => navigate('/about')}>Our Values</li>
+                          <li onClick={() => navigate('/about')}>History</li>
+                          <li onClick={() => navigate('/about')}>Our team</li>
                         </div>
                       </div>
                     </div>
@@ -101,7 +103,10 @@ const Navbar = () => {
                     onClick={() => navigate('/media')}
                     className={`nav-text ${
                       location.pathname !== '/' && 'nav-text-other'
-                    } ${active === 3 && 'active'}`}
+                    } ${
+                      (location.pathname.includes('/media') || active === 3) &&
+                      'active'
+                    }`}
                   >
                     Media
                     <FaChevronDown className='icon' />
@@ -110,10 +115,12 @@ const Navbar = () => {
                     <div className='dropdown-links-wrapper'>
                       <div className='dropdown-links-con'>
                         <div className='dropdown-links'>
-                          <li onClick={() => navigate('/')}>Podcast</li>
-                          <li onClick={() => navigate('/')}>Videos</li>
-                          <li onClick={() => navigate('/')}>Reels</li>
-                          <li onClick={() => navigate('/')}>Presentation</li>
+                          <li onClick={() => navigate('/media')}>Podcast</li>
+                          <li onClick={() => navigate('/media')}>Videos</li>
+                          <li onClick={() => navigate('/media')}>Reels</li>
+                          <li onClick={() => navigate('/media')}>
+                            Presentation
+                          </li>
                         </div>
                       </div>
                     </div>
@@ -128,7 +135,11 @@ const Navbar = () => {
                     onClick={() => navigate('/products')}
                     className={`nav-text ${
                       location.pathname !== '/' && 'nav-text-other'
-                    } ${active === 4 && 'active'}`}
+                    } ${
+                      (location.pathname.includes('/products') ||
+                        active === 4) &&
+                      'active'
+                    }`}
                   >
                     Products
                     <FaChevronDown className='icon' />
@@ -137,10 +148,12 @@ const Navbar = () => {
                     <div className='dropdown-links-wrapper products'>
                       <div className='dropdown-links-con'>
                         <div className='dropdown-links'>
-                          <li onClick={() => navigate('/')}>Books</li>
-                          <li onClick={() => navigate('/')}>Shirts</li>
-                          <li onClick={() => navigate('/')}>Frames</li>
-                          <li onClick={() => navigate('/')}>Customization</li>
+                          <li onClick={() => navigate('/products')}>Books</li>
+                          <li onClick={() => navigate('/products')}>Shirts</li>
+                          <li onClick={() => navigate('/products')}>Frames</li>
+                          <li onClick={() => navigate('/products')}>
+                            Customization
+                          </li>
                         </div>
                       </div>
                     </div>
@@ -155,7 +168,11 @@ const Navbar = () => {
                     onClick={() => navigate('/services')}
                     className={`nav-text ${
                       location.pathname !== '/' && 'nav-text-other'
-                    } ${active === 5 && 'active'}`}
+                    } ${
+                      (location.pathname.includes('/services') ||
+                        active === 5) &&
+                      'active'
+                    }`}
                   >
                     Services
                     <FaChevronDown className='icon' />
@@ -164,13 +181,10 @@ const Navbar = () => {
                     <div className='dropdown-links-wrapper'>
                       <div className='dropdown-links-con'>
                         <div className='dropdown-links'>
-                          <li onClick={() => navigate('/')}>
-                            Why Moving Bible
-                          </li>
-                          <li onClick={() => navigate('/')}>Vision</li>
-                          <li onClick={() => navigate('/')}>Mission</li>
-                          <li onClick={() => navigate('/')}>identity</li>
-                          <li onClick={() => navigate('/')}>Values</li>
+                          <li onClick={() => navigate('/services')}>Vision</li>
+                          <li onClick={() => navigate('/services')}>Mission</li>
+                          <li onClick={() => navigate('/services')}>identity</li>
+                          <li onClick={() => navigate('/services')}>Values</li>
                         </div>
                       </div>
                     </div>

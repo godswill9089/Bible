@@ -11,6 +11,7 @@ import AboutUs from './Pages/About/AboutUs';
 import Products from './Pages/Products/Products';
 import Media from './Pages/Media/Media';
 import Layout from './Wrappers/Layout/Layout';
+import WhyMovingBible from './Pages/WhyMovingBible/WhyMovingBible';
 
 function App() {
   const children = [
@@ -30,6 +31,11 @@ function App() {
       path: '/products',
       element: <Products />,
     },
+    {
+      path: '/services',
+      element: <Products />,
+    },
+    { path: '/home/why-moving-bible', element: <WhyMovingBible /> },
   ];
   const router = createBrowserRouter([
     {
