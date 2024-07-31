@@ -11,7 +11,6 @@ const HeroMedia = () => {
     productsBannerIcon,
     productsBannerIcon2,
     productsBannerIcon3,
-    productsBannerShirts,
     play,
     ebook,
     blog,
