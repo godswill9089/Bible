@@ -16,15 +16,15 @@
   margin: 0 auto;
 }
 .navbar-component .content {
-  padding: 17px 0;
+  /* padding: 17px 0; */
 }
 @media screen and (max-width: 600px) {
   .navbar-component .content {
-    /* padding: 17px 0;
-    display: flex;
+     padding: 17px 0;
+    /* display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center; */
+    justify-content: center;  */
   }
 }
 .navbar-component .navbar-items-wrapper {
