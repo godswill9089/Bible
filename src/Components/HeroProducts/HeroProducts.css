@@ -66,6 +66,12 @@
   font-size: 2.7rem;
   line-height: 3.7rem;
 }
+@media screen and (max-width: 600px) {
+  .hero-products-wrapper .hero-products .info-wrapper p {
+    width: 100%;
+    font-size: 2rem;
+  }
+}
 .hero-products-wrapper .hero-products .img-1 {
   width: 25.3rem;
   height: 24.9rem;

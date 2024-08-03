@@ -5,6 +5,7 @@ import { navLinks } from './navlinks';
 import logo from '../../Assets/tmb logo.png';
 import { FaBars, FaChevronDown } from 'react-icons/fa';
 import { useIcons } from '../../hooks/useIcon';
+import OutsideClickHandler from 'react-outside-click-handler';
 
 const Navbar = () => {
   const { nigeria, china, uk } = useIcons();
@@ -263,9 +264,7 @@ const Navbar = () => {
                 </div>
               </div>
               <div
-                className={`hamburger ${
-                  location.pathname !== '/' && 'other'
-                }`}
+                className={`hamburger ${location.pathname !== '/' && 'other'}`}
                 onClick={() =>
                   setShowNavMainMobileContainer(!showNavMainMobileContainer)
                 }
@@ -288,17 +287,21 @@ const Navbar = () => {
               <div className='countries-dropdown'>hello</div>
             )}
           </div>
-          <div className='mobile-view-con'>
-            <div className='mobile-view-wrapper'>
-              <div
-                className='mobile-view'
-                style={{
-                  height: showNavMainMobileContainer
-                    ? `${navMainMobileContainerHeight + 100}px`
-                    : 0,
-                }}
-              >
-                <div className='nav-con-mobile'>
+          <OutsideClickHandler
+            onOutsideClick={() => {
+              setShowNavMainMobileContainer(false);
+            }}
+          >
+            <div className='mobile-view-con'>
+              <div className='mobile-view-wrapper'>
+                <div
+                  className='mobile-view'
+                  style={{
+                    height: showNavMainMobileContainer
+                      ? `${navMainMobileContainerHeight}px`
+                      : 0,
+                  }}
+                >
                   <ul className='nav-main-mobile' ref={navMainMobileContainer}>
                     <li
                       className='nav-wrapper-mobile'
@@ -461,7 +464,7 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </OutsideClickHandler>
         </div>
       </div>
     </div>
