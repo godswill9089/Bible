@@ -28,11 +28,11 @@ const Navbar = () => {
     const navMainMobileContainerHeight =
       navMainMobileContainer.current?.getBoundingClientRect().height;
     setNavMainMobileContainerHeight(navMainMobileContainerHeight);
-  }, [active]);
+  }, []);
   // console.log('active', active);
 
-  // console.log('homeContainerHeight', homeContainerHeight);
-  console.log('navMainMobileContainerHeight', navMainMobileContainerHeight);
+  console.log('navMainMobileContainer height', navMainMobileContainerHeight);
+  // console.log('navMainMobileContainerHeight', navMainMobileContainerHeight);
 
   return (
     <div
@@ -265,9 +265,10 @@ const Navbar = () => {
               </div>
               <div
                 className={`hamburger ${location.pathname !== '/' && 'other'}`}
-                onClick={() =>
-                  setShowNavMainMobileContainer(!showNavMainMobileContainer)
-                }
+                onClick={() => {
+                  setShowNavMainMobileContainer(!showNavMainMobileContainer);
+                  setActive(0);
+                }}
               >
                 <FaBars />
               </div>
@@ -288,8 +289,10 @@ const Navbar = () => {
             )}
           </div>
           <OutsideClickHandler
-            onOutsideClick={() => {
-              setShowNavMainMobileContainer(false);
+            onOutsideClick={(e) => {
+              if (!e.target.closest('.navbar-component')) {
+                setShowNavMainMobileContainer(false);
+              }
             }}
           >
             <div className='mobile-view-con'>
@@ -298,7 +301,7 @@ const Navbar = () => {
                   className='mobile-view'
                   style={{
                     height: showNavMainMobileContainer
-                      ? `${navMainMobileContainerHeight}px`
+                      ? `${navMainMobileContainerHeight + 125}px`
                       : 0,
                   }}
                 >
