@@ -65,10 +65,21 @@
   margin-top: 8rem;
   margin-bottom: 3rem;
 }
+@media screen and (max-width: 600px) {
+  .hero-about-us .info-wrapper h1 {
+    font-size: 3.2rem;
+  }
+}
 .hero-about-us .info-wrapper p {
   font-weight: 400;
-   font-size: 2.7rem;
-  line-height: 3.7rem;
+  font-size: 2.7rem;
+  line-height: 150%;
+}
+@media screen and (max-width: 600px) {
+  .hero-about-us .info-wrapper p {
+    font-size: 1.7rem;
+    line-height: 150%;
+  }
 }
 .hero-about-us .img-1 {
   width: 39.3rem;

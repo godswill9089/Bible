@@ -1,0 +1,33 @@
+/* src/components/HeroSection.css */
+
+.hero-section {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  background: url('../../Assets/Mask\ group2.png') no-repeat center center;
+  background-size: cover;
+  background-attachment: scroll;
+  background-origin: border-box;
+  background-clip: border-box;
+  background-color: transparent;
+  min-height: 50rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.overlay-text {
+  padding: 20px;
+  background: #ff5240d6;
+  font-size: 1.6rem;
+  line-height: 150%;
+  width: 70%;
+  max-width: 80rem;
+}
+@media screen and (max-width: 600px) {
+  .overlay-text {
+    width: 100%;
+  }
+}

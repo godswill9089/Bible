@@ -8,18 +8,24 @@
   width: 87.5%;
   margin: 0 auto;
 }
+@media screen and (max-width: 600px) {
+  .brief-history .container {
+    width: 100%;
+  }
+}
 .brief-history .content {
   padding: 5rem 15rem;
 }
-.brief-history .title-wrapper {
-  display: flex;
-  margin-bottom: 5rem;
+@media screen and (max-width: 600px) {
+  .brief-history .content {
+    padding: 5rem 2rem;
+  }
+}
+.brief-history .title {
+  text-align: center;
 }
 .brief-history .info {
-  margin-bottom: 3rem;
-}
-.brief-history .info p {
-  font-weight: 500;
-  font-size: 1.8rem;
-  /* line-height: 4.16rem; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
 }

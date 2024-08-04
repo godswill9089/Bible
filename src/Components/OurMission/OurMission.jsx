@@ -1,8 +1,8 @@
 import React, { useRef, useState } from 'react';
 import './OurMission.css';
-import { useIcons } from '../../hooks/useIcon';
 import Title from '../../Views/Atoms/Title/Title';
 import Card from '../Card/Card';
+import Info from '../../Views/Atoms/Info/Info';
 
 const OurMission = () => {
   const cards = [
@@ -30,7 +30,7 @@ const OurMission = () => {
             <Title text={'Our Mission'} />
           </div>
           <div className='info'>
-            <p>The Moving Bible is dedicated to:</p>
+            <Info text={'The Moving Bible is dedicated to:'} strong />
           </div>
           <div className='carousel'>
             <div className='cards-wrapper'>

@@ -34,6 +34,8 @@ import socialMedia2 from '../Assets/Images/social-media-2.svg';
 import socialMedia3 from '../Assets/Images/social-media-3.svg';
 import starLike from '../Assets/Images/star-like.svg';
 import hoodieBlue from '../Assets/Images/hoodie-blue.svg';
+import signUpImgHome from '../Assets/Images/sign-up-home.png';
+import signUpImgAbout from '../Assets/Images/sign-up-about.png';
 
 export const useIcons = () => {
   return {
@@ -72,5 +74,7 @@ export const useIcons = () => {
     socialMedia3,
     starLike,
     hoodieBlue,
+    signUpImgHome,
+    signUpImgAbout,
   };
 };

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './SignUp.css';
 import { FaArrowRight } from 'react-icons/fa';
 
-function SignUp() {
+function SignUp({ text, img }) {
   const [email, setEmail] = useState('');
 
   const handleEmailChange = (event) => {
@@ -16,12 +16,18 @@ function SignUp() {
     // Reset the email state after submission if needed
     setEmail('');
   };
-
   return (
     <div className='sign'>
-      <header className='sign-header'>
-        <h1>Sign up for our weekly newsletter The Good Stuff.</h1>
-        {/* <form onSubmit={handleSubmit}>
+      <header
+        className='sign-header'
+        style={{
+          backgroundImage: `url(${img})`,
+        }}
+      >
+        <div className='info-wrapper'>
+          <h1>{text}</h1>
+        </div>
+        <form onSubmit={handleSubmit}>
           <div className='email-wrapper'>
             <input
               type='email'
@@ -30,16 +36,11 @@ function SignUp() {
               onChange={handleEmailChange}
               required
             />
+            <span className='icon-wrapper'>
+              <FaArrowRight className='icon' />
+            </span>
           </div>
-        </form> */}
-        <div className='head-submit'>
-          <button className='submit-btn'>
-            enter email adress
-            <div>
-              <FaArrowRight className='link3' />
-            </div>
-          </button>
-        </div>
+        </form>
       </header>
     </div>
   );
