@@ -14,6 +14,11 @@
   box-shadow: 0px 5.969581604003906px 16.714828491210938px 0px #080f340a;
   border-radius: 0.8rem;
 }
+@media screen and (max-width: 600px) {
+  .video-component .content {
+    padding: 3rem 1rem;
+  }
+}
 .video-component .title-wrapper {
   display: flex;
   margin-bottom: 5rem;
@@ -23,25 +28,32 @@
   justify-content: space-between;
   margin-bottom: 3rem;
 }
+@media screen and (max-width: 600px) {
+  .video-component .details-wrapper {
+    flex-direction: column;
+  }
+}
 .video-component .details {
   max-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
 }
-.video-component .details .title {
-  font-weight: 600;
-  font-size: 4rem;
-  line-height: 4.92rem;
-  margin-bottom: 1rem;
+.video-component .info-con {
+  min-height: 13rem;
 }
-.video-component .details .info {
-  margin-bottom: 2rem;
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 2.952rem;
-}
+
 .video-component .btns-wrapper {
   display: flex;
   column-gap: 4rem;
   align-items: center;
+  margin: 2rem 0;
+}
+@media screen and (max-width: 600px) {
+  .video-component .btns-wrapper {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
 }
 .video-component .btns {
   display: flex;
@@ -56,7 +68,7 @@
 .video-component .video-wrapper {
   height: 100%;
   padding: 2rem;
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: center;
 }

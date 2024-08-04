@@ -1,11 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './Books.css';
-import { FaArrowLeft, FaStarOfLife } from 'react-icons/fa';
-import { FaArrowRight } from 'react-icons/fa';
-import CardContainer from '../CardContainer/CardContainer';
-import { useIcons } from '../../hooks/useIcon';
+
 import Title from '../../Views/Atoms/Title/Title';
-import ButtonPill from '../../Views/Molecules/ButtonPill/ButtonPill';
 import ButtonRound from '../../Views/Molecules/ButtonRound/ButtonRound';
 import CardBook from '../../Views/Molecules/CardBook/CardBook';
 import useWindowSize from '../../hooks/useWindowSize';
@@ -50,7 +46,7 @@ const Books = () => {
       name: 'Sarah',
     },
   ];
-  
+
   const cardContainer = useRef(null);
   const numOfCardsToDisplay = 4;
   const numOfCardsTotal = testimonials.length;
@@ -121,13 +117,13 @@ const Books = () => {
             </p>
           </div>
           <div className='carousel'>
-            <div className='books-wrapper'>
+            <div className='cards-wrapper'>
               <div
-                className='books'
+                className='cards'
                 style={{ transform: `translateX(-${translateSize}px)` }}
               >
                 {testimonials.map((book, index) => (
-                  <div key={index} className='book-con' ref={cardContainer}>
+                  <div key={index} className='cards-con' ref={cardContainer}>
                     <CardBook book={book} />
                   </div>
                 ))}

@@ -35,14 +35,11 @@
   margin-left: -2.5rem;
   margin-right: -2.5rem;
 }
-.books-component .carousel .books-wrapper {
-  /* padding: 1rem; */
+.books-component .carousel .cards-wrapper {
   overflow: hidden;
-  /* margin-right: -9.5rem; */
   position: relative;
-  /* background-color: green; */
 }
-.books-component .carousel .books {
+.books-component .carousel .cards {
   display: flex;
   /* overflow: hidden; */
   /* background-color: red; */

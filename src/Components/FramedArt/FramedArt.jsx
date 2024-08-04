@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import './FramedArt.css';
-import { FaArrowLeft, FaStarOfLife } from 'react-icons/fa';
-import { FaArrowRight } from 'react-icons/fa';
-import CardContainer from '../CardContainer/CardContainer';
-import { useIcons } from '../../hooks/useIcon';
+
 import Title from '../../Views/Atoms/Title/Title';
 import ButtonPill from '../../Views/Molecules/ButtonPill/ButtonPill';
 import ButtonRound from '../../Views/Molecules/ButtonRound/ButtonRound';
+import SectionTitle from '../../Views/Atoms/SectionTitle/SectionTitle';
+import Info from '../../Views/Atoms/Info/Info';
 
 const FramedArt = () => {
   const [direction, setDirection] = useState('left');
@@ -19,12 +18,12 @@ const FramedArt = () => {
             <Title text={'Framed Art'} />
           </div>
           <div className='details'>
-            <h2 className='title'>Uplifting Inspiration</h2>
-            <p className='info'>
-              Display your faith in your home or office with beautiful framed
+            <SectionTitle text='Uplifting Inspiration' />
+            <Info
+              text=' Display your faith in your home or office with beautiful framed
               artwork featuring scripture verses, inspirational quotes, and
-              faith-based imagery.
-            </p>
+              faith-based imagery.'
+            />
           </div>
           <div className='btns-wrapper'>
             <ButtonPill

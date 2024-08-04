@@ -1,35 +1,66 @@
-.sign {
-}
-
-.sign .sign-header {
+.sign-header {
   /* background-image: url('../../Assets/Images/Weekly\ new\ let.png'); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 40rem;
   height: 40rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  .sign-header {
+    flex-direction: column;
+    row-gap: 3rem;
+    padding: 2rem 2rem;
+    min-height: 30rem;
+    height: 20rem;
+  }
+}
+.sign-header .container {
+  width: 77.5%;
+  margin: 0 auto;
+  /* background-color: blue; */
+}
+@media screen and (max-width: 600px) {
+  .sign-header .container {
+    width: 100%;
+  }
+}
+.sign-header .content {
+  /* padding: 10rem 0rem; */
+}
+@media screen and (max-width: 600px) {
+  .sign-header .content {
+    /* padding: 0rem 2rem; */
+  }
+}
+
+.sign-header .sign-header-2 {
   display: flex;
   align-items: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  padding: 100px;
+  /* padding: 100px; */
   /* background-color: blue; */
   width: 100%;
 }
 @media screen and (max-width: 600px) {
-  .sign .sign-header {
+  .sign-header .sign-header-2 {
     flex-direction: column;
     row-gap: 3rem;
     padding: 2rem 2rem;
-    min-height: 20rem;
-    height: 20rem;
+    /* min-height: 20rem; */
+    /* height: 20rem; */
   }
 }
 
-.sign .sign-header .info-wrapper {
+.sign-header .info-wrapper {
   flex: 1 1 0%;
 }
-.sign .sign-header h1 {
+.sign-header h1 {
   width: 80%;
   text-align: left;
   font-family: 'Poppins', sans-serif;
@@ -38,14 +69,14 @@
   font-size: 4rem;
 }
 @media screen and (max-width: 600px) {
-  .sign .sign-header h1 {
+  .sign-header h1 {
     width: 100%;
     line-height: 120%;
     font-size: 2rem;
   }
 }
 
-.sign .sign-header form {
+.sign-header form {
   /* margin-top: 20px; */
   display: flex;
   flex-direction: column;
@@ -53,11 +84,11 @@
   width: 40rem;
 }
 @media screen and (max-width: 600px) {
-  .sign .sign-header form {
+  .sign-header form {
     width: 30rem;
   }
 }
-.sign .sign-header .email-wrapper {
+.sign-header .email-wrapper {
   display: flex;
   align-items: center;
   width: 100%;
@@ -67,7 +98,7 @@
   border: 1px solid #ccc;
   overflow: hidden;
 }
-.sign .sign-header form input {
+.sign-header form input {
   padding: 2rem;
   flex: 1 1 0%;
   height: 100%;
@@ -76,10 +107,10 @@
   color: #000000;
   /* background-color: rgba(0, 128, 0, 0.235); */
 }
-.sign .sign-header form input:focus {
+.sign-header form input:focus {
   outline: none;
 }
-.sign .sign-header form .icon-wrapper {
+.sign-header form .icon-wrapper {
   height: 100%;
   /* width: 5rem; */
   padding: 0 2rem;
@@ -90,5 +121,5 @@
   font-size: 1.6rem;
   color: #000000;
 }
-.sign .sign-header form .icon {
+.sign-header form .icon {
 }

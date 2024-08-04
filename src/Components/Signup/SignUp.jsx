@@ -17,31 +17,35 @@ function SignUp({ text, img }) {
     setEmail('');
   };
   return (
-    <div className='sign'>
-      <header
-        className='sign-header'
-        style={{
-          backgroundImage: `url(${img})`,
-        }}
-      >
-        <div className='info-wrapper'>
-          <h1>{text}</h1>
+    <div
+      className='sign-header'
+      style={{
+        backgroundImage: `url(${img})`,
+      }}
+    >
+      <div className='container'>
+        <div className='content'>
+          <header className='sign-header-2'>
+            <div className='info-wrapper'>
+              <h1>{text}</h1>
+            </div>
+            <form onSubmit={handleSubmit}>
+              <div className='email-wrapper'>
+                <input
+                  type='email'
+                  placeholder='Enter Email Address'
+                  value={email}
+                  onChange={handleEmailChange}
+                  required
+                />
+                <span className='icon-wrapper'>
+                  <FaArrowRight className='icon' />
+                </span>
+              </div>
+            </form>
+          </header>
         </div>
-        <form onSubmit={handleSubmit}>
-          <div className='email-wrapper'>
-            <input
-              type='email'
-              placeholder='Enter Email Address'
-              value={email}
-              onChange={handleEmailChange}
-              required
-            />
-            <span className='icon-wrapper'>
-              <FaArrowRight className='icon' />
-            </span>
-          </div>
-        </form>
-      </header>
+      </div>
     </div>
   );
 }

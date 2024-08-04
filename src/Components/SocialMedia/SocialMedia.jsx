@@ -3,9 +3,6 @@ import './SocialMedia.css';
 
 import { useIcons } from '../../hooks/useIcon';
 import Title from '../../Views/Atoms/Title/Title';
-import ButtonPill from '../../Views/Molecules/ButtonPill/ButtonPill';
-import ButtonRound from '../../Views/Molecules/ButtonRound/ButtonRound';
-import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import Links from '../../Views/Atoms/Links/Links';
 
 const SocialMedia = () => {
@@ -140,6 +137,9 @@ const SocialMedia = () => {
             <img src={productsBannerIcon} alt='' className='img-1' />
             <img src={productsBannerIcon2} alt='' className='img-2' />
             <img src={starLike} alt='' className='img-3' />
+            <div className='links-wrapper-2'>
+              <Links />
+            </div>
           </div>
         </div>
       </div>

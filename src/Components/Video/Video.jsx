@@ -5,6 +5,8 @@ import ButtonPill from '../../Views/Molecules/ButtonPill/ButtonPill';
 import ButtonRound from '../../Views/Molecules/ButtonRound/ButtonRound';
 import { useIcons } from '../../hooks/useIcon';
 import VideoPlayer from '../../Views/Molecules/VideoPlayer/VideoPlayer';
+import Info from '../../Views/Atoms/Info/Info';
+import SectionTitle from '../../Views/Atoms/SectionTitle/SectionTitle';
 
 const Video = () => {
   const [direction, setDirection] = useState('left');
@@ -56,8 +58,10 @@ const Video = () => {
           </div>
           <div className='details-wrapper'>
             <div className='details'>
-              <h2 className='title'>{activeItem.title}</h2>
-              <p className='info'>{activeItem.info}</p>
+              <SectionTitle text={activeItem.title} />
+              <div className='info-con'>
+                <Info text={activeItem.info} />
+              </div>
               <div className='btns-wrapper'>
                 <ButtonPill
                   onClick={() => {

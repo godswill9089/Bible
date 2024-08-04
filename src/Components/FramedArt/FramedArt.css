@@ -14,25 +14,26 @@
   box-shadow: 0px 5.969581604003906px 16.714828491210938px 0px #080f340a;
   border-radius: 0.8rem;
 }
+@media screen and (max-width: 600px) {
+  .framed-art .content {
+    padding: 4rem 1rem;
+  }
+}
 .framed-art .title-wrapper {
   display: flex;
   margin-bottom: 5rem;
 }
+@media screen and (max-width: 600px) {
+  .framed-art .title-wrapper {
+    margin-bottom: 2rem;
+  }
+}
 .framed-art .details {
   margin-bottom: 7rem;
   max-width: 60rem;
-}
-.framed-art .details .title {
-  font-weight: 600;
-  font-size: 4rem;
-  line-height: 4.92rem;
-  margin-bottom: 1rem;
-}
-.framed-art .details .info {
-  margin-bottom: 2rem;
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 2.952rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
 }
 
 .framed-art .btns-wrapper {
@@ -40,6 +41,13 @@
   column-gap: 4rem;
   align-items: center;
   margin-bottom: 12rem;
+}
+@media screen and (max-width: 600px) {
+  .framed-art .btns-wrapper {
+    flex-direction: column;
+    row-gap: 2rem;
+    margin-bottom: 5rem;
+  }
 }
 .framed-art .btns {
   display: flex;
