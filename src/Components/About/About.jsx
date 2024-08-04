@@ -4,6 +4,7 @@ import ButtonRound from '../../Views/Molecules/ButtonRound/ButtonRound';
 import Title from '../../Views/Atoms/Title/Title';
 import Card from '../Card/Card';
 import useWindowSize from '../../hooks/useWindowSize';
+import Info from '../../Views/Atoms/Info/Info';
 
 const About = () => {
   const { windowSize } = useWindowSize();
@@ -107,18 +108,16 @@ const About = () => {
       </div>
       <div className='about'>
         <div className='details'>
-          <p>
-            Welcome to The Moving Bible! We are a passionate community dedicated
-            to bringing the Gospel of Jesus Christ to life. We believe that
-            faith should not just be words, but a driving force for positive
-            change in the world.
-          </p>
-          <p>
-            Our vision is ambitious: to inspire and equip 1 billion souls to
-            live Christ-like lives in the next ten years. Imagine a world where
-            the teachings of the Bible are reflected in everyday actions,
-            transforming communities and individuals.
-          </p>
+          <Info
+            text={
+              'Welcome to The Moving Bible! We are a passionate community dedicated  to bringing the Gospel of Jesus Christ to life. We believe that faith should not just be words, but a driving force for positive change in the world.'
+            }
+          />
+          <Info
+            text={
+              'Our vision is ambitious: to inspire and equip 1 billion souls to live Christ-like lives in the next ten years. Imagine a world where  the teachings of the Bible are reflected in everyday actions, transforming communities and individuals.'
+            }
+          />
         </div>
         <div className='btn-about-wrapper'>
           <div className='btn-about'>

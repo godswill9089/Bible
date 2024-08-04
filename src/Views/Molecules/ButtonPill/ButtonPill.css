@@ -1,6 +1,8 @@
+.btn-pill-component-wrapper {
+  display: inline-block;
+}
 .btn-pill-component {
   background-color: #3c0cec;
-  color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -15,4 +17,5 @@
 .btn-pill-component p {
   font-weight: 400;
   font-size: 1.8rem;
+  color: #fff ;
 }

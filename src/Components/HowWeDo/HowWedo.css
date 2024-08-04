@@ -11,6 +11,11 @@
 .how-we-do-component .content {
   padding: 4rem 15rem;
 }
+@media screen and (max-width: 600px) {
+  .how-we-do-component .content {
+    padding: 4rem 0rem;
+  }
+}
 .how-we-do-component .title-wrapper {
   display: flex;
   margin-bottom: 5rem;
@@ -22,12 +27,9 @@
   margin-bottom: 2rem;
   font-weight: 400;
   font-size: 1.8rem;
-  letter-spacing: .02rem;
+  letter-spacing: 0.02rem;
 }
-.how-we-do-component .info p strong {
-  font-weight: 600;
-  color: #3c0cec;
-}
+
 .how-we-do-component .carousel-screen-1 {
   background-image: url('../../Assets/blog\ image.png');
 }
@@ -61,6 +63,11 @@
   opacity: 0;
   color: #fff;
   width: 50%;
+}
+@media screen and (max-width: 600px) {
+  .how-we-do-component .screen {
+    width: 100%;
+  }
 }
 .how-we-do-component .screen.active {
   opacity: 1;

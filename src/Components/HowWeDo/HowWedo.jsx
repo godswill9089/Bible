@@ -4,6 +4,8 @@ import '../About/About.css';
 import { FaStarOfLife } from 'react-icons/fa';
 import { FaArrowRight } from 'react-icons/fa';
 import Title from '../../Views/Atoms/Title/Title';
+import Info from '../../Views/Atoms/Info/Info';
+import ButtonPill from '../../Views/Molecules/ButtonPill/ButtonPill';
 
 const HowWedo = ({ title, description }) => {
   const [active, setActive] = useState(1);
@@ -22,19 +24,18 @@ const HowWedo = ({ title, description }) => {
             <Title text={'How We Do It'} />
           </div>
           <div className='info'>
-            <p className='text'>
-              That the purpose of Jesus Christ shall not only be left in the
-              holy book but men shall live out these mysteries and as it
-              happened in Antioch and new rebirth for the name "Christians"
-              would be given.
-              <br />
-            </p>
-            <p className='text'>
-              <strong className='strong' >
-                We offer various avenues for you to connect with The Moving
-                Bible and be part of the movement.
-              </strong>
-            </p>
+            <Info
+              text={
+                'That the purpose of Jesus Christ shall not only be left in the oly book but men shall live out these mysteries and as it  happened in Antioch and new rebirth for the name "Christians"  would be given.'
+              }
+            />
+            <Info
+              text={
+                'We offer various avenues for you to connect with The Moving Bible and be part of the movement.'
+              }
+              strong
+              highlight
+            />
           </div>
           <div className={`bg-img-2 carousel-screen-${active}`}>
             <div className='screens'>
@@ -46,12 +47,12 @@ const HowWedo = ({ title, description }) => {
                     practical tips for living a Christ-like life, and in-depth
                     Bible teachings.
                   </p>
-                  <a href='#' className='screen-btn'>
-                    Learn More{' '}
-                    <span className='arrow'>
-                      <FaArrowRight />{' '}
-                    </span>
-                  </a>
+                  <ButtonPill
+                    onClick={() => {
+                      console.log('btn pill');
+                    }}
+                    text={'Learn more'}
+                  />
                 </div>
               )}
               {active === 2 && (
@@ -62,13 +63,13 @@ const HowWedo = ({ title, description }) => {
                     to various initiatives, like community outreach programs or
                     spreading the Gospel online.
                   </p>
-                  <a href='#' className='screen-btn'>
-                    Learn More{' '}
-                    <span className='arrow'>
-                      {' '}
-                      <FaArrowRight />{' '}
-                    </span>
-                  </a>
+
+                  <ButtonPill
+                    onClick={() => {
+                      console.log('btn pill');
+                    }}
+                    text={'Learn more'}
+                  />
                 </div>
               )}
               {active === 3 && (
@@ -78,13 +79,12 @@ const HowWedo = ({ title, description }) => {
                     Inspiring stories and highlights from the news and media
                     about the impact God is making through our church.
                   </p>
-                  <a href='#' className='screen-btn'>
-                    Learn More{' '}
-                    <span className='arrow'>
-                      {' '}
-                      <FaArrowRight />{' '}
-                    </span>
-                  </a>
+                  <ButtonPill
+                    onClick={() => {
+                      console.log('btn pill');
+                    }}
+                    text={'Learn more'}
+                  />
                 </div>
               )}
             </div>

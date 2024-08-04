@@ -1,0 +1,17 @@
+.info-component {
+  font-weight: 400;
+  font-size: 1.8rem;
+  letter-spacing: 0.02rem;
+  line-height: 3rem;
+}
+@media screen and (max-width: 600px) {
+  .info-component {
+    font-size: 1.5rem;
+  }
+}
+.info-component.strong {
+  font-weight: 600;
+}
+.info-component.highlight {
+  color: #3c0cec;
+}
