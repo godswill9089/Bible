@@ -17,7 +17,7 @@
   background-color: #fff;
   padding: 2rem;
   border-radius: 8px;
-  height: 40rem;
+  min-height: 40rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,7 +33,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 13.9rem;
-  /* background-color: green; */
   width: 100%;
 }
 @media screen and (max-width: 600px) {
@@ -46,6 +45,7 @@
 .become-component .text-content {
   max-width: 60%;
   width: 60%;
+  height: 100%;
 }
 @media screen and (max-width: 600px) {
   .become-component .text-content {

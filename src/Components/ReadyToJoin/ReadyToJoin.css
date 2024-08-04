@@ -10,11 +10,9 @@
   margin: 0 auto;
 }
 .ready-to-join .content {
-  padding: 7rem 15rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  padding: 7rem 0;
 }
+
 .ready-to-join .ready {
 }
 .ready-to-join .ready .title {
@@ -24,10 +22,16 @@
   line-height: 100%;
   text-align: center;
 }
+@media screen and (max-width: 600px) {
+  .ready-to-join .ready .title {
+    font-size: 2rem;
+    line-height: 120%;
+  }
+}
 .ready-to-join .ready .info {
   font-size: 1.5rem;
   margin-bottom: 3rem;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
 }
 .ready-to-join .btn {

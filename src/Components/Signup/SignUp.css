@@ -1,67 +1,91 @@
 .sign {
-    text-align: center;
+  text-align: center;
 }
 
 .sign-header {
-    background-image: url("../../Assets/Weekly\ new\ let.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 20vh;
-    display: flex;
-    align-items: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-    padding: 100px;
+  background-image: url('../../Assets/Weekly\ new\ let.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 100px;
+  /* background-color: blue; */
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .sign-header {
+    flex-direction: column;
+    row-gap: 3rem;
+    padding: 2rem 2rem;
+  }
 }
 
-.sign-header h1{
-    width: 60%;
-    text-align: left;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300 !important;
+.sign-header h1 {
+  width: 60%;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300 !important;
+}
+@media screen and (max-width: 600px) {
+  .sign-header h1 {
+    width: 100%;
+    /* background-color: green; */
+  }
 }
 
 .sign-header form {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .sign-header form input {
-    padding: 10px;
-    margin-bottom: 10px;
-    width: 300px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 300px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .sign-header form button {
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-    background-color: #61dafb;
-    color: #282c34;
-    border: none;
-    border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  border-radius: 5px;
+}
+.sign .head-submit {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 600px) {
+  .sign .head-submit {
+    justify-content: flex-start;
+  }
+}
+.submit-btn {
+  display: flex !important;
+  align-items: center;
+  gap: 20px;
+  width: 30rem;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 50px;
+  border: none;
+  color: black;
+  background-color: #fff;
+  font-size: 20px;
 }
 
- .submit{
-    display: flex !important;
-    align-items: center;
-    gap: 20px;
-    width: 150%;
-    justify-content: space-between;
-    padding: 15px;
-    border-radius: 50px;
-    border: none;
-    color: black;
-    background-color: #fff;
-    font-size: 20px;
-}
-
-.link3{
-    margin-top: 4px;
+.link3 {
+  margin-top: 4px;
 }
