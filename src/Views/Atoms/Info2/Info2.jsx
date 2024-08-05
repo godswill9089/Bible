@@ -1,10 +1,10 @@
 import React from 'react';
-import './Info.css';
+import './Info2.css';
 
-const Info = ({ textTitle, text, strong, highlight }) => {
+const Info2 = ({ textTitle, text, strong, highlight }) => {
   return (
     <p
-      className={`info-component ${strong && 'strong'} ${
+      className={`info-component-2 ${strong && 'strong'} ${
         highlight && 'highlight'
       }`}
     >
@@ -13,4 +13,4 @@ const Info = ({ textTitle, text, strong, highlight }) => {
   );
 };
 
-export default Info;
+export default Info2;

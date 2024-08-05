@@ -12,6 +12,11 @@
 .books-component .content {
   padding: 4rem 15rem;
 }
+@media screen and (max-width: 600px) {
+  .books-component .content {
+    padding: 4rem 0rem;
+  }
+}
 .books-component .title-wrapper {
   display: flex;
   margin-bottom: 5rem;

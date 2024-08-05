@@ -1,21 +1,21 @@
-.info-component {
+.info-component-2 {
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 2rem;
   letter-spacing: 0.02rem;
   line-height: 150%;
 }
 @media screen and (max-width: 600px) {
-  .info-component {
-    font-size: 1.5rem;
+  .info-component-2 {
+    font-size: 1.6rem;
     line-height: 140%;
   }
 }
-.info-component.strong {
+.info-component-2.strong {
   font-weight: 600;
 }
-.info-component.highlight {
+.info-component-2.highlight {
   color: #3c0cec;
 }
-.info-component span {
+.info-component-2 span {
   font-weight: 700;
 }

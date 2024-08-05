@@ -64,12 +64,12 @@
   max-width: 70rem;
   font-weight: 400;
   font-size: 2.7rem;
-  line-height: 3.7rem;
+  line-height: 150%;
 }
 @media screen and (max-width: 600px) {
   .hero-products-wrapper .hero-products .info-wrapper p {
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 }
 .hero-products-wrapper .hero-products .img-1 {
@@ -102,18 +102,14 @@
 .hero-products-wrapper .t-shirts .content {
   padding: 7rem 10rem;
 }
+@media screen and (max-width: 600px) {
+  .hero-products-wrapper .t-shirts .content {
+    padding: 4rem 0rem;
+  }
+}
 .hero-products-wrapper .t-shirts .content .info {
   width: 100%;
   max-width: 60rem;
-}
-.hero-products-wrapper .t-shirts .content .info .info-text {
-  font-weight: 400;
-  font-size: 2.7rem;
-  line-height: 3.7rem;
-  margin-bottom: 4rem;
-}
-.hero-products-wrapper .t-shirts .content .info .info-text span {
-  font-weight: 900;
 }
 .hero-products-wrapper .t-shirts .btns-wrapper {
   display: flex;
@@ -125,6 +121,11 @@
   column-gap: 1.5rem;
   align-items: center;
 }
+@media screen and (max-width: 600px) {
+  .hero-products-wrapper .t-shirts .btns {
+    display: none;
+  }
+}
 
 .hero-products-wrapper .products-banner-shirts {
   position: absolute;
@@ -133,4 +134,9 @@
   z-index: 2;
   width: 60.6rem;
   height: 60.1rem;
+}
+@media screen and (max-width: 600px) {
+  .hero-products-wrapper .products-banner-shirts {
+    display: none;
+  }
 }

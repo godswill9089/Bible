@@ -5,6 +5,7 @@ import Title from '../../Views/Atoms/Title/Title';
 import ButtonRound from '../../Views/Molecules/ButtonRound/ButtonRound';
 import CardBook from '../../Views/Molecules/CardBook/CardBook';
 import useWindowSize from '../../hooks/useWindowSize';
+import Info2 from '../../Views/Atoms/Info2/Info2';
 
 const Books = () => {
   const { windowSize } = useWindowSize();
@@ -103,18 +104,20 @@ const Books = () => {
             <Title text={'Books'} />
           </div>
           <div className='info'>
-            <p>
-              <span>Inspiring Reads:</span> Dive into a selection of books by
-              renowned Christian authors, thought leaders, and everyday heroes.
-              Find stories that will challenge, encourage, and equip you to live
-              a Christ-like life.
-            </p>
-            <p>
-              <span>Bible Studies & Devotionals:</span> Deepen your
+            <Info2
+              textTitle='Inspiring Reads:'
+              text='Dive into a selection of books by renowned Christian
+              authors, thought leaders, and everyday heroes. Find stories that
+              will challenge, encourage, and equip you to live a Christ-like
+              life.'
+            />
+            <Info2
+              textTitle='Bible Studies & Devotionals:'
+              text='Deepen your
               understanding of scripture with in-depth Bible study guides and
               daily devotionals. Grow your faith and find practical applications
-              for everyday life.
-            </p>
+              for everyday life.'
+            />
           </div>
           <div className='carousel'>
             <div className='cards-wrapper'>

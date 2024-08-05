@@ -3,6 +3,8 @@ import './Customization.css';
 import Title from '../../Views/Atoms/Title/Title';
 import ButtonPill from '../../Views/Molecules/ButtonPill/ButtonPill';
 import { FaArrowDown } from 'react-icons/fa';
+import Info from '../../Views/Atoms/Info/Info';
+import SectionTitle from '../../Views/Atoms/SectionTitle/SectionTitle';
 
 const Customization = () => {
   return (
@@ -14,18 +16,19 @@ const Customization = () => {
               <Title text={'Customization'} />
             </div>
             <div className='details'>
-              <h2 className='title'>Design generator</h2>
-              <p className='info'>
-                <span>Express Your Faith Uniquely:</span> Unleash your
+              <SectionTitle text='Design generator' />
+              <Info
+                textTitle='Express Your Faith Uniquely:'
+                text='Unleash your
                 creativity and design your own faith-inspired artwork using our
                 online customization tool. Choose from various backgrounds,
                 scripture verses, and design elements to create a one-of-a-kind
-                piece.
-              </p>
+                piece.'
+              />
             </div>
             <div className='describe'>
               <div className='describe-info'>
-                <p>Describe what you want to see</p>
+                <p className='placeholder'>Describe what you want to see</p>
                 <div className='style'>
                   <p>Style</p>
                   <FaArrowDown />

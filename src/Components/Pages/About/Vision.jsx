@@ -14,7 +14,7 @@ const Vision = () => {
           <div className='vision-text'>
             <Info
               text={
-                ' We envision a future where 1 billion souls are actively living out the teachings of Christ. Imagine a world where compassion, forgiveness, and love become the cornerstones of everyday actions, building stronger communities and individuals empowered by their faith.'
+                'We envision a future where 1 billion souls are actively living out the teachings of Christ. Imagine a world where compassion, forgiveness, and love become the cornerstones of everyday actions, building stronger communities and individuals empowered by their faith.'
               }
             />
           </div>

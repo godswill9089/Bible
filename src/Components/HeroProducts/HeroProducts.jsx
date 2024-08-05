@@ -3,6 +3,7 @@ import './HeroProducts.css';
 import { useIcons } from '../../hooks/useIcon';
 import ButtonRound from '../../Views/Molecules/ButtonRound/ButtonRound';
 import ButtonPill from '../../Views/Molecules/ButtonPill/ButtonPill';
+import Info from '../../Views/Atoms/Info/Info';
 
 const HeroProducts = () => {
   const {
@@ -36,11 +37,12 @@ const HeroProducts = () => {
         <div className='container'>
           <div className='content'>
             <div className='info'>
-              <p className='info-text'>
-                <span>T-shirts & Sweatshirts:</span> High-quality garments
-                featuring uplifting messages and scripture verses. Choose from a
-                variety of designs and colors to express your faith in style.
-              </p>
+              <Info
+                textTitle='T-shirts & Sweatshirts:'
+                text='High-quality garments featuring uplifting messages
+                and scripture verses. Choose from a variety of designs and
+                colors to express your faith in style.'
+              />
               <div className='btns-wrapper'>
                 <ButtonPill
                   onClick={() => {
@@ -48,6 +50,7 @@ const HeroProducts = () => {
                   }}
                   text={'Shop now'}
                 />
+                {/* this buttons hides on mobile screen cause no need for them, the shirts are hidden already*/}
                 <div className='btns'>
                   <ButtonRound
                     active={active === 'left'}
