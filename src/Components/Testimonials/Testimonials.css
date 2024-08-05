@@ -4,7 +4,7 @@
   background-color: #3f00f5;
   color: #fff;
   display: flex;
-  height: 80.1rem;
+  min-height: 80.1rem;
   /* height: 58.1rem; */
   padding: 17rem 0;
   margin-top: 60px;
@@ -52,10 +52,15 @@
 }
 
 .testimonials-component .view-more {
-  /* background-color: green; */
   display: flex;
   align-items: center;
   column-gap: 1rem;
+}
+@media screen and (max-width: 600px) {
+  .testimonials-component .view-more {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
 }
 .testimonials-component .view-more .btns {
   display: flex;
