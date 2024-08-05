@@ -51,7 +51,7 @@ const HowWedo = ({ title, description }) => {
                     onClick={() => {
                       console.log('btn pill');
                     }}
-                    text={'Learn more'}
+                    text={'Learn more'} light
                   />
                 </div>
               )}
@@ -68,7 +68,7 @@ const HowWedo = ({ title, description }) => {
                     onClick={() => {
                       console.log('btn pill');
                     }}
-                    text={'Learn more'}
+                    text={'Learn more'} light
                   />
                 </div>
               )}
@@ -83,7 +83,7 @@ const HowWedo = ({ title, description }) => {
                     onClick={() => {
                       console.log('btn pill');
                     }}
-                    text={'Learn more'}
+                    text={'Learn more'} light
                   />
                 </div>
               )}

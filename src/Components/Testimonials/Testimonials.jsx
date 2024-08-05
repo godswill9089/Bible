@@ -1,16 +1,13 @@
 // src/Testimonials.js
-import React, { useEffect, useRef, useState } from 'react';
-import {
-  FaArrowLeft,
-  FaArrowRight,
-  FaChevronLeft,
-  FaChevronRight,
-} from 'react-icons/fa';
-import { FaStarOfLife } from 'react-icons/fa';
+import React, { useState } from 'react';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import './Testimonials.css';
 import img1 from '../../Assets/testimonial1.svg';
 import img2 from '../../Assets/testimonial2.svg';
 import { FaMessage } from 'react-icons/fa6';
+import Title from '../../Views/Atoms/Title/Title';
+import ButtonPill from '../../Views/Molecules/ButtonPill/ButtonPill';
+import Info from '../../Views/Atoms/Info/Info';
 
 const testimonials = [
   {
@@ -87,21 +84,20 @@ const Testimonials = () => {
       <div className='container'>
         <div className='content'>
           <div className='testimonial-headers'>
-            <div className='impact'>
-              <h2>The Impact</h2>
-              <div>
-                <FaStarOfLife className='ico vision-icon test-icon' />
-              </div>
-           </div>
-            <p>
-              Countless lives have already been touched by The Moving Bible.
-              We've witnessed individuals embrace faith, communities flourish,
-              and the message of Christ reach new corners of the globe.
-            </p>
+            <Title text='The Impact' light />
+            <Info
+              text="Countless lives have already been touched by The Moving Bible.
+             We've witnessed individuals embrace faith, communities flourish,
+              and the message of Christ reach new corners of the globe."
+            />
             <div className='view-more'>
-              <a href='#' className='view-more-buttons'>
-                View More   <span className="arrow"> <FaArrowRight className='arrow2'/> </span>
-              </a>
+              <ButtonPill
+                onClick={() => {
+                  console.log('btn pill');
+                }}
+                text={'View more'}
+                light
+              />
               <div className='btns'>
                 <div
                   className={`btn ${direction === 'left' && 'active'}`}

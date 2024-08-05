@@ -1,21 +1,23 @@
 .btn-pill-component-wrapper {
-  display: inline-block;
+  /* display: inline-block; */
+  display: inline-flex;
 }
 .btn-pill-component {
-  background-color: #3c0cec;
   display: flex;
   align-items: center;
   justify-content: space-between;
   column-gap: 5rem;
   padding: 1rem 2rem;
-  border-top-left-radius: 1000px;
-  border-top-right-radius: 1000px;
-  border-bottom-right-radius: 1000px;
-  border-bottom-left-radius: 1000px;
+  border-radius: 99rem;
   cursor: pointer;
+  background-color: #3c0cec;
+  color: #fff;
+}
+.btn-pill-component.btn-pill-component-light {
+  background-color: #fff;
+  color: #3c0cec;
 }
 .btn-pill-component p {
-  font-weight: 400;
+  font-weight: 400 !important;
   font-size: 1.8rem;
-  color: #fff ;
 }

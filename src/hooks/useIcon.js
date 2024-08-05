@@ -10,6 +10,7 @@ import productsBannerIcon2 from '../Assets/Images/products-banner-icon-2.svg';
 import productsBannerIcon3 from '../Assets/Images/products-banner-icon-3.svg';
 import productsBannerShirts from '../Assets/Images/products-banner-shirts.svg';
 import titleIcon from '../Assets/Images/title-icon.svg';
+import titleIconLight from '../Assets/Images/title-icon-light.svg';
 import logoWhite from '../Assets/Images/logo-white.svg';
 import aboutUsBanner from '../Assets/Images/about-us-banner.svg';
 import nigeria from '../Assets/Images/nigeria.svg';
@@ -28,6 +29,7 @@ import podcast3 from '../Assets/Images/podcast-3.svg';
 import podcast3Sm from '../Assets/Images/podcast-3-sm.svg';
 import audio from '../Assets/Images/audio.svg';
 import arrowRight from '../Assets/Images/arrow.svg';
+import arrowRightLight from '../Assets/Images/arrow-light.svg';
 import expand from '../Assets/Images/expand.svg';
 import socialMedia1 from '../Assets/Images/social-media-1.svg';
 import socialMedia2 from '../Assets/Images/social-media-2.svg';
@@ -50,6 +52,7 @@ export const useIcons = () => {
     productsBannerIcon3,
     productsBannerShirts,
     titleIcon,
+    titleIconLight,
     logoWhite,
     aboutUsBanner,
     nigeria,
@@ -68,6 +71,7 @@ export const useIcons = () => {
     podcast3Sm,
     audio,
     arrowRight,
+    arrowRightLight,
     expand,
     socialMedia1,
     socialMedia2,
