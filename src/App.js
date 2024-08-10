@@ -25,6 +25,8 @@ import Books from './Views/NavigationPages/Books/Books';
 import Shirts from './Views/NavigationPages/Shirts/Shirts';
 import Frames from './Views/NavigationPages/Frames/Frames';
 import Customization from './Views/NavigationPages/Customization/Customization';
+import Volunteer from './Views/NavigationPages/Volunteer/Volunteer';
+import Onsite from './Views/NavigationPages/Onsite/Onsite';
 
 function App() {
   const children = [
@@ -117,20 +119,12 @@ function App() {
       element: <Products />,
     },
     {
-      path: '/services/books',
-      element: <Books />,
+      path: '/services/volunteer',
+      element: <Volunteer />,
     },
     {
-      path: '/services/shirts',
-      element: <Shirts />,
-    },
-    {
-      path: '/services/frames',
-      element: <Frames />,
-    },
-    {
-      path: '/services/customization',
-      element: <Customization />,
+      path: '/services/onsite',
+      element: <Onsite />,
     },
   ];
   const router = createBrowserRouter([

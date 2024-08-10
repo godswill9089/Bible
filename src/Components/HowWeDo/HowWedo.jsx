@@ -31,7 +31,7 @@ const HowWedo = ({ title, description }) => {
             />
             <Info
               text={
-                'We offer various avenues for you to connect with The Moving Bible and be part of the movement.'
+                'We offer various avenues for you to connect with the moving bible and be part of the movement.'
               }
               strong
               highlight

@@ -36,6 +36,7 @@
   overflow: hidden;
   z-index: 1;
   position: relative;
+  cursor: pointer;
 }
 @media screen and (max-width: 600px) {
   .video-player-component .video-player-wrapper {

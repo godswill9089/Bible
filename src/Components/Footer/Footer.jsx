@@ -9,8 +9,11 @@ import {
   FaTwitter,
   FaYoutube,
 } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
+  const navigate = useNavigate();
+
   return (
     <footer className='footer footer-component'>
       <div className='footer-columns'>
@@ -28,36 +31,46 @@ const Footer = () => {
               <div className='footer-column'>
                 <h3>About Us</h3>
                 <ul>
-                  <li>Why Moving Bible</li>
-                  <li>Vision</li>
-                  <li>Mission</li>
-                  <li>Identity</li>
-                  <li>Values</li>
+                  <li onClick={() => navigate('/home/why-moving-bible')}>
+                    Why Moving Bible
+                  </li>
+                  <li onClick={() => navigate('/home/vision')}>Vision</li>
+                  <li onClick={() => navigate('/home/mission')}>Mission</li>
+                  <li onClick={() => navigate('/home/identity')}>Identity</li>
+                  <li onClick={() => navigate('/home/values')}>Values</li>
                 </ul>
               </div>
               <div className='footer-column'>
                 <h3>Media</h3>
                 <ul>
-                  <li>Podcast</li>
-                  <li>Videos</li>
-                  <li>Reels</li>
-                  <li>Presentation</li>
+                  <li onClick={() => navigate('/media/podcast')}>Podcast</li>
+                  <li onClick={() => navigate('/media/videos')}>Videos</li>
+                  <li onClick={() => navigate('/media/reels')}>Reels</li>
+                  <li onClick={() => navigate('/media/presentation')}>
+                    Presentation
+                  </li>
                 </ul>
               </div>
               <div className='footer-column'>
                 <h3>Products</h3>
                 <ul>
-                  <li>Books</li>
-                  <li>Shirts</li>
-                  <li>Frames</li>
-                  <li>Customization</li>
+                  <li onClick={() => navigate('/products/books')}>Books</li>
+                  <li onClick={() => navigate('/products/shirts')}>Shirts</li>
+                  <li onClick={() => navigate('/products/frames')}>Frames</li>
+                  <li onClick={() => navigate('/products/customization')}>
+                    Customization
+                  </li>
                 </ul>
               </div>
               <div className='footer-column'>
                 <h3>Services</h3>
                 <ul>
-                  <li>Volunteer</li>
-                  <li>Onsite</li>
+                  <li onClick={() => navigate('/home/why-moving-bible')}>
+                    Volunteer
+                  </li>
+                  <li onClick={() => navigate('/home/why-moving-bible')}>
+                    Onsite
+                  </li>
                 </ul>
               </div>
             </div>
@@ -65,7 +78,7 @@ const Footer = () => {
               <h3>Quick Links</h3>
               <ul className='footer-ul'>
                 <div className='footer-li'>
-                  <li>Godencell</li>
+                  <li>Godencall</li>
                 </div>
                 <div className='footer-li'>
                   <li>CartOn</li>
@@ -94,27 +107,6 @@ const Footer = () => {
               <a href='https://www.youtube.com' target='blanc'>
                 <FaYoutube className='icon' />
               </a>
-              {/* <a href='#'>
-                <i className='fab fa-instagram'>
-                  <FaInstagram />
-                </i>
-              </a>
-              <a href='#'>
-                <i className='fab fa-linkedin'>
-                  <FaSquareXTwitter />
-                </i>
-              </a>
-              <a href='#'>
-                <i className='fab fa-youtube'>
-                  {' '}
-                  <PiLinkedinLogo />
-                </i>
-              </a>
-              <a href='#'>
-                <i className='fab fa-youtube'>
-                  <FiYoutube />{' '}
-                </i>
-              </a> */}
             </div>
           </div>
         </div>

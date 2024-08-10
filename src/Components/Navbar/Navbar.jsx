@@ -252,21 +252,11 @@ const Navbar = () => {
                         <div className='dropdown-links-wrapper'>
                           <div className='dropdown-links-con'>
                             <div className='dropdown-links'>
-                              <li onClick={() => navigate('/services/books')}>
-                                Books
+                              <li onClick={() => navigate('/services/volunteer')}>
+                                Volunteer
                               </li>
-                              <li onClick={() => navigate('/services/shirts')}>
-                                Shirts
-                              </li>
-                              <li onClick={() => navigate('/services/frames')}>
-                                Frames
-                              </li>
-                              <li
-                                onClick={() =>
-                                  navigate('/services/customization')
-                                }
-                              >
-                                Customization
+                              <li onClick={() => navigate('/services/onsite')}>
+                                Onsite
                               </li>
                             </div>
                           </div>

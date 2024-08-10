@@ -28,19 +28,21 @@ const values = [
 const Value = () => {
   return (
     <div className='value-component'>
-      <div className='container'>
-        <div className='content'>
-          <section className='values-section'>
-            <h2>Our Values</h2>
-            <div className='values-list'>
-              {values.map((value, index) => (
-                <div key={index} className='value-item'>
-                  <h3>{value.title}</h3>
-                  <p>{value.description}</p>
-                </div>
-              ))}
-            </div>
-          </section>
+      <div className='wrapper'>
+        <div className='container'>
+          <div className='content'>
+            <section className='values-section'>
+              <h2>Our Values</h2>
+              <div className='values-list'>
+                {values.map((value, index) => (
+                  <div key={index} className='value-item'>
+                    <h3>{value.title}</h3>
+                    <p>{value.description}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          </div>
         </div>
       </div>
     </div>

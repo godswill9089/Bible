@@ -7,7 +7,7 @@ const Mission = ({ missions }) => {
   return (
     <div className='About-container'>
       <div className='About-header-text abt-t'>
-        <h2>Our MISSION</h2>
+        <h2>Our MISSIONs</h2>
         {/* <div>
           <FaStarOfLife className='ico' />
         </div> */}

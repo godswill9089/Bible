@@ -5,8 +5,10 @@ import VideoPlayer from '../../Views/Molecules/VideoPlayer/VideoPlayer';
 import ButtonPill from '../../Views/Molecules/ButtonPill/ButtonPill';
 import Info from '../../Views/Atoms/Info/Info';
 import SectionTitle from '../../Views/Atoms/SectionTitle/SectionTitle';
+import { useNavigate } from 'react-router-dom';
 
 const Become = () => {
+  const navigate = useNavigate();
   return (
     <div className='become-component'>
       <div className='container'>
@@ -23,7 +25,10 @@ const Become = () => {
                 <div className='btn'>
                   <ButtonPill
                     onClick={() => {
-                      console.log('btn pill');
+                      window.open(
+                        'https://youtu.be/z5dV2v1Cvu4?si=u753Y5PnTcqKwRnV',
+                        '_blank'
+                      );
                     }}
                     text={'Watch now'}
                   />
@@ -31,7 +36,14 @@ const Become = () => {
               </div>
               <div className='video-content-wrapper'>
                 <div className='vid-contents'>
-                  <VideoPlayer />
+                  <VideoPlayer
+                    onClick={() => {
+                      window.open(
+                        'https://youtu.be/z5dV2v1Cvu4?si=u753Y5PnTcqKwRnV',
+                        '_blank'
+                      );
+                    }}
+                  />
                 </div>
               </div>
             </div>

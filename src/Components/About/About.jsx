@@ -10,12 +10,12 @@ const About = () => {
   const { windowSize } = useWindowSize();
   const cards = [
     {
-      title: 'Faith In Action',
+      title: 'Faith in action',
       description:
         'We Believe In Putting Our Beliefs Into Practice, Serving Others, And Spreading The Message Of Love And Hope.',
     },
     {
-      title: 'Faith In Action',
+      title: 'Faith in action',
       description:
         'We Believe In Putting Our Beliefs Into Practice, Serving Others, And Spreading The Message Of Love And Hope.',
     },
@@ -110,7 +110,7 @@ const About = () => {
         <div className='details'>
           <Info
             text={
-              'Welcome to The Moving Bible! We are a passionate community dedicated  to bringing the Gospel of Jesus Christ to life. We believe that faith should not just be words, but a driving force for positive change in the world.'
+              'Welcome to The Moving Bible! We are a passionate community dedicated  to bringing the gospel of Jesus Christ to life. We believe that faith should not just be words, but a driving force for positive change in the world.'
             }
           />
           <Info
