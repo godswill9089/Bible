@@ -1,0 +1,45 @@
+.abt-main a {
+  color: white !important;
+}
+.abt-en {
+  color: white !important;
+}
+.Fa {
+  color: white !important;
+}
+.abt-btn {
+  background-color: #ff5240 !important;
+}
+
+/* src/WhyTheMovingBible.css */
+.why-section {
+  /* Dark blue background */
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 50px 20px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.why-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  /* Light blue border */
+  /* Slightly transparent background */
+}
+
+.why-content h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.why-content p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.abt-main li a:hover::after {
+  background-color: #fff !important;
+}

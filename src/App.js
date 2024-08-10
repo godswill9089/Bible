@@ -20,6 +20,10 @@ function App() {
       element: <Home />,
     },
     {
+      path: '/home/why-moving-bible',
+      element: <WhyMovingBible />,
+    },
+    {
       path: '/about',
       element: <AboutUs />,
     },

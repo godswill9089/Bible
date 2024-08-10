@@ -1,4 +1,3 @@
-import './AboutUs.css';
 import React from 'react';
 import Vision from '../../Components/Pages/About/Vision';
 import MissionCard from '../../Components/Pages/About/MissionCard';
@@ -12,6 +11,7 @@ import Value from '../../Components/Value/Value';
 import SignUp from '../../Components/Signup/SignUp';
 import { useIcons } from '../../hooks/useIcon';
 import Footer from '../../Components/Footer/Footer';
+import './AboutUs.css';
 
 const AboutUs = () => {
   const { signUpImgAbout } = useIcons();

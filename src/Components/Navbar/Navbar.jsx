@@ -71,10 +71,20 @@ const Navbar = () => {
                         <div className='dropdown-links-wrapper'>
                           <div className='dropdown-links-con'>
                             <div className='dropdown-links'>
-                              <li onClick={() => navigate('/')}>
+                              <li
+                                onClick={() =>
+                                  navigate('/home/why-moving-bible')
+                                }
+                              >
                                 Why Moving Bible
                               </li>
-                              <li onClick={() => navigate('/')}>Vision</li>
+                              <li
+                                onClick={() =>
+                                  navigate('/home/vision')
+                                }
+                              >
+                                Vision
+                              </li>
                               <li onClick={() => navigate('/')}>Mission</li>
                               <li onClick={() => navigate('/')}>identity</li>
                               <li onClick={() => navigate('/')}>Values</li>
@@ -328,7 +338,9 @@ const Navbar = () => {
                           ref={homeContainer}
                           className='dropdown-linkss dropdown-links-mobile'
                         >
-                          <li onClick={() => navigate('/')}>
+                          <li
+                            onClick={() => navigate('/home/why-moving-bible')}
+                          >
                             Why Moving Bible
                           </li>
                           <li onClick={() => navigate('/')}>Vision</li>
