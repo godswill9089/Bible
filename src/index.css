@@ -18,49 +18,22 @@ body {
 }
 
 @font-face {
-  font-family: 'THICCCBOI-Black';
-  src: url('../src/Assets/Thicccboi/THICCCBOI-Black.ttf') format('truetype');
+  font-family: 'GrandisExtended-Thin';
+  src: url('../src/Assets/Fonts/GrandisExtended/GrandisExtended-Thin.ttf')
+    format('truetype');
 }
-
 @font-face {
-  font-family: 'THICCCBOI-ExtraBold';
-  font-weight: 800;
-  src: url('../src/Assets/Thicccboi/THICCCBOI-ExtraBold.ttf') format('truetype');
+  font-family: 'GrandisExtended-Regular';
+  src: url('../src/Assets/Fonts/GrandisExtended/GrandisExtended-Regular.ttf')
+    format('truetype');
 }
-
 @font-face {
-  font-family: 'THICCCBOI-Bold';
-  font-weight: 700;
-  src: url('../src/Assets/Thicccboi/THICCCBOI-Bold.ttf') format('truetype');
+  font-family: 'GrandisExtended-Bold';
+  src: url('../src/Assets/Fonts/GrandisExtended/GrandisExtended-Bold.ttf')
+    format('truetype');
 }
-
 @font-face {
-  font-family: 'THICCCBOI-SemiBold';
-  font-weight: 600;
-  src: url('../src/Assets/Thicccboi/THICCCBOI-SemiBold.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'THICCCBOI-Medium';
-  src: url('../src/Assets/Thicccboi/THICCCBOI-Medium.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'THICCCBOI-Regular';
-  src: url('../src/Assets/Thicccboi/THICCCBOI-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'THICCCBOI-Light';
-  src: url('../src/Assets/Thicccboi/THICCCBOI-Light.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'THICCCBOI-ThicccAF';
-  src: url('../src/Assets/Thicccboi/THICCCBOI-ThicccAF.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'THICCCBOI-Thin';
-  src: url('../src/Assets/Thicccboi/THICCCBOI-Thin.ttf') format('truetype');
+  font-family: 'GrandisExtended-Black';
+  src: url('../src/Assets/Fonts/GrandisExtended/GrandisExtended-Black.ttf')
+    format('truetype');
 }

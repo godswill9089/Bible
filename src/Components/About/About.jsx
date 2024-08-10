@@ -104,7 +104,7 @@ const About = () => {
   return (
     <div className='about-component'>
       <div className='title-wrapper'>
-        <Title text={'Learn About who we Are'} />
+        <Title text={'Learn about who we are'} />
       </div>
       <div className='about'>
         <div className='details'>

@@ -1,5 +1,7 @@
 .title-component-wrapper {
   display: inline-flex;
+  font-family: GrandisExtended-Bold;
+  /* font-weight: 200; */
 }
 .title-component {
   border-radius: 50px;
