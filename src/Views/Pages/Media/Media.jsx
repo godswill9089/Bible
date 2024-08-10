@@ -1,12 +1,12 @@
 import React from 'react';
-import Footer from '../../Components/Footer/Footer';
-import ReadyToJoin from '../../Components/ReadyToJoin/ReadyToJoin';
-import HeroMedia from '../../Components/HeroMedia/HeroMedia';
-import Audio from '../../Components/Audio/Audio';
-import Video from '../../Components/Video/Video';
-import SocialMedia from '../../Components/SocialMedia/SocialMedia';
-import SignUp from '../../Components/Signup/SignUp';
-import { useIcons } from '../../hooks/useIcon';
+import Footer from '../../../Components/Footer/Footer';
+import ReadyToJoin from '../../../Components/ReadyToJoin/ReadyToJoin';
+import HeroMedia from '../../../Components/HeroMedia/HeroMedia';
+import Audio from '../../../Components/Audio/Audio';
+import Video from '../../../Components/Video/Video';
+import SocialMedia from '../../../Components/SocialMedia/SocialMedia';
+import SignUp from '../../../Components/Signup/SignUp';
+import { useIcons } from '../../../hooks/useIcon';
 
 const Media = () => {
   const { signUpImgHome } = useIcons();

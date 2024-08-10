@@ -6,10 +6,10 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 import { headerRoutes } from './Components/Routes/Route';
-import Home from './Pages/Home/Home';
-import AboutUs from './Pages/About/AboutUs';
-import Products from './Pages/Products/Products';
-import Media from './Pages/Media/Media';
+import Home from './Views/Pages/Home/Home';
+import AboutUs from './Views/Pages/About/AboutUs';
+import Products from './Views/Pages/Products/Products';
+import Media from './Views/Pages/Media/Media';
 import Layout from './Wrappers/Layout/Layout';
 import WhyMovingBible from './Views/NavigationPages/WhyMovingBible/WhyMovingBible';
 
