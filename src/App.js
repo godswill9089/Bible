@@ -1,11 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import {
-  BrowserRouter,
-  createBrowserRouter,
-  RouterProvider,
-} from 'react-router-dom';
-import { headerRoutes } from './Components/Routes/Route';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './Views/Pages/Home/Home';
 import AboutUs from './Views/Pages/About/AboutUs';
 import Products from './Views/Pages/Products/Products';
