@@ -11,7 +11,7 @@ import AboutUs from './Pages/About/AboutUs';
 import Products from './Pages/Products/Products';
 import Media from './Pages/Media/Media';
 import Layout from './Wrappers/Layout/Layout';
-import WhyMovingBible from './Pages/WhyMovingBible/WhyMovingBible';
+import WhyMovingBible from './Views/NavigationPages/WhyMovingBible/WhyMovingBible';
 
 function App() {
   const children = [
