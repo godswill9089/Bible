@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Navbar.css';
-import { navLinks } from './navlinks';
 import logo from '../../Assets/tmb logo.png';
 import { FaBars, FaChevronDown } from 'react-icons/fa';
 import { useIcons } from '../../hooks/useIcon';
@@ -78,16 +77,18 @@ const Navbar = () => {
                               >
                                 Why Moving Bible
                               </li>
-                              <li
-                                onClick={() =>
-                                  navigate('/home/vision')
-                                }
-                              >
+                              <li onClick={() => navigate('/home/vision')}>
                                 Vision
                               </li>
-                              <li onClick={() => navigate('/')}>Mission</li>
-                              <li onClick={() => navigate('/')}>identity</li>
-                              <li onClick={() => navigate('/')}>Values</li>
+                              <li onClick={() => navigate('/home/mission')}>
+                                Mission
+                              </li>
+                              <li onClick={() => navigate('/home/identity')}>
+                                identity
+                              </li>
+                              <li onClick={() => navigate('/home/values')}>
+                                Values
+                              </li>
                             </div>
                           </div>
                         </div>
@@ -99,7 +100,7 @@ const Navbar = () => {
                       onMouseLeave={() => setActive(0)}
                     >
                       <div
-                        onClick={() => navigate('/about')}
+                        onClick={() => navigate('/about-us')}
                         className={`nav-text ${
                           location.pathname !== '/' && 'nav-text-other'
                         } ${
@@ -115,19 +116,29 @@ const Navbar = () => {
                         <div className='dropdown-links-wrapper about-us'>
                           <div className='dropdown-links-con'>
                             <div className='dropdown-links'>
-                              <li onClick={() => navigate('/about')}>
+                              <li
+                                onClick={() =>
+                                  navigate('/about-us/our-mission')
+                                }
+                              >
                                 Our Mission
                               </li>
-                              <li onClick={() => navigate('/about')}>
+                              <li
+                                onClick={() => navigate('/about-us/our-vision')}
+                              >
                                 Our Vision
                               </li>
-                              <li onClick={() => navigate('/about')}>
+                              <li
+                                onClick={() => navigate('/about-us/our-values')}
+                              >
                                 Our Values
                               </li>
-                              <li onClick={() => navigate('/about')}>
+                              <li onClick={() => navigate('/about-us/history')}>
                                 History
                               </li>
-                              <li onClick={() => navigate('/about')}>
+                              <li
+                                onClick={() => navigate('/about-us/our-team')}
+                              >
                                 Our team
                               </li>
                             </div>
@@ -157,12 +168,18 @@ const Navbar = () => {
                         <div className='dropdown-links-wrapper'>
                           <div className='dropdown-links-con'>
                             <div className='dropdown-links'>
-                              <li onClick={() => navigate('/media')}>
+                              <li onClick={() => navigate('/media/podcast')}>
                                 Podcast
                               </li>
-                              <li onClick={() => navigate('/media')}>Videos</li>
-                              <li onClick={() => navigate('/media')}>Reels</li>
-                              <li onClick={() => navigate('/media')}>
+                              <li onClick={() => navigate('/media/videos')}>
+                                Videos
+                              </li>
+                              <li onClick={() => navigate('/media/reels')}>
+                                Reels
+                              </li>
+                              <li
+                                onClick={() => navigate('/media/presentation')}
+                              >
                                 Presentation
                               </li>
                             </div>
@@ -192,16 +209,20 @@ const Navbar = () => {
                         <div className='dropdown-links-wrapper products'>
                           <div className='dropdown-links-con'>
                             <div className='dropdown-links'>
-                              <li onClick={() => navigate('/products')}>
+                              <li onClick={() => navigate('/products/books')}>
                                 Books
                               </li>
-                              <li onClick={() => navigate('/products')}>
+                              <li onClick={() => navigate('/products/shirts')}>
                                 Shirts
                               </li>
-                              <li onClick={() => navigate('/products')}>
+                              <li onClick={() => navigate('/products/frames')}>
                                 Frames
                               </li>
-                              <li onClick={() => navigate('/products')}>
+                              <li
+                                onClick={() =>
+                                  navigate('/products/customization')
+                                }
+                              >
                                 Customization
                               </li>
                             </div>
@@ -231,17 +252,21 @@ const Navbar = () => {
                         <div className='dropdown-links-wrapper'>
                           <div className='dropdown-links-con'>
                             <div className='dropdown-links'>
-                              <li onClick={() => navigate('/services')}>
-                                Vision
+                              <li onClick={() => navigate('/services/books')}>
+                                Books
                               </li>
-                              <li onClick={() => navigate('/services')}>
-                                Mission
+                              <li onClick={() => navigate('/services/shirts')}>
+                                Shirts
                               </li>
-                              <li onClick={() => navigate('/services')}>
-                                identity
+                              <li onClick={() => navigate('/services/frames')}>
+                                Frames
                               </li>
-                              <li onClick={() => navigate('/services')}>
-                                Values
+                              <li
+                                onClick={() =>
+                                  navigate('/services/customization')
+                                }
+                              >
+                                Customization
                               </li>
                             </div>
                           </div>

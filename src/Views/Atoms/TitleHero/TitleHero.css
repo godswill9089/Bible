@@ -1,0 +1,12 @@
+.title-hero-component {
+  font-weight: 800;
+  font-size: 5.2rem;
+  line-height: 4.16rem;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+}
+@media screen and (max-width: 600px) {
+  .title-hero-component {
+    font-size: 3.2rem;
+  }
+}

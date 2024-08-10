@@ -1,0 +1,103 @@
+.hero-general-wrapper .hero-general {
+  position: relative;
+  width: 100%;
+  min-height: 67.4rem;
+  height: 67.4rem;
+  overflow: hidden;
+  margin-top: -9.3rem;
+}
+
+.hero-general-wrapper .hero-general::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../Assets/Images/about-us-banner.svg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  z-index: 1; /* Ensure it is below the overlay and content */
+}
+
+.hero-general-wrapper .hero-general::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3c0cec9e; /* Overlay color with opacity */
+  /* opacity: 0.2; */
+  z-index: 2; /* Ensure it is above the background image but below the content */
+}
+
+.hero-general-wrapper .hero-general > * {
+  position: relative;
+  z-index: 3;
+  color: white;
+}
+.hero-general-wrapper .hero-general .container {
+  height: 100%;
+  width: 87.5%;
+  margin: 0 auto;
+}
+
+.hero-general-wrapper .hero-general .content {
+  height: 100%;
+  position: relative;
+}
+.hero-general .info-wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100rem;
+  text-align: center;
+}
+.hero-general .info-wrapper h1 {
+  font-weight: 800;
+  font-size: 5.2rem;
+  line-height: 4.16rem;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+}
+@media screen and (max-width: 600px) {
+  .hero-general .info-wrapper h1 {
+    font-size: 3.2rem;
+  }
+}
+.hero-general .info-wrapper p {
+  font-weight: 400;
+  font-size: 2.7rem;
+  line-height: 150%;
+}
+@media screen and (max-width: 600px) {
+  .hero-general .info-wrapper p {
+    font-size: 1.7rem;
+  }
+}
+.hero-general .img-1 {
+  width: 39.3rem;
+  height: 24.9rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.hero-general .img-2 {
+  width: 20.7rem;
+  height: 10.5rem;
+  position: absolute;
+  top: 0;
+  left: 20%;
+}
+.hero-general .img-3 {
+  width: 7.4rem;
+  height: 11rem;
+  position: absolute;
+  top: 24.8rem;
+  right: 10%;
+}

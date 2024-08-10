@@ -1,12 +1,12 @@
 import React from 'react';
 import HeroGeneral from '../../../Components/HeroGeneral/HeroGeneral';
 
-const WhyMovingBible = () => {
+const Values = () => {
   return (
     <div className=''>
-      <HeroGeneral title='Why moving bible' />
+      <HeroGeneral title='Values' />
     </div>
   );
 };
 
-export default WhyMovingBible;
+export default Values;
