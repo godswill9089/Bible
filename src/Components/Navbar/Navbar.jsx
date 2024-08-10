@@ -252,7 +252,9 @@ const Navbar = () => {
                         <div className='dropdown-links-wrapper'>
                           <div className='dropdown-links-con'>
                             <div className='dropdown-links'>
-                              <li onClick={() => navigate('/services/volunteer')}>
+                              <li
+                                onClick={() => navigate('/services/volunteer')}
+                              >
                                 Volunteer
                               </li>
                               <li onClick={() => navigate('/services/onsite')}>
@@ -354,14 +356,45 @@ const Navbar = () => {
                           className='dropdown-linkss dropdown-links-mobile'
                         >
                           <li
-                            onClick={() => navigate('/home/why-moving-bible')}
+                            onClick={() => {
+                              navigate('/home/why-moving-bible');
+                              setShowNavMainMobileContainer(false);
+                            }}
                           >
                             Why Moving Bible
                           </li>
-                          <li onClick={() => navigate('/')}>Vision</li>
-                          <li onClick={() => navigate('/')}>Mission</li>
-                          <li onClick={() => navigate('/')}>identity</li>
-                          <li onClick={() => navigate('/')}>Values</li>
+                          <li
+                            onClick={() => {
+                              navigate('/home/vision');
+                              setShowNavMainMobileContainer(false);
+                            }}
+                          >
+                            Vision
+                          </li>
+                          <li
+                            onClick={() => {
+                              navigate('/home/mission');
+                              setShowNavMainMobileContainer(false);
+                            }}
+                          >
+                            Mission
+                          </li>
+                          <li
+                            onClick={() => {
+                              navigate('/home/identity');
+                              setShowNavMainMobileContainer(false);
+                            }}
+                          >
+                            identity
+                          </li>
+                          <li
+                            onClick={() => {
+                              navigate('/home/values');
+                              setShowNavMainMobileContainer(false);
+                            }}
+                          >
+                            Values
+                          </li>
                         </div>
                       </div>
                     </li>
@@ -370,7 +403,7 @@ const Navbar = () => {
                       onClick={() => setActive(2)}
                     >
                       <div
-                        onClick={() => navigate('/about')}
+                        onClick={() => navigate('/about-us')}
                         className={`nav-text-mobile ${
                           location.pathname !== '/' && 'nav-text-other'
                         } ${active === 2 && 'active'}`}
@@ -387,13 +420,21 @@ const Navbar = () => {
                           ref={homeContainer}
                           className='dropdown-linkss dropdown-links-mobile'
                         >
-                          <li onClick={() => navigate('/about')}>
+                          <li onClick={() => navigate('/about-us/our-mission')}>
                             Our Mission
                           </li>
-                          <li onClick={() => navigate('/about')}>Our Vision</li>
-                          <li onClick={() => navigate('/about')}>Our Values</li>
-                          <li onClick={() => navigate('/about')}>History</li>
-                          <li onClick={() => navigate('/about')}>Our team</li>
+                          <li onClick={() => navigate('/about-us/our-vision')}>
+                            Our Vision
+                          </li>
+                          <li onClick={() => navigate('/about-us/our-values')}>
+                            Our Values
+                          </li>
+                          <li onClick={() => navigate('/about-us/history')}>
+                            History
+                          </li>
+                          <li onClick={() => navigate('/about-us/our-team')}>
+                            Our team
+                          </li>
                         </div>
                       </div>
                     </li>
@@ -419,10 +460,16 @@ const Navbar = () => {
                           ref={homeContainer}
                           className='dropdown-linkss dropdown-links-mobile'
                         >
-                          <li onClick={() => navigate('/media')}>Podcast</li>
-                          <li onClick={() => navigate('/media')}>Videos</li>
-                          <li onClick={() => navigate('/media')}>Reels</li>
-                          <li onClick={() => navigate('/media')}>
+                          <li onClick={() => navigate('/media/podcast')}>
+                            Podcast
+                          </li>
+                          <li onClick={() => navigate('/media/videos')}>
+                            Videos
+                          </li>
+                          <li onClick={() => navigate('/media/reels')}>
+                            Reels
+                          </li>
+                          <li onClick={() => navigate('/media/presentation')}>
                             Presentation
                           </li>
                         </div>
@@ -450,10 +497,18 @@ const Navbar = () => {
                           ref={homeContainer}
                           className='dropdown-linkss dropdown-links-mobile'
                         >
-                          <li onClick={() => navigate('/products')}>Books</li>
-                          <li onClick={() => navigate('/products')}>Shirts</li>
-                          <li onClick={() => navigate('/products')}>Frames</li>
-                          <li onClick={() => navigate('/products')}>
+                          <li onClick={() => navigate('/products/books')}>
+                            Books
+                          </li>
+                          <li onClick={() => navigate('/products/shirts')}>
+                            Shirts
+                          </li>
+                          <li onClick={() => navigate('/products/frames')}>
+                            Frames
+                          </li>
+                          <li
+                            onClick={() => navigate('/products/customization')}
+                          >
                             Customization
                           </li>
                         </div>
@@ -481,11 +536,11 @@ const Navbar = () => {
                           ref={homeContainer}
                           className='dropdown-linkss dropdown-links-mobile'
                         >
-                          <li onClick={() => navigate('/products')}>Books</li>
-                          <li onClick={() => navigate('/products')}>Shirts</li>
-                          <li onClick={() => navigate('/products')}>Frames</li>
-                          <li onClick={() => navigate('/products')}>
-                            Customization
+                          <li onClick={() => navigate('/services/volunteer')}>
+                            Volunteer
+                          </li>
+                          <li onClick={() => navigate('/services/onsite')}>
+                            Onsite
                           </li>
                         </div>
                       </div>
