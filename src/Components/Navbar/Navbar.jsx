@@ -29,8 +29,9 @@ const Navbar = () => {
     setNavMainMobileContainerHeight(navMainMobileContainerHeight);
   }, []);
   // console.log('active', active);
+  console.log('homeContainerHeight', homeContainerHeight);
 
-  console.log('navMainMobileContainer height', navMainMobileContainerHeight);
+  // console.log('navMainMobileContainer height', navMainMobileContainerHeight);
   // console.log('navMainMobileContainerHeight', navMainMobileContainerHeight);
 
   return (
@@ -348,7 +349,7 @@ const Navbar = () => {
                       <div
                         className='dropdown-links-wrapper-mobile'
                         style={{
-                          height: active === 1 ? `${homeContainerHeight}px` : 0,
+                          height: active === 1 ? `${300}px` : 0,
                         }}
                       >
                         <div

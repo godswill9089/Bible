@@ -131,8 +131,8 @@ const Testimonials = () => {
       setNumOfCardsExtra(1);
     }
   }, [windowSize]);
-  console.log('card width', cardWidth);
-  console.log('translateSize', translateSize);
+  // console.log('card width', cardWidth);
+  // console.log('translateSize', translateSize);
   return (
     <section className='testimonials-component'>
       <div className='container'>
