@@ -26,12 +26,7 @@ const FramedArt = () => {
             />
           </div>
           <div className='btns-wrapper'>
-            <ButtonPill
-              onClick={() => {
-                console.log('btn pill');
-              }}
-              text={'Shop now'}
-            />
+            <ButtonPill onClick={() => {}} text={'Shop now'} />
             <div className='btns'>
               <ButtonRound
                 active={direction === 'left'}

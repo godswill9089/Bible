@@ -95,7 +95,6 @@ const Testimonials = () => {
 
   const handleTranslate = (direction) => {
     if (direction === 'left') {
-      console.log('left');
       if (slideCount === 0) {
         // setTranslateSize(200);
       } else {
@@ -103,17 +102,12 @@ const Testimonials = () => {
         setSlideCount(slideCount - 1);
       }
     } else {
-      console.log('right');
       if (
         slideCount ===
         numOfCardsTotal + numOfCardsExtra - numOfCardsToDisplay
       ) {
         // setTranslateSize(0);
       } else {
-        console.log(
-          'translateSize + columnGap + cardWidth',
-          translateSize + columnGap + cardWidth
-        );
         setTranslateSize(translateSize + columnGap + cardWidth);
         setSlideCount(slideCount + 1);
       }
@@ -131,8 +125,7 @@ const Testimonials = () => {
       setNumOfCardsExtra(1);
     }
   }, [windowSize]);
-  // console.log('card width', cardWidth);
-  // console.log('translateSize', translateSize);
+
   return (
     <section className='testimonials-component'>
       <div className='container'>
@@ -145,13 +138,7 @@ const Testimonials = () => {
               and the message of Christ reach new corners of the globe."
             />
             <div className='view-more'>
-              <ButtonPill
-                onClick={() => {
-                  console.log('btn pill');
-                }}
-                text={'View more'}
-                light
-              />
+              <ButtonPill onClick={() => {}} text={'View more'} light />
               <div className='btns'>
                 <div
                   className={`btn ${direction === 'left' && 'active'}`}

@@ -47,12 +47,7 @@ const HowWedo = ({ title, description }) => {
                     practical tips for living a Christ-like life, and in-depth
                     Bible teachings.
                   </p>
-                  <ButtonPill
-                    onClick={() => {
-                      console.log('btn pill');
-                    }}
-                    text={'Learn more'} light
-                  />
+                  <ButtonPill onClick={() => {}} text={'Learn more'} light />
                 </div>
               )}
               {active === 2 && (
@@ -64,12 +59,7 @@ const HowWedo = ({ title, description }) => {
                     spreading the Gospel online.
                   </p>
 
-                  <ButtonPill
-                    onClick={() => {
-                      console.log('btn pill');
-                    }}
-                    text={'Learn more'} light
-                  />
+                  <ButtonPill onClick={() => {}} text={'Learn more'} light />
                 </div>
               )}
               {active === 3 && (
@@ -79,12 +69,7 @@ const HowWedo = ({ title, description }) => {
                     Inspiring stories and highlights from the news and media
                     about the impact God is making through our church.
                   </p>
-                  <ButtonPill
-                    onClick={() => {
-                      console.log('btn pill');
-                    }}
-                    text={'Learn more'} light
-                  />
+                  <ButtonPill onClick={() => {}} text={'Learn more'} light />
                 </div>
               )}
             </div>

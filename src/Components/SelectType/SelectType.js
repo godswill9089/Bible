@@ -32,7 +32,6 @@ function SelectType({
       stack.current.prepend(card);
     }, 250);
   }
-  console.log('cardTypes', cardTypes);
   return (
     <div className='select-card-type'>
       <div className='cards-wrap' ref={stack}>

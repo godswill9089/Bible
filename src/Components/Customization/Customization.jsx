@@ -35,12 +35,7 @@ const Customization = () => {
                 </div>
               </div>
               <div className='btn-pill'>
-                <ButtonPill
-                  onClick={() => {
-                    console.log('btn pill');
-                  }}
-                  text={'Generate'}
-                />
+                <ButtonPill onClick={() => {}} text={'Generate'} />
               </div>
             </div>
           </div>

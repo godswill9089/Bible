@@ -28,11 +28,6 @@ const Navbar = () => {
       navMainMobileContainer.current?.getBoundingClientRect().height;
     setNavMainMobileContainerHeight(navMainMobileContainerHeight);
   }, []);
-  // console.log('active', active);
-  console.log('homeContainerHeight', homeContainerHeight);
-
-  // console.log('navMainMobileContainer height', navMainMobileContainerHeight);
-  // console.log('navMainMobileContainerHeight', navMainMobileContainerHeight);
 
   return (
     <div
@@ -347,10 +342,12 @@ const Navbar = () => {
                         Home <FaChevronDown className='icon' />
                       </div>
                       <div
-                        className='dropdown-links-wrapper-mobile'
-                        style={{
-                          height: active === 1 ? `${300}px` : 0,
-                        }}
+                        className={`dropdown-links-wrapper-mobile ${
+                          active === 1 && 'active'
+                        }`}
+                        // style={{
+                        //   height: active === 1 ? `${homeContainerHeight}px` : 0,
+                        // }}
                       >
                         <div
                           ref={homeContainer}
@@ -412,10 +409,12 @@ const Navbar = () => {
                         About us <FaChevronDown className='icon' />
                       </div>
                       <div
-                        className='dropdown-links-wrapper-mobile'
-                        style={{
-                          height: active === 2 ? `${homeContainerHeight}px` : 0,
-                        }}
+                        className={`dropdown-links-wrapper-mobile ${
+                          active === 2 && 'active'
+                        }`}
+                        // style={{
+                        //   height: active === 2 ? `${homeContainerHeight}px` : 0,
+                        // }}
                       >
                         <div
                           ref={homeContainer}
@@ -452,10 +451,12 @@ const Navbar = () => {
                         Media <FaChevronDown className='icon' />
                       </div>
                       <div
-                        className='dropdown-links-wrapper-mobile'
-                        style={{
-                          height: active === 3 ? `${homeContainerHeight}px` : 0,
-                        }}
+                        className={`dropdown-links-wrapper-mobile ${
+                          active === 3 && 'active'
+                        }`}
+                        // style={{
+                        //   height: active === 3 ? `${homeContainerHeight}px` : 0,
+                        // }}
                       >
                         <div
                           ref={homeContainer}
@@ -489,10 +490,12 @@ const Navbar = () => {
                         Products <FaChevronDown className='icon' />
                       </div>
                       <div
-                        className='dropdown-links-wrapper-mobile'
-                        style={{
-                          height: active === 4 ? `${homeContainerHeight}px` : 0,
-                        }}
+                        className={`dropdown-links-wrapper-mobile ${
+                          active === 4 && 'active'
+                        }`}
+                        // style={{
+                        //   height: active === 4 ? `${homeContainerHeight}px` : 0,
+                        // }}
                       >
                         <div
                           ref={homeContainer}
@@ -528,10 +531,12 @@ const Navbar = () => {
                         Services <FaChevronDown className='icon' />
                       </div>
                       <div
-                        className='dropdown-links-wrapper-mobile'
-                        style={{
-                          height: active === 5 ? `${homeContainerHeight}px` : 0,
-                        }}
+                        className={`dropdown-links-wrapper-mobile ${
+                          active === 5 && 'active'
+                        }`}
+                        // style={{
+                        //   height: active === 5 ? `${homeContainerHeight}px` : 0,
+                        // }}
                       >
                         <div
                           ref={homeContainer}

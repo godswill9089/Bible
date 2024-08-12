@@ -11,12 +11,7 @@ const ReadyToJoin = () => {
             <h1 className='title'>Ready to join us in making a difference? </h1>
             <p className='info'>Choose Your Path</p>
             <div className='btn'>
-              <ButtonPill
-                onClick={() => {
-                  console.log('btn pill');
-                }}
-                text={'Join the movement'}
-              />
+              <ButtonPill onClick={() => {}} text={'Join the movement'} />
             </div>
           </div>
         </div>

@@ -63,12 +63,7 @@ const Video = () => {
                 <Info text={activeItem.info} />
               </div>
               <div className='btns-wrapper'>
-                <ButtonPill
-                  onClick={() => {
-                    console.log('btn pill');
-                  }}
-                  text={'Watch now'}
-                />
+                <ButtonPill onClick={() => {}} text={'Watch now'} />
                 <div className='btns'>
                   <ButtonRound
                     active={direction === 'left'}

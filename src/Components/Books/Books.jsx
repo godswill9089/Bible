@@ -92,9 +92,6 @@ const Books = () => {
     }
   }, [windowSize]);
 
-  // console.log('cardWidth', cardWidth);
-  // console.log('translateSize', translateSize);
-  // console.log('windowSize', windowSize);
 
   return (
     <div className='books-component'>

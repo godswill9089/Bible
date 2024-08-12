@@ -44,12 +44,7 @@ const HeroProducts = () => {
                 colors to express your faith in style.'
               />
               <div className='btns-wrapper'>
-                <ButtonPill
-                  onClick={() => {
-                    console.log('btn pill');
-                  }}
-                  text={'Shop now'}
-                />
+                <ButtonPill onClick={() => {}} text={'Shop now'} />
                 {/* this buttons hides on mobile screen cause no need for them, the shirts are hidden already*/}
                 <div className='btns'>
                   <ButtonRound

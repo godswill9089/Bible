@@ -37,7 +37,6 @@ const HeroMedia = () => {
     },
   ];
   const [selectedCard, setSelectedCard] = useState({});
-  console.log('selected card', selectedCard);
 
   return (
     <div className='hero-media-wrapper'>

@@ -349,8 +349,12 @@
   overflow: hidden;
   width: 87.5%;
   margin: 0 auto;
+  height: 0rem;
   /* display: none; */
   /* background-color: rgba(0, 0, 255, 0.263); */
+}
+.navbar-component .dropdown-links-wrapper-mobile.active {
+  height: 15rem;
 }
 .navbar-component .dropdown-links-mobile li {
   height: 3rem;
