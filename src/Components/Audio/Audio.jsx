@@ -12,6 +12,7 @@ const Audio = () => {
     useIcons();
   const testimonials = [
     {
+      id: 1,
       title: 'Podcast',
       info: 'Faith in Action',
       text: 'From Soup Kitchens to Mission Fields (Focuses on real-world service projects)',
@@ -19,6 +20,7 @@ const Audio = () => {
       img2: podcast1Sm,
     },
     {
+      id: 2,
       title: 'Bible Study',
       info: 'Living like Christ',
       text: 'The Sermon on the Mount in Action (Focuses on a specific scripture passage and its practical application)',
@@ -26,6 +28,7 @@ const Audio = () => {
       img2: podcast2Sm,
     },
     {
+      id: 3,
       title: 'Podcast',
       info: 'Bible on the move',
       text: 'Decoding Scripture for Everyday Life (Combines practicality with scripture study)',
@@ -33,6 +36,7 @@ const Audio = () => {
       img2: podcast3Sm,
     },
     {
+      id: 4,
       title: 'Podcast',
       info: 'Faith in Action',
       text: 'From Soup Kitchens to Mission Fields (Focuses on real-world service projects)',
@@ -40,6 +44,7 @@ const Audio = () => {
       img2: podcast1Sm,
     },
     {
+      id: 5,
       title: 'Podcast',
       info: 'Faith in Action',
       text: 'From Soup Kitchens to Mission Fields (Focuses on real-world service projects)',
@@ -94,6 +99,7 @@ const Audio = () => {
       setNumOfCardsExtra(1);
     }
   }, [windowSize]);
+  const [active, setActive] = useState(1);
   return (
     <div className='audio-component'>
       <div className='container'>
@@ -153,6 +159,14 @@ const Audio = () => {
                 onClick={() => handleTranslate('right')}
               />
             </div>
+          </div>
+          <div className='btns'>
+            {testimonials.map((item) => (
+              <div
+                className={`btn ${slideCount + 1 === item.id && 'active'}`}
+                onClick={() => setActive(1)}
+              ></div>
+            ))}
           </div>
         </div>
       </div>

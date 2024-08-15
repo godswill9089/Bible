@@ -37,7 +37,7 @@ const HowWedo = ({ title, description }) => {
               highlight
             />
           </div>
-          <div className={`bg-img-2 carousel-screen-${active}`}>
+          <div className={`bg-img-2 carousel carousel-screen-${active}`}>
             <div className='screens'>
               {active === 1 && (
                 <div className={`screen ${active === 1 && 'active'}`}>
@@ -73,20 +73,20 @@ const HowWedo = ({ title, description }) => {
                 </div>
               )}
             </div>
-            <div className='btns'>
-              <div
-                className={`btn ${active === 1 && 'active'}`}
-                onClick={() => setActive(1)}
-              ></div>
-              <div
-                className={`btn ${active === 2 && 'active'}`}
-                onClick={() => setActive(2)}
-              ></div>
-              <div
-                className={`btn ${active === 3 && 'active'}`}
-                onClick={() => setActive(3)}
-              ></div>
-            </div>
+          </div>
+          <div className='btns'>
+            <div
+              className={`btn ${active === 1 && 'active'}`}
+              onClick={() => setActive(1)}
+            ></div>
+            <div
+              className={`btn ${active === 2 && 'active'}`}
+              onClick={() => setActive(2)}
+            ></div>
+            <div
+              className={`btn ${active === 3 && 'active'}`}
+              onClick={() => setActive(3)}
+            ></div>
           </div>
         </div>
       </div>
