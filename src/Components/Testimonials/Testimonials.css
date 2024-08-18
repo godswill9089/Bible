@@ -126,6 +126,7 @@
 @media screen and (max-width: 600px) {
   .testimonials-component .testimonial-card {
     min-width: 30rem;
+    margin-left: 2.5rem;
     /* min-width: 40rem; */
   }
 }

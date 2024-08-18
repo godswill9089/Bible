@@ -98,3 +98,10 @@
   justify-content: space-around;
   transition: all linear 1s;
 }
+@media screen and (max-width: 600px) {
+  .about-component .carousel .cards {
+    justify-content: center;
+  }
+}
+
+
