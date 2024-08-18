@@ -12,7 +12,7 @@ const HowWedo = ({ title, description }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setActive((prevCount) => (prevCount < 3 ? prevCount + 1 : 1));
-    }, 3000);
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, [active]);

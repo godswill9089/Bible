@@ -106,6 +106,7 @@
   border-radius: 8px;
   background-color: #fff;
   cursor: pointer;
+  margin-top: 3rem;
 }
 .how-we-do-component .btn.active {
   background-color: #ff5240db;

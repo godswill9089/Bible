@@ -1,13 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import './Navbar.css';
 import logo from '../../Assets/tmb logo.png';
 import { FaBars, FaChevronDown } from 'react-icons/fa';
 import { useIcons } from '../../hooks/useIcon';
 import OutsideClickHandler from 'react-outside-click-handler';
+import Lan from '../Lan/Lan';
 
 const Navbar = () => {
-  const { nigeria, china, uk } = useIcons();
+  const { nigeria, china, uk,} = useIcons();
   const [active, setActive] = useState(0);
   const [showCountriesDropdown, setShowCountriesDropdown] = useState(false);
   const location = useLocation();
@@ -308,7 +309,9 @@ const Navbar = () => {
           </div>
           <div className='countries-dropdown-wrapper'>
             {showCountriesDropdown && (
-              <div className='countries-dropdown'>hello</div>
+              <div className='countries-dropdown'>
+               <Lan />
+              </div>
             )}
           </div>
           <OutsideClickHandler
