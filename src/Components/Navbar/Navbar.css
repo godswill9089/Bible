@@ -71,6 +71,7 @@
   justify-content: center;
   z-index: 4;
   column-gap: 2rem;
+  /* background-color: blue; */
 }
 .navbar-component .nav-main .nav-wrapper {
   list-style: none;
@@ -255,6 +256,10 @@
   display: flex;
   align-items: center;
   column-gap: 0.2rem;
+  /* height: -8rem; */
+  /* background-color: green; */
+  cursor: pointer;
+  height: 68.5px;
 }
 .navbar-component .en {
   font-weight: 900;
@@ -394,6 +399,9 @@
   width: 100%;
   position: relative;
   z-index: 3;
+  /* padding: 4rem 0 0; */
+  margin-top: -2rem;
+  /* background-color: blue; */
 }
 
 .navbar-component .countries-dropdown {

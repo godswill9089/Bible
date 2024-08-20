@@ -8,7 +8,7 @@ import OutsideClickHandler from 'react-outside-click-handler';
 import Lan from '../Lan/Lan';
 
 const Navbar = () => {
-  const { nigeria, china, uk,} = useIcons();
+  const { nigeria, china, uk } = useIcons();
   const [active, setActive] = useState(0);
   const [showCountriesDropdown, setShowCountriesDropdown] = useState(false);
   const location = useLocation();
@@ -273,15 +273,16 @@ const Navbar = () => {
                       <img src={china} alt='' className='italy' />
                       <img src={uk} alt='' className='uk' />
                     </div>
-                    <div className='lang'>
+                    <div
+                      className='lang'
+                      onMouseEnter={() => setShowCountriesDropdown(true)}
+                      onMouseLeave={() => setShowCountriesDropdown(false)}
+                    >
                       <div className='en'>
                         <p>En</p>
                       </div>
                       <div className='icon'>
-                        <FaChevronDown
-                          onMouseEnter={() => setShowCountriesDropdown(true)}
-                          onMouseLeave={() => setShowCountriesDropdown(false)}
-                        />
+                        <FaChevronDown />
                       </div>
                     </div>
                   </div>
@@ -307,10 +308,14 @@ const Navbar = () => {
               </button>
             </div>
           </div>
-          <div className='countries-dropdown-wrapper'>
+          <div
+            className='countries-dropdown-wrapper'
+            onMouseEnter={() => setShowCountriesDropdown(true)}
+            onMouseLeave={() => setShowCountriesDropdown(false)}
+          >
             {showCountriesDropdown && (
               <div className='countries-dropdown'>
-               <Lan />
+                <Lan />
               </div>
             )}
           </div>
