@@ -6,11 +6,14 @@ import { FaBars, FaChevronDown } from 'react-icons/fa';
 import { useIcons } from '../../hooks/useIcon';
 import OutsideClickHandler from 'react-outside-click-handler';
 import Lan from '../Lan/Lan';
+import PopUpItems from '../Pop-up/PopUpItem';
 
 const Navbar = () => {
   const { nigeria, china, uk } = useIcons();
   const [active, setActive] = useState(0);
   const [showCountriesDropdown, setShowCountriesDropdown] = useState(false);
+  const [showAmNewHereDropdown1, setShowAmNewHereDropdown1] = useState(false);
+  const [showAmNewHereDropdown2, setShowAmNewHereDropdown2] = useState(false);
   const location = useLocation();
   const { logoWhite } = useIcons();
   const navigate = useNavigate();
@@ -303,6 +306,7 @@ const Navbar = () => {
                 className={`nav-btn ${
                   location.pathname !== '/' && 'nav-btn-other'
                 }`}
+                onClick={() => setShowAmNewHereDropdown1(true)}
               >
                 Am New Here
               </button>
@@ -317,6 +321,17 @@ const Navbar = () => {
               <div className='countries-dropdown'>
                 <Lan />
               </div>
+            )}
+            {showAmNewHereDropdown1 && (
+              <>
+                <OutsideClickHandler
+                  onOutsideClick={(e) => setShowAmNewHereDropdown1(false)}
+                >
+                  <div className='countries-dropdown'>
+                    <PopUpItems />
+                  </div>
+                </OutsideClickHandler>
+              </>
             )}
           </div>
           <OutsideClickHandler
