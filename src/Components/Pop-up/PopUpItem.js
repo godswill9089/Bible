@@ -1,6 +1,7 @@
 import React from 'react';
-import VolunteerCard from './VolunteerCard';
-import './PopUpItems.css';
+// import VolunteerCard from './VolunteerCard';
+import './PopUpItem.css';
+import PopUp from './PopUp';
 
 const PopUpItems = () => {
     const volunteerItems = [
@@ -31,8 +32,8 @@ const PopUpItems = () => {
 
     return (
         <div className="volunteer-section">
-            <VolunteerCard title="Volunteer" items={volunteerItems} />
-            <VolunteerCard title="Onsite" items={onsiteItems} />
+            <PopUp title="Volunteer" items={volunteerItems} />
+            <PopUp title="Onsite" items={onsiteItems} />
         </div>
     );
 };
