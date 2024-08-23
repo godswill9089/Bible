@@ -1,16 +1,10 @@
 import React, { useState } from 'react';
-import { useIcons } from '../../hooks/useIcon';
 import './SignUpFormDropdown.css';
-import Info from '../../Views/Atoms/Info/Info';
-import Info2 from '../../Views/Atoms/Info2/Info2';
 import FormGroup from '../../Views/Atoms/FormGroup/FormGroup';
-import { FaCheck } from 'react-icons/fa';
 import Check from '../../Views/Atoms/Check/Check';
 import ButtonPill from '../../Views/Molecules/ButtonPill/ButtonPill';
 
-const SignUpFormDropdown = () => {
-  const { Translate } = useIcons();
-
+const SignUpFormDropdown = ({ setShowAmNewHereDropdown2 }) => {
   const [formData, setFormData] = useState({
     full_name: '',
     email: '',
@@ -23,7 +17,6 @@ const SignUpFormDropdown = () => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-  console.log(formData);
 
   return (
     <div className='sign-up-form-dropdown-wrapper'>
@@ -241,10 +234,7 @@ const SignUpFormDropdown = () => {
             <div className='btn'>
               <ButtonPill
                 onClick={() => {
-                  window.open(
-                    'https://youtu.be/z5dV2v1Cvu4?si=u753Y5PnTcqKwRnV',
-                    '_blank'
-                  );
+                  setShowAmNewHereDropdown2(false);
                 }}
                 text={'Submit'}
               />

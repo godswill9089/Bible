@@ -4,6 +4,7 @@
   min-height: 9.3rem;
   /* height: 11.3rem; */
   width: 100%;
+  z-index: 888;
   /* display: none; */
   /* z-index: 99999; */
 }
@@ -375,7 +376,7 @@
 
 /* nav btn */
 .navbar-component .nav-btn-wrapper {
-  z-index: 3;
+  z-index: 5;
 }
 @media screen and (max-width: 600px) {
   .navbar-component .nav-btn-wrapper {

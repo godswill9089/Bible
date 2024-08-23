@@ -15,7 +15,7 @@ const Navbar = () => {
   const { nigeria, china, uk } = useIcons();
   const [active, setActive] = useState(0);
   const [showCountriesDropdown, setShowCountriesDropdown] = useState(false);
-  const [showAmNewHereDropdown1, setShowAmNewHereDropdown1] = useState(true);
+  const [showAmNewHereDropdown1, setShowAmNewHereDropdown1] = useState(false);
   const [showAmNewHereDropdown2, setShowAmNewHereDropdown2] = useState(false);
   const location = useLocation();
   const { logoWhite } = useIcons();
@@ -359,7 +359,9 @@ const Navbar = () => {
               <OutsideClickHandler
                 onOutsideClick={(e) => setShowAmNewHereDropdown2(false)}
               >
-                <SignUpFormDropdown />
+                <SignUpFormDropdown
+                  setShowAmNewHereDropdown2={setShowAmNewHereDropdown2}
+                />
               </OutsideClickHandler>
             </>
           )}

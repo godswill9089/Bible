@@ -1,17 +1,32 @@
 .volunteer-dropdown-wrapper {
   position: absolute;
-  top: 1rem;
+  top: 7rem;
   left: 0;
   width: 100%;
   background-color: #fff;
   padding: 3rem 7rem;
+  z-index: 4;
 }
 .volunteer-dropdown-wrapper .sign-up-form-dropdown {
   display: flex;
+  column-gap: 4rem;
   padding: 20px;
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
+}
+
+.volunteer-dropdown-wrapper .img-con {
+  width: 32.8rem;
+  height: 32.8rem;
+  min-width: 32.8rem;
+  min-height: 32.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.volunteer-dropdown-wrapper .other {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  flex: 1 1 0%;
 }
 
 .volunteer-dropdown-wrapper .con {
