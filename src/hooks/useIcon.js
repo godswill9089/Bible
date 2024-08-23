@@ -41,6 +41,7 @@ import signUpImgAbout from '../Assets/Images/sign-up-about.png';
 import team1 from '../Assets/Images/team-1.svg';
 import team2 from '../Assets/Images/team-2.svg';
 import Translate from '../Assets/Images/TARANSLATE.png';
+import volunteer from '../Assets/Images/volunteer.svg';
 
 export const useIcons = () => {
   return {
@@ -86,5 +87,6 @@ export const useIcons = () => {
     team1,
     team2,
     Translate,
+    volunteer,
   };
 };

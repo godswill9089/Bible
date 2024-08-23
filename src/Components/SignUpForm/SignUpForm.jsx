@@ -1,7 +1,7 @@
 import React from 'react';
 import './FormRadio.css';
 
-const SignUpForm = ({ label, name, options }) => {
+const SignUpForm2 = ({ label, name, options }) => {
     return (
         <div className="form-radio">
             <p>{label}</p>
@@ -17,4 +17,4 @@ const SignUpForm = ({ label, name, options }) => {
     );
 };
 
-export default SignUpForm;
+export default SignUpForm2;

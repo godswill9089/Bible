@@ -7,12 +7,15 @@ import { useIcons } from '../../hooks/useIcon';
 import OutsideClickHandler from 'react-outside-click-handler';
 import Lan from '../Lan/Lan';
 import PopUpItems from '../Pop-up/PopUpItem';
+import SignUpFor from '../SignUpForm/SignUpFor';
+import SignUpFormDropdown from '../SignUpFormDropdown/SignUpFormDropdown';
+import VoulnteerDropdown from '../VoulnteerDropdown/VoulnteerDropdown';
 
 const Navbar = () => {
   const { nigeria, china, uk } = useIcons();
   const [active, setActive] = useState(0);
   const [showCountriesDropdown, setShowCountriesDropdown] = useState(false);
-  const [showAmNewHereDropdown1, setShowAmNewHereDropdown1] = useState(false);
+  const [showAmNewHereDropdown1, setShowAmNewHereDropdown1] = useState(true);
   const [showAmNewHereDropdown2, setShowAmNewHereDropdown2] = useState(false);
   const location = useLocation();
   const { logoWhite } = useIcons();
@@ -32,6 +35,8 @@ const Navbar = () => {
       navMainMobileContainer.current?.getBoundingClientRect().height;
     setNavMainMobileContainerHeight(navMainMobileContainerHeight);
   }, []);
+  console.log('showAmNewHereDropdown1', showAmNewHereDropdown1);
+  console.log('showAmNewHereDropdown2', showAmNewHereDropdown2);
 
   return (
     <div
@@ -322,18 +327,42 @@ const Navbar = () => {
                 <Lan />
               </div>
             )}
-            {showAmNewHereDropdown1 && (
-              <>
-                <OutsideClickHandler
-                  onOutsideClick={(e) => setShowAmNewHereDropdown1(false)}
-                >
-                  <div className='countries-dropdown'>
-                    <PopUpItems />
-                  </div>
-                </OutsideClickHandler>
-              </>
-            )}
           </div>
+          {/* {showAmNewHereDropdown1 && (
+            <>
+              <OutsideClickHandler
+                onOutsideClick={(e) => setShowAmNewHereDropdown1(false)}
+              >
+                <div className='countries-dropdown'>
+                  <PopUpItems
+                    setShowAmNewHereDropdown1={setShowAmNewHereDropdown1}
+                    setShowAmNewHereDropdown2={setShowAmNewHereDropdown2}
+                  />
+                </div>
+              </OutsideClickHandler>
+            </>
+          )} */}
+          {showAmNewHereDropdown1 && (
+            <>
+              <OutsideClickHandler
+                onOutsideClick={(e) => setShowAmNewHereDropdown1(false)}
+              >
+                <VoulnteerDropdown
+                  setShowAmNewHereDropdown1={setShowAmNewHereDropdown1}
+                  setShowAmNewHereDropdown2={setShowAmNewHereDropdown2}
+                />
+              </OutsideClickHandler>
+            </>
+          )}
+          {showAmNewHereDropdown2 && (
+            <>
+              <OutsideClickHandler
+                onOutsideClick={(e) => setShowAmNewHereDropdown2(false)}
+              >
+                <SignUpFormDropdown />
+              </OutsideClickHandler>
+            </>
+          )}
           <OutsideClickHandler
             onOutsideClick={(e) => {
               if (!e.target.closest('.navbar-component')) {

@@ -1,5 +1,5 @@
 import React from 'react';
-import './FormInput.css';
+// import './FormInput.css';
 
 const SignUpForm = ({ label, type = 'text', name, placeholder }) => {
     return (

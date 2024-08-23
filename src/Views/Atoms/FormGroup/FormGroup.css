@@ -1,0 +1,16 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+.form-group label {
+}
+.form-group input {
+  background-color: #d9d9d9;
+  height: 5rem;
+  border-radius: 999rem;
+  border: none;
+  outline: none;
+  padding: 0 2rem;
+  font-size: 1.4rem;
+}

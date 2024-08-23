@@ -1,0 +1,14 @@
+.check-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #fff;
+  background-color: #cc2f9e;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
