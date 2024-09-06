@@ -15,11 +15,7 @@ const HeroGeneral = ({ title }) => {
             <div className='info-wrapper'>
               <TitleHero text={title} />
               <InfoHero
-                text="In a world filled with words, The Moving Bible exists to ignite
-                action. We believe that faith in Jesus Christ shouldn't be
-                confined to dusty pages or Sunday sermons. It's a vibrant force
-                meant to transform hearts and inspire positive change in the
-                world around us"
+                text="We aim to transform individuals and families through God’s word written in the bible, which  transcends to transformation in our society, nations and the world at large. The moving bible shall serve as a movement to transform hearts and inspire positive change in the world around us."
               />
             </div>
             <img src={productsBannerIcon} alt='' className='img-1' />
