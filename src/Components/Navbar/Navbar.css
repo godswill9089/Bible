@@ -4,9 +4,7 @@
   min-height: 9.3rem;
   /* height: 11.3rem; */
   width: 100%;
-  z-index: 888;
-  /* display: none; */
-  /* z-index: 99999; */
+  /* z-index: 888; */
 }
 .navbar-component-other {
   /* padding: 4rem 0 0; */
@@ -37,9 +35,10 @@
   justify-content: space-between;
 }
 .navbar-component .logo-wrapper {
-  z-index: 3;
+  z-index: 4;
   width: 26.9rem;
   height: 5.4rem;
+  cursor: pointer;
 }
 @media screen and (max-width: 600px) {
   .navbar-component .logo-wrapper {
@@ -70,10 +69,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 4;
+  z-index: 5;
   column-gap: 2rem;
   /* background-color: blue; */
 }
+
 .navbar-component .nav-main .nav-wrapper {
   list-style: none;
   margin-top: 1rem;
@@ -119,6 +119,7 @@
 }
 .navbar-component .dropdown-links-wrapper {
   position: relative;
+  z-index: 99999 !important;
 }
 .navbar-component .dropdown-links-con {
   /* background-color: green; */
@@ -127,6 +128,7 @@
   top: 0;
   width: 20rem;
   padding: 1rem 0 0;
+  z-index: 99;
 }
 .navbar-component .dropdown-links {
   /* margin-top: 5px; */
@@ -138,6 +140,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
+  z-index: 999;
 }
 .navbar-component .dropdown-links-wrapper.about-us .dropdown-links {
   background-color: #3c0cec8f;

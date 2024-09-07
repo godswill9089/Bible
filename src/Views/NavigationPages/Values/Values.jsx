@@ -12,7 +12,12 @@ const Values = () => {
   return (
     <div className=''>
       {/* temp components, update when design is available */}
-      <HeroGeneral title='Values' />
+      <HeroGeneral
+        title='Values'
+        info={
+          '…Don’t show me, just your bible. Show me your life transformed by the word of God. '
+        }
+      />
       <Become />
       <ReadyToJoin />
       <SignUp

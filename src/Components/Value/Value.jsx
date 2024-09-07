@@ -32,7 +32,7 @@ const Value = () => {
         <div className='container'>
           <div className='content'>
             <section className='values-section'>
-              <h2>Our Values</h2>
+              <h2>Core Values</h2>
               <div className='values-list'>
                 {values.map((value, index) => (
                   <div key={index} className='value-item'>

@@ -41,6 +41,8 @@
   }
 }
 .value-component .value-item {
+  width: 29rem;
+  /* background-color: green; */
 }
 .value-component .value-item h3 {
   font-size: 2.3rem;
@@ -55,7 +57,8 @@
 }
 .value-component .value-item p {
   font-size: 1.4rem;
-  font-weight: 100 !important;
+  font-weight: 400 !important;
   line-height: 2rem;
+  font-family: 'Outfit', sans-serif;
   /* display: none; */
 }

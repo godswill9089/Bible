@@ -22,6 +22,8 @@ import Frames from './Views/NavigationPages/Frames/Frames';
 import Customization from './Views/NavigationPages/Customization/Customization';
 import Volunteer from './Views/NavigationPages/Volunteer/Volunteer';
 import Onsite from './Views/NavigationPages/Onsite/Onsite';
+import Identity from './Views/NavigationPages/Identity/Identity';
+import Donate from './Views/Pages/Donate/Donate';
 
 function App() {
   const children = [
@@ -40,6 +42,10 @@ function App() {
     {
       path: '/home/mission',
       element: <Mission />,
+    },
+    {
+      path: '/home/identity',
+      element: <Identity />,
     },
     {
       path: '/home/values',
@@ -120,6 +126,18 @@ function App() {
     {
       path: '/services/onsite',
       element: <Onsite />,
+    },
+    {
+      path: '/donate',
+      element: <Donate />,
+    },
+    {
+      path: '/donate/donate-now',
+      element: <Donate />,
+    },
+    {
+      path: '/donate/why-donate',
+      element: <Donate />,
     },
   ];
   const router = createBrowserRouter([

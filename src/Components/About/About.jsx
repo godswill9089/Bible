@@ -10,49 +10,30 @@ const About = () => {
   const { windowSize } = useWindowSize();
   const cards = [
     {
-      title: 'Faith in action',
+      title: 'Christ-centered living',
       description:
-        'We Believe In Putting Our Beliefs Into Practice, Serving Others, And Spreading The Message Of Love And Hope.',
+        'We strive to embody the teachings of Jesus Christ in our thoughts, words, and deeds.',
+    },
+    {
+      title: 'Transforming Lives',
+      description:
+        'We Believe In The Power Of The Gospel To Empower Individuals And Create A Ripple Effect Of Positive Change.',
+    },
+    {
+      title: 'Excellence in the Spirit',
+      description:
+        'Our work/walk daily with Christ Jesus is a work towards excellence as He helps us create a better version of ourselves daily, through transformation. Our actions shall emulate and exhibit excellence in truth and in Spirit',
     },
     {
       title: 'Faith in action',
       description:
         'We Believe In Putting Our Beliefs Into Practice, Serving Others, And Spreading The Message Of Love And Hope.',
     },
+
     {
       title: 'Spreading The Gospel',
       description:
         'Sharing The Good News Of Jesus Christ With Every Corner Of The Earth Is At The Heart Of Our Mission.',
-    },
-    {
-      title: 'Christ-Centered Living',
-      description:
-        'We Strive To Embody The Teachings Of Jesus Christ In Our Thoughts, Words, And Deeds.',
-    },
-    {
-      title: 'Transforming Lives5',
-      description:
-        'We Believe In The Power Of The Gospel To Empower Individuals And Create A Ripple Effect Of Positive Change.',
-    },
-    {
-      title: 'Transforming Lives6',
-      description:
-        'We Believe In The Power Of The Gospel To Empower Individuals And Create A Ripple Effect Of Positive Change.',
-    },
-    {
-      title: 'Transforming Lives7',
-      description:
-        'We Believe In The Power Of The Gospel To Empower Individuals And Create A Ripple Effect Of Positive Change.',
-    },
-    {
-      title: 'Transforming Lives8',
-      description:
-        'We Believe In The Power Of The Gospel To Empower Individuals And Create A Ripple Effect Of Positive Change.',
-    },
-    {
-      title: 'Transforming Lives9',
-      description:
-        'We Believe In The Power Of The Gospel To Empower Individuals And Create A Ripple Effect Of Positive Change.',
     },
   ];
 
@@ -110,12 +91,13 @@ const About = () => {
         <div className='details'>
           <Info
             text={
-              'Welcome to The Moving Bible! We are a passionate community dedicated  to bringing the gospel of Jesus Christ to life. We believe that faith should not just be words, but a driving force for positive change in the world.'
+              'We are a passionate community with dedication towards bringing the gospel of Jesus Christ to all people of the earth. We believe that faith in God should not just be only words but actions as well, thereby providing a driving force for positive change in the world.'
             }
           />
+          <h1 className='title-vision'>Vision</h1>
           <Info
             text={
-              'Our vision is ambitious: to inspire and equip 1 billion souls to live Christ-like lives in the next ten years. Imagine a world where  the teachings of the Bible are reflected in everyday actions, transforming communities and individuals.'
+              'We envision a future where at least 1 billion people across 195 countries are living out the teachings of God as it is written in the Holy Bible, in the next 10 years. We would actively seek a world, through the empowerment of  God Almighty where Christ-like love, compassion and forgiveness becomes the key cornerstones of people’s everyday actions, leading to stronger communities and individuals empowered by their faith in God.'
             }
           />
         </div>

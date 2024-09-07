@@ -42,6 +42,10 @@ import team1 from '../Assets/Images/team-1.svg';
 import team2 from '../Assets/Images/team-2.svg';
 import Translate from '../Assets/Images/TARANSLATE.png';
 import volunteer from '../Assets/Images/volunteer.svg';
+import bannerHome from '../Assets/Images/banner-home.svg';
+import ringsHome from '../Assets/Images/rings-home.svg';
+import ringsHome2 from '../Assets/Images/rings-home-2.svg';
+import theMovingBibleHome from '../Assets/Images/the-moving-bible-home.svg';
 
 export const useIcons = () => {
   return {
@@ -88,5 +92,9 @@ export const useIcons = () => {
     team2,
     Translate,
     volunteer,
+    bannerHome,
+    ringsHome,
+    ringsHome2,
+    theMovingBibleHome,
   };
 };

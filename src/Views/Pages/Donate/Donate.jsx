@@ -6,15 +6,15 @@ import SignUp from '../../../Components/Signup/SignUp';
 import Footer from '../../../Components/Footer/Footer';
 import { useIcons } from '../../../hooks/useIcon';
 
-const Mission = () => {
+const Donate = () => {
   const { signUpImgHome } = useIcons();
 
   return (
     <div className=''>
       {/* temp components, update when design is available */}
       <HeroGeneral
-        title='Mission'
-        info='We aim to transform individuals and families through God’s word written in the bible, which transcends to transformation in our society, nations and the world at large. The moving bible shall serve as a movement to transform hearts and inspire positive change in the world around us.'
+        title='Donate'
+        info='To be able use the resources to reach the teaming population who have heard the gospel of Jesus Christ. We intend utilize goodwill donations as low $1 to first provide assistance to rural communities with no access to constantly hear the word of God. Gospel materials such as bible, clothing, frames and other products would also be donated to these vulnerable people free through the donations received. It is also an opportunity to partake in the kingdom works and active the blessings that comes from this movement for God.'
       />
       <Become />
       <ReadyToJoin />
@@ -27,4 +27,4 @@ const Mission = () => {
   );
 };
 
-export default Mission;
+export default Donate;

@@ -15,7 +15,6 @@ import './AboutUs.css';
 
 const AboutUs = () => {
   const { signUpImgAbout } = useIcons();
-
   return (
     <>
       <HeroAboutUs />

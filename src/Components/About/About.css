@@ -41,6 +41,10 @@
     width: 100%;
   }
 }
+.about-component .title-vision {
+  /* background-color: green; */
+  text-decoration: underline;
+}
 
 .about-component .btn-about-wrapper {
   display: flex;
@@ -103,5 +107,3 @@
     justify-content: center;
   }
 }
-
-

@@ -89,7 +89,7 @@ const Navbar = () => {
                                 Mission
                               </li>
                               <li onClick={() => navigate('/home/identity')}>
-                                identity
+                                Identity
                               </li>
                               <li onClick={() => navigate('/home/values')}>
                                 Values
@@ -270,7 +270,45 @@ const Navbar = () => {
                         </div>
                       )}
                     </li>
+                    <li
+                      className='nav-wrapper'
+                      onMouseOver={() => setActive(6)}
+                      onMouseLeave={() => setActive(0)}
+                    >
+                      <div
+                        onClick={() => navigate('/donate')}
+                        className={`nav-text ${
+                          location.pathname !== '/' && 'nav-text-other'
+                        } ${
+                          (location.pathname.includes('/donate') ||
+                            active === 6) &&
+                          'active'
+                        }`}
+                      >
+                        Donate
+                        {/* <FaChevronDown className='icon' /> */}
+                      </div>
+                      {active === 6 && (
+                        <div className='dropdown-links-wrapper'>
+                          <div className='dropdown-links-con'>
+                            <div className='dropdown-links'>
+                              <li
+                                onClick={() => navigate('/donate/donate-now')}
+                              >
+                                Donate
+                              </li>
+                              <li
+                                onClick={() => navigate('/donate/why-donate')}
+                              >
+                                Why donate
+                              </li>
+                            </div>
+                          </div>
+                        </div>
+                      )}
+                    </li>
                   </ul>
+                  {/* <button className='donate'>Donate</button> */}
                   <div
                     className={`country-wrapper ${
                       location.pathname !== '/' && 'country-wrapper-other'

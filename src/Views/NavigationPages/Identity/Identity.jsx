@@ -12,7 +12,7 @@ const Identity = () => {
   return (
     <div className=''>
       {/* temp components, update when design is available */}
-      <HeroGeneral title='Mission' />
+      <HeroGeneral title='Identity' />
       <Become />
       <ReadyToJoin />
       <SignUp
