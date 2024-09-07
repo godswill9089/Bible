@@ -10,8 +10,16 @@ import PopUpItems from '../Pop-up/PopUpItem';
 import SignUpFor from '../SignUpForm/SignUpFor';
 import SignUpFormDropdown from '../SignUpFormDropdown/SignUpFormDropdown';
 import VoulnteerDropdown from '../VoulnteerDropdown/VoulnteerDropdown';
+import { useDispatch, useSelector } from 'react-redux';
+import { setShowSignInFormDropdown } from '../../Features/sign-in/sign-in_slice';
+import SignInFormDropdown from '../SignInFormDropdown/SignInFormDropdown';
 
 const Navbar = () => {
+  const { showSignInFormDropdown } = useSelector((state) => state.signIn);
+  console.log('showSignInFormDropdown', showSignInFormDropdown);
+
+  const dispatch = useDispatch();
+
   const { nigeria, china, uk } = useIcons();
   const [active, setActive] = useState(0);
   const [showCountriesDropdown, setShowCountriesDropdown] = useState(false);
@@ -286,7 +294,7 @@ const Navbar = () => {
                         }`}
                       >
                         Donate
-                        {/* <FaChevronDown className='icon' /> */}
+                        <FaChevronDown className='icon' />
                       </div>
                       {active === 6 && (
                         <div className='dropdown-links-wrapper'>
@@ -308,7 +316,6 @@ const Navbar = () => {
                       )}
                     </li>
                   </ul>
-                  {/* <button className='donate'>Donate</button> */}
                   <div
                     className={`country-wrapper ${
                       location.pathname !== '/' && 'country-wrapper-other'
@@ -398,6 +405,19 @@ const Navbar = () => {
                 onOutsideClick={(e) => setShowAmNewHereDropdown2(false)}
               >
                 <SignUpFormDropdown
+                  setShowAmNewHereDropdown2={setShowAmNewHereDropdown2}
+                />
+              </OutsideClickHandler>
+            </>
+          )}
+          {showSignInFormDropdown && (
+            <>
+              <OutsideClickHandler
+                onOutsideClick={() =>
+                  dispatch(setShowSignInFormDropdown(false))
+                }
+              >
+                <SignInFormDropdown
                   setShowAmNewHereDropdown2={setShowAmNewHereDropdown2}
                 />
               </OutsideClickHandler>

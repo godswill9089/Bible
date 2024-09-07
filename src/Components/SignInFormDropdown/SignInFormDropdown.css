@@ -1,0 +1,101 @@
+.sign-in-form-dropdown-wrapper {
+  position: absolute;
+  top: 7rem;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 3rem 7rem;
+  z-index: 4;
+}
+.sign-in-form-dropdown-wrapper .sign-in-form-dropdown {
+  display: flex;
+  padding: 20px;
+  /* margin-top: 4rem; */
+}
+
+.sign-in-form-dropdown-wrapper .details-form {
+  /* display: flex; */
+  width: 50rem;
+  max-width: 50rem;
+  border-right: 2px solid #3c0cec8f;
+  padding: 0 2.4rem;
+}
+.sign-in-form-dropdown-wrapper .details-form h1 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 120%;
+  margin-bottom: 1rem;
+}
+.sign-in-form-dropdown-wrapper .details-form p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  /* letter-spacing: .5px; */
+  line-height: 120%;
+  margin-bottom: 3rem;
+}
+.sign-in-form-dropdown-wrapper form {
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+.sign-in-form-dropdown-wrapper .other-form .title {
+  color: #3c0cec;
+  font-size: 2.4rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.sign-in-form-dropdown-wrapper .other-form .info {
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+.sign-in-form-dropdown-wrapper .other-form {
+  padding: 0 2rem;
+  /* border-bottom: 2px solid #3c0cec; */
+}
+.sign-in-form-dropdown-wrapper .other-form .wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem 1rem;
+  border-bottom: 2px solid #3c0cec;
+  min-height: 30rem;
+  /* column-gap: 4rem; */
+}
+.sign-in-form-dropdown-wrapper .other-form .wrapper .availability {
+  width: 80%;
+}
+.sign-in-form-dropdown-wrapper .how-often-wrapper {
+  margin-bottom: 2rem;
+}
+.sign-in-form-dropdown-wrapper .btns {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.sign-in-form-dropdown-wrapper .btns .btn {
+  display: flex;
+  column-gap: 0.5rem;
+  font-weight: 300;
+}
+.sign-in-form-dropdown-wrapper .are-you {
+  margin-bottom: 1rem;
+}
+.sign-in-form-dropdown-wrapper .other-form .wrapper .skills {
+  width: 100%;
+}
+.sign-in-form-dropdown-wrapper .other-form .thank-you {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10rem;
+  margin-top: 1rem;
+}
+.sign-in-form-dropdown-wrapper .other-form .thank-you .btn {
+  min-width: 17rem;
+  display: block;
+}
+.sign-in-form-dropdown-wrapper .other-form .thank-you .details {
+}
