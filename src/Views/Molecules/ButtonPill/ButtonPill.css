@@ -1,6 +1,7 @@
 .btn-pill-component-wrapper {
   /* display: inline-block; */
   display: inline-flex;
+  margin-top: 2rem;
 }
 .btn-pill-component {
   display: flex;
