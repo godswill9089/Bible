@@ -10,7 +10,7 @@ import CardPodcast from '../../Views/Molecules/CardPodcast/CardPodcast';
 const Audio = () => {
   const { podcast1, podcast1Sm, podcast2, podcast2Sm, podcast3, podcast3Sm } =
     useIcons();
-  const testimonials = [
+  const [cards, setCards] = useState([
     {
       id: 1,
       title: 'Podcast',
@@ -51,55 +51,54 @@ const Audio = () => {
       img1: podcast2,
       img2: podcast2Sm,
     },
-  ];
+  ]);
 
   // new
   const { windowSize } = useWindowSize();
 
   const cardContainer = useRef(null);
   const numOfCardsToDisplay = 3;
-  const numOfCardsTotal = testimonials.length;
-  const columnGap = 30;
-  const [slideCount, setSlideCount] = useState(0);
+  const numOfCardsTotal = cards.length;
   const [numOfCardsExtra, setNumOfCardsExtra] = useState(1);
-
+  const [cardsOriginalLength, setCardsOriginalLength] = useState(0);
+  useEffect(() => {
+    setCardsOriginalLength(cards.length);
+  }, []);
+  const columnGap = 30;
   const [cardWidth, setCardWidth] = useState(0);
   const [translateSize, setTranslateSize] = useState(0);
   const [direction, setDirection] = useState('right');
+  const [slideCount, setSlideCount] = useState(0);
 
   const handleTranslate = (direction) => {
+    const cardsTemp = [...cards];
     if (direction === 'left') {
-      if (slideCount === 0) {
-        // setTranslateSize(200);
-      } else {
+      if (slideCount > 0) {
+        let lastItemCopy = { ...cardsTemp[cardsTemp.length - 1] };
+        cardsTemp.pop(lastItemCopy);
         setTranslateSize(translateSize - columnGap - cardWidth);
         setSlideCount(slideCount - 1);
       }
     } else {
-      if (
-        slideCount ===
-        numOfCardsTotal + numOfCardsExtra - numOfCardsToDisplay
-      ) {
-        // setTranslateSize(0);
-      } else {
-        setTranslateSize(translateSize + columnGap + cardWidth);
-        setSlideCount(slideCount + 1);
-      }
+      let firstItemCopy = { ...cardsTemp[slideCount] };
+      cardsTemp.push(firstItemCopy);
+      setTranslateSize(translateSize + columnGap + cardWidth);
+      setSlideCount(slideCount + 1);
     }
+    setCards(cardsTemp);
     setDirection(direction);
   };
   useEffect(() => {
     const cardWidth = cardContainer.current?.getBoundingClientRect().width;
     setCardWidth(cardWidth);
   }, []);
-  useEffect(() => {
-    if (windowSize.width <= 1300) {
-      setNumOfCardsExtra(2);
-    } else {
-      setNumOfCardsExtra(1);
-    }
-  }, [windowSize]);
+
   const [active, setActive] = useState(1);
+  console.log('slideCount', slideCount);
+  console.log('cardsOriginalLength', cardsOriginalLength);
+  console.log('cards.length', cards.length);
+  console.log(' % ', slideCount % cards.length);
+
   return (
     <div className='audio-component'>
       <div className='container'>
@@ -127,7 +126,7 @@ const Audio = () => {
                 className='cards'
                 style={{ transform: `translateX(-${translateSize}px)` }}
               >
-                {testimonials.map((item, index) => (
+                {cards.map((item, index) => (
                   <div key={index} className='cards-con' ref={cardContainer}>
                     {/* <CardBook  book={book} /> */}
                     <CardPodcast item={item} />
@@ -161,9 +160,14 @@ const Audio = () => {
             </div>
           </div>
           <div className='btns'>
-            {testimonials.map((item) => (
+            {Array.from({ length: cardsOriginalLength }).map((item, index) => (
               <div
-                className={`btn ${slideCount + 1 === item.id && 'active'}`}
+                className={`btn ${
+                  slideCount < Math.ceil(cardsOriginalLength / 2)
+                    ? slideCount === index && 'active'
+                    : index + 1 === Math.ceil(cardsOriginalLength / 2) &&
+                      'active'
+                }`}
                 onClick={() => setActive(1)}
               ></div>
             ))}

@@ -42,29 +42,29 @@ const About = () => {
   const cardContainer = useRef(null);
   const numOfCardsToDisplay = 4;
   const numOfCardsTotal = cards.length;
-  const columnGap = 30;
 
+  const columnGap = 30;
   const [cardWidth, setCardWidth] = useState(0);
   const [translateSize, setTranslateSize] = useState(0);
   const [direction, setDirection] = useState('right');
   const [slideCount, setSlideCount] = useState(0);
 
   const handleTranslate = (direction) => {
-    const array = [...cards];
+    const cardsTemp = [...cards];
     if (direction === 'left') {
       if (slideCount > 0) {
-        let lastItemCopy = { ...array[array.length - 1] };
-        array.pop(lastItemCopy);
+        let lastItemCopy = { ...cardsTemp[cardsTemp.length - 1] };
+        cardsTemp.pop(lastItemCopy);
         setTranslateSize(translateSize - columnGap - cardWidth);
         setSlideCount(slideCount - 1);
       }
     } else {
-      let firstItemCopy = { ...array[slideCount] };
-      array.push(firstItemCopy);
+      let firstItemCopy = { ...cardsTemp[slideCount] };
+      cardsTemp.push(firstItemCopy);
       setTranslateSize(translateSize + columnGap + cardWidth);
       setSlideCount(slideCount + 1);
     }
-    setCards(array);
+    setCards(cardsTemp);
     setDirection(direction);
   };
 
