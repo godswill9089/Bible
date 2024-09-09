@@ -57,7 +57,7 @@
 }
 .about-component .carousel-btn.hidden {
   /* display: none; */
-  /* visibility: hidden; */
+  visibility: hidden;
 }
 
 .card-container {
@@ -101,9 +101,10 @@
   column-gap: 3rem;
   justify-content: space-around;
   transition: all linear 1s;
+  /* background-color: green; */
 }
 @media screen and (max-width: 600px) {
   .about-component .carousel .cards {
-    justify-content: center;
+    /* justify-content: center; */
   }
 }

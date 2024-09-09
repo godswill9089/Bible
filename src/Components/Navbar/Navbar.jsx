@@ -16,7 +16,7 @@ import SignInFormDropdown from '../SignInFormDropdown/SignInFormDropdown';
 
 const Navbar = () => {
   const { showSignInFormDropdown } = useSelector((state) => state.signIn);
-  console.log('showSignInFormDropdown', showSignInFormDropdown);
+  // console.log('showSignInFormDropdown', showSignInFormDropdown);
 
   const dispatch = useDispatch();
 
@@ -43,8 +43,10 @@ const Navbar = () => {
       navMainMobileContainer.current?.getBoundingClientRect().height;
     setNavMainMobileContainerHeight(navMainMobileContainerHeight);
   }, []);
-  console.log('showAmNewHereDropdown1', showAmNewHereDropdown1);
-  console.log('showAmNewHereDropdown2', showAmNewHereDropdown2);
+
+  
+  // console.log('showAmNewHereDropdown1', showAmNewHereDropdown1);
+  // console.log('showAmNewHereDropdown2', showAmNewHereDropdown2);
 
   return (
     <div
