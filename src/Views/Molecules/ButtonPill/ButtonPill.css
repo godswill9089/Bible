@@ -1,7 +1,8 @@
 .btn-pill-component-wrapper {
   /* display: inline-block; */
   display: inline-flex;
-  margin-top: 2rem;
+  /* add this margin top on the div wrapping the ButtonPill component of the file that you want it, this margint top here is affecting it everywhere on the app */
+  /* margin-top: 2rem; */
 }
 .btn-pill-component {
   display: flex;

@@ -11,25 +11,7 @@ import Info from '../../Views/Atoms/Info/Info';
 import useWindowSize from '../../hooks/useWindowSize';
 
 const Testimonials = () => {
-  // const [translateSize, setTranslateSize] = useState(0);
-  // const [direction, setDirection] = useState('');
-  // const handleTranslate = (direction) => {
-  //   if (direction === 'left') {
-  //     if (translateSize === 0) {
-  //       setTranslateSize(210);
-  //     } else {
-  //       setTranslateSize(translateSize - 42);
-  //     }
-  //   } else {
-  //     if (translateSize === 210) {
-  //       setTranslateSize(0);
-  //     } else {
-  //       setTranslateSize(translateSize + 42);
-  //     }
-  //   }
-  //   setDirection(direction);
-  // };
-  const testimonials = [
+  const [cards, setCards] = useState([
     {
       text: "I used to be lost and alone. After joining The Moving Bible's volunteer program, I found purpose and a supportive community.",
       name: 'Sarah',
@@ -78,53 +60,40 @@ const Testimonials = () => {
       location: 'Kenya, Africa',
       img: img2,
     },
-  ];
+  ]);
   // new
   const { windowSize } = useWindowSize();
 
   const cardContainer = useRef(null);
-  const numOfCardsToDisplay = 2;
-  const numOfCardsTotal = testimonials.length;
-  const columnGap = 30;
-  const [slideCount, setSlideCount] = useState(0);
-  const [numOfCardsExtra, setNumOfCardsExtra] = useState(1);
 
+  const columnGap = 30;
   const [cardWidth, setCardWidth] = useState(0);
   const [translateSize, setTranslateSize] = useState(0);
   const [direction, setDirection] = useState('right');
+  const [slideCount, setSlideCount] = useState(0);
 
   const handleTranslate = (direction) => {
+    const cardsTemp = [...cards];
     if (direction === 'left') {
-      if (slideCount === 0) {
-        // setTranslateSize(200);
-      } else {
+      if (slideCount > 0) {
+        let lastItemCopy = { ...cardsTemp[cardsTemp.length - 1] };
+        cardsTemp.pop(lastItemCopy);
         setTranslateSize(translateSize - columnGap - cardWidth);
         setSlideCount(slideCount - 1);
       }
     } else {
-      if (
-        slideCount ===
-        numOfCardsTotal + numOfCardsExtra - numOfCardsToDisplay
-      ) {
-        // setTranslateSize(0);
-      } else {
-        setTranslateSize(translateSize + columnGap + cardWidth);
-        setSlideCount(slideCount + 1);
-      }
+      let firstItemCopy = { ...cardsTemp[slideCount] };
+      cardsTemp.push(firstItemCopy);
+      setTranslateSize(translateSize + columnGap + cardWidth);
+      setSlideCount(slideCount + 1);
     }
+    setCards(cardsTemp);
     setDirection(direction);
   };
   useEffect(() => {
     const cardWidth = cardContainer.current?.getBoundingClientRect().width;
     setCardWidth(cardWidth);
   }, []);
-  useEffect(() => {
-    if (windowSize.width <= 1300) {
-      setNumOfCardsExtra(2);
-    } else {
-      setNumOfCardsExtra(1);
-    }
-  }, [windowSize]);
 
   return (
     <section className='testimonials-component'>
@@ -160,7 +129,7 @@ const Testimonials = () => {
               className='testimonial-cards'
               style={{ transform: `translateX(-${translateSize}px)` }}
             >
-              {testimonials.map((testimonial, index) => (
+              {cards.map((testimonial, index) => (
                 <div className='card-con' ref={cardContainer}>
                   <div className='testimonial-card' key={index}>
                     <div className='card-body'>

@@ -94,10 +94,6 @@ const Audio = () => {
   }, []);
 
   const [active, setActive] = useState(1);
-  console.log('slideCount', slideCount);
-  console.log('cardsOriginalLength', cardsOriginalLength);
-  console.log('cards.length', cards.length);
-  console.log(' % ', slideCount % cards.length);
 
   return (
     <div className='audio-component'>
@@ -128,7 +124,6 @@ const Audio = () => {
               >
                 {cards.map((item, index) => (
                   <div key={index} className='cards-con' ref={cardContainer}>
-                    {/* <CardBook  book={book} /> */}
                     <CardPodcast item={item} />
                   </div>
                 ))}
