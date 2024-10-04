@@ -9,7 +9,8 @@ import Info2 from '../../Views/Atoms/Info2/Info2';
 
 const Books = () => {
   const { windowSize } = useWindowSize();
-  const testimonials = [
+
+  const [cards, setCards] = useState([
     {
       id: 1,
       text: "Our marriage was on the brink of collapse. Through The Moving Bible's marriage counseling program based on Christian principles, we rediscovered the love and respect for each other.",
@@ -46,52 +47,42 @@ const Books = () => {
       text: "I used to be lost and alone. After joining The Moving Bible's volunteer program, I found purpose and a supportive community.",
       name: 'Sarah',
     },
-  ];
+  ]);
 
   const cardContainer = useRef(null);
   const numOfCardsToDisplay = 4;
-  const numOfCardsTotal = testimonials.length;
-  const columnGap = 30;
-  const [slideCount, setSlideCount] = useState(0);
+  const numOfCardsTotal = cards.length;
+
   const [numOfCardsExtra, setNumOfCardsExtra] = useState(1);
 
+  const columnGap = 30;
   const [cardWidth, setCardWidth] = useState(0);
   const [translateSize, setTranslateSize] = useState(0);
   const [direction, setDirection] = useState('right');
+  const [slideCount, setSlideCount] = useState(0);
 
   const handleTranslate = (direction) => {
+    const cardsTemp = [...cards];
     if (direction === 'left') {
-      if (slideCount === 0) {
-        // setTranslateSize(200);
-      } else {
+      if (slideCount > 0) {
+        let lastItemCopy = { ...cardsTemp[cardsTemp.length - 1] };
+        cardsTemp.pop(lastItemCopy);
         setTranslateSize(translateSize - columnGap - cardWidth);
         setSlideCount(slideCount - 1);
       }
     } else {
-      if (
-        slideCount ===
-        numOfCardsTotal + numOfCardsExtra - numOfCardsToDisplay
-      ) {
-        // setTranslateSize(0);
-      } else {
-        setTranslateSize(translateSize + columnGap + cardWidth);
-        setSlideCount(slideCount + 1);
-      }
+      let firstItemCopy = { ...cardsTemp[slideCount] };
+      cardsTemp.push(firstItemCopy);
+      setTranslateSize(translateSize + columnGap + cardWidth);
+      setSlideCount(slideCount + 1);
     }
+    setCards(cardsTemp);
     setDirection(direction);
   };
   useEffect(() => {
     const cardWidth = cardContainer.current?.getBoundingClientRect().width;
     setCardWidth(cardWidth);
   }, []);
-  useEffect(() => {
-    if (windowSize.width <= 1300) {
-      setNumOfCardsExtra(2);
-    } else {
-      setNumOfCardsExtra(1);
-    }
-  }, [windowSize]);
-
 
   return (
     <div className='books-component'>
@@ -122,7 +113,7 @@ const Books = () => {
                 className='cards'
                 style={{ transform: `translateX(-${translateSize}px)` }}
               >
-                {testimonials.map((book, index) => (
+                {cards.map((book, index) => (
                   <div key={index} className='cards-con' ref={cardContainer}>
                     <CardBook book={book} />
                   </div>

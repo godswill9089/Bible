@@ -8,7 +8,7 @@ import Info from '../../Views/Atoms/Info/Info';
 
 const About = () => {
   const { windowSize } = useWindowSize();
-  const cards = [
+  const [cards, setCards] = useState([
     {
       title: 'Christ-centered living',
       description:
@@ -35,53 +35,48 @@ const About = () => {
       description:
         'Sharing The Good News Of Jesus Christ With Every Corner Of The Earth Is At The Heart Of Our Mission.',
     },
-  ];
+  ]);
 
   // new
 
   const cardContainer = useRef(null);
   const numOfCardsToDisplay = 4;
   const numOfCardsTotal = cards.length;
-  const columnGap = 30;
-  const [slideCount, setSlideCount] = useState(0);
-  const [numOfCardsExtra, setNumOfCardsExtra] = useState(1);
 
+  const columnGap = 30;
   const [cardWidth, setCardWidth] = useState(0);
   const [translateSize, setTranslateSize] = useState(0);
   const [direction, setDirection] = useState('right');
+  const [slideCount, setSlideCount] = useState(0);
 
   const handleTranslate = (direction) => {
+    const cardsTemp = [...cards];
     if (direction === 'left') {
-      if (slideCount === 0) {
-        // setTranslateSize(200);
-      } else {
+      if (slideCount > 0) {
+        let lastItemCopy = { ...cardsTemp[cardsTemp.length - 1] };
+        cardsTemp.pop(lastItemCopy);
         setTranslateSize(translateSize - columnGap - cardWidth);
         setSlideCount(slideCount - 1);
       }
     } else {
-      if (
-        slideCount ===
-        numOfCardsTotal + numOfCardsExtra - numOfCardsToDisplay
-      ) {
-        // setTranslateSize(0);
-      } else {
-        setTranslateSize(translateSize + columnGap + cardWidth);
-        setSlideCount(slideCount + 1);
-      }
+      let firstItemCopy = { ...cardsTemp[slideCount] };
+      cardsTemp.push(firstItemCopy);
+      setTranslateSize(translateSize + columnGap + cardWidth);
+      setSlideCount(slideCount + 1);
     }
+    setCards(cardsTemp);
     setDirection(direction);
   };
+
   useEffect(() => {
     const cardWidth = cardContainer.current?.getBoundingClientRect().width;
     setCardWidth(cardWidth);
   }, []);
-  useEffect(() => {
-    if (windowSize.width <= 1300) {
-      setNumOfCardsExtra(2);
-    } else {
-      setNumOfCardsExtra(1);
-    }
-  }, [windowSize]);
+
+  console.log(cards);
+  console.log('slideCount', slideCount);
+  // console.log(translateSize);
+
   return (
     <div className='about-component'>
       <div className='title-wrapper'>
@@ -115,11 +110,7 @@ const About = () => {
               />
             </div>
             <div
-              className={`carousel-btn carousel-btn-right ${
-                slideCount ===
-                  numOfCardsTotal + numOfCardsExtra - numOfCardsToDisplay &&
-                'hidden'
-              }`}
+              className={`carousel-btn carousel-btn-right ${false && 'hidden'}`}
             >
               <ButtonRound
                 active={direction === 'right'}
@@ -134,7 +125,9 @@ const About = () => {
         <div className='cards-wrapper'>
           <div
             className='cards'
-            style={{ transform: `translateX(-${translateSize}px)` }}
+            style={{
+              transform: `translateX(-${translateSize}px)`,
+            }}
           >
             {cards.map((card, index) => (
               <div key={index} className='book-con' ref={cardContainer}>
