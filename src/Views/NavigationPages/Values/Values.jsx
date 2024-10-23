@@ -14,9 +14,9 @@ const Values = () => {
       {/* temp components, update when design is available */}
       <HeroGeneral
         title='Values'
-        info={
-          '…Don’t show me, just your bible. Show me your life transformed by the word of God. '
-        }
+        info={[
+          "Faith in action, Excellence in the Spirit, Christ-centered living, Compassion and Service Community and Unity, Transformation and Spiritual growth"
+        ]}
       />
       <Become />
       <ReadyToJoin />
@@ -30,3 +30,4 @@ const Values = () => {
 };
 
 export default Values;
+

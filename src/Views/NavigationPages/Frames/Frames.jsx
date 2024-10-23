@@ -12,7 +12,7 @@ const Frames = () => {
   return (
     <div className=''>
       {/* temp components, update when design is available */}
-      <HeroGeneral title='Frames' />
+      <HeroGeneral title='Frames' info={"..."}/>
       <Become />
       <ReadyToJoin />
       <SignUp

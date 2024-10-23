@@ -12,13 +12,13 @@ const Podcast = () => {
   return (
     <div className=''>
       {/* temp components, update when design is available */}
-      <HeroGeneral title='Podcast' />
-      <Become />
+      <HeroGeneral title='Podcast' info={"...."}/>
+      {/* <Become />
       <ReadyToJoin />
       <SignUp
         text={'Sign up for our weekly newsletter The Good Stuff.'}
         img={signUpImgHome}
-      />
+      /> */}
       <Footer />
     </div>
   );

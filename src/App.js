@@ -75,6 +75,10 @@ function App() {
       path: '/about-us/our-team',
       element: <OurTeam />,
     },
+     {
+      path: '/about-us/why-moving-bible',
+      element: <WhyMovingBible />,
+    },
     {
       path: '/media',
       element: <Media />,

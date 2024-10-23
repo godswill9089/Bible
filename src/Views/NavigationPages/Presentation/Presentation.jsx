@@ -14,13 +14,13 @@ const Presentation = () => {
 
   return (
     <div className=''>
-      <HeroGeneral title='Presentation' />
-      <Become />
+      <HeroGeneral title='Presentation' info={"..."} />
+      {/* <Become />
       <ReadyToJoin />
       <SignUp
         text={'Sign up for our weekly newsletter The Good Stuff.'}
         img={signUpImgHome}
-      />
+      /> */}
       <Footer />
     </div>
   );

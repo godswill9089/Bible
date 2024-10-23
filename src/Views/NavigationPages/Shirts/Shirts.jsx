@@ -12,7 +12,7 @@ const Shirts = () => {
   return (
     <div className=''>
       {/* temp components, update when design is available */}
-      <HeroGeneral title='Shirts' />
+      <HeroGeneral title='Shirts' info={"..."} />
       <Become />
       <ReadyToJoin />
       <SignUp

@@ -79,9 +79,9 @@ const Navbar = () => {
                           location.pathname !== '/' && 'nav-text-other'
                         } ${active === 1 && 'active'}`}
                       >
-                        Home <FaChevronDown className='icon' />
+                        Home
                       </div>
-                      {active === 1 && (
+                      {/* {active === 1 && (
                         <div className='dropdown-links-wrapper'>
                           <div className='dropdown-links-con'>
                             <div className='dropdown-links'>
@@ -107,7 +107,7 @@ const Navbar = () => {
                             </div>
                           </div>
                         </div>
-                      )}
+                      )} */}
                     </li>
                     <li
                       className='nav-wrapper'
@@ -132,6 +132,11 @@ const Navbar = () => {
                           <div className='dropdown-links-con'>
                             <div className='dropdown-links'>
                               <li
+                                onClick={() => navigate('/about-us/our-vision')}
+                              >
+                                Our Vision
+                              </li>
+                               <li
                                 onClick={() =>
                                   navigate('/about-us/our-mission')
                                 }
@@ -139,14 +144,9 @@ const Navbar = () => {
                                 Our Mission
                               </li>
                               <li
-                                onClick={() => navigate('/about-us/our-vision')}
-                              >
-                                Our Vision
-                              </li>
-                              <li
                                 onClick={() => navigate('/about-us/our-values')}
                               >
-                                Our Values
+                                Our Core Values
                               </li>
                               <li onClick={() => navigate('/about-us/history')}>
                                 History
@@ -155,6 +155,11 @@ const Navbar = () => {
                                 onClick={() => navigate('/about-us/our-team')}
                               >
                                 Our team
+                              </li>
+                               <li
+                                onClick={() => navigate('/about-us/why-moving-bible')}
+                              >
+                                Why Moving Bible
                               </li>
                             </div>
                           </div>
@@ -217,7 +222,7 @@ const Navbar = () => {
                           'active'
                         }`}
                       >
-                        Products
+                        Artefacts
                         <FaChevronDown className='icon' />
                       </div>
                       {active === 4 && (

@@ -5,6 +5,7 @@ import Become from '../../../Components/Become/Become';
 import ReadyToJoin from '../../../Components/ReadyToJoin/ReadyToJoin';
 import SignUp from '../../../Components/Signup/SignUp';
 import Footer from '../../../Components/Footer/Footer';
+import MeetTheTeam from '../../../Components/Pages/About/MeetTheTeam';
 
 const OurTeam = () => {
   const { signUpImgHome } = useIcons();
@@ -13,6 +14,7 @@ const OurTeam = () => {
     <div className=''>
       {/* temp components, update when design is available */}
       <HeroGeneral title='Our team' />
+       <MeetTheTeam/>
       <Become />
       <ReadyToJoin />
       <SignUp

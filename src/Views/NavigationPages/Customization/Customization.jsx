@@ -11,7 +11,7 @@ const Customization = () => {
   return (
     <div className=''>
       {/* temp components, update when design is available */}
-      <HeroGeneral title='Customization' />
+      <HeroGeneral title='Customization' info={"..."}/>
       <Become />
       <ReadyToJoin />
       <SignUp

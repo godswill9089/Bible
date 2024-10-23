@@ -12,7 +12,11 @@ const WhyMovingBible = () => {
   return (
     <div className=''>
       {/* temp components, update when design is available */}
-      <HeroGeneral title='Why moving bible' />
+      <HeroGeneral title='Why moving bible'
+       info={[
+          "The Moving Bible is mandate that calls all humans to action on living on Godly principles that found in the bible to a point where the reflection of these Godly principles would be seen across all localities and nations that the humans are embodiments of the glory of God that are manifested in the scriptures."
+        ]}
+      />
       <Become />
       <ReadyToJoin />
       <SignUp

@@ -17,7 +17,7 @@ const About = () => {
     {
       title: 'Transforming Lives',
       description:
-        'We Believe In The Power Of The Gospel To Empower Individuals And Create A Ripple Effect Of Positive Change.',
+        'We believe In the power Of the gospel to empower individuals and create a ripple effect of positive change.',
     },
     {
       title: 'Excellence in the Spirit',
@@ -27,13 +27,13 @@ const About = () => {
     {
       title: 'Faith in action',
       description:
-        'We Believe In Putting Our Beliefs Into Practice, Serving Others, And Spreading The Message Of Love And Hope.',
+        'We believe in putting our beliefs into practice, serving others, and spreading the message of love and hope.',
     },
 
     {
       title: 'Spreading The Gospel',
       description:
-        'Sharing The Good News Of Jesus Christ With Every Corner Of The Earth Is At The Heart Of Our Mission.',
+        'Sharing the good news of Jesus Christ with every corner of the earth is at the heart of our mission.',
     },
   ]);
 

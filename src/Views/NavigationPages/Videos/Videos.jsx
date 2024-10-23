@@ -11,13 +11,13 @@ const Videos = () => {
 
   return (
     <div className=''>
-      <HeroGeneral title='Videos' />
-      <Become />
+      <HeroGeneral title='Videos'  info={"...."}/>
+      {/* <Become />
       <ReadyToJoin />
       <SignUp
         text={'Sign up for our weekly newsletter The Good Stuff.'}
         img={signUpImgHome}
-      />
+      /> */}
       <Footer />
     </div>
   );

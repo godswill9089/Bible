@@ -17,7 +17,7 @@ const HeroGeneral = ({ title, info }) => {
               <InfoHero
                 text={
                   info ||
-                  "In a world filled with words, The Moving Bible exists to ignite action. We believe that faith in Jesus Christ shouldn't be    confined to dusty pages or Sunday sermons. It's a vibrant force meant to transform hearts and inspire positive change in the world around us"
+                  "We envision a future where at least 1 billion people across 195 countries are living out the teachings of God as it is written in the Holy Bible, in the next 10 years. We would actively seek a world, through the empowerment of  God Almighty where Christ-like love, compassion and forgiveness becomes the key cornerstones of people’s everyday actions, leading to stronger communities and individuals empowered by their faith in God."
                 }
               />
             </div>

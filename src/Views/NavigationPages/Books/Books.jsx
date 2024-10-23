@@ -12,7 +12,7 @@ const Books = () => {
   return (
     <div className=''>
       {/* temp components, update when design is available */}
-      <HeroGeneral title='Books' />
+      <HeroGeneral title='Books' info={"..."}/>
       <Become />
       <ReadyToJoin />
       <SignUp
